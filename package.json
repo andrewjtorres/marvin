@@ -19,7 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/ajtorres9/marvin"
   },
-  "scripts": {},
+  "scripts": {
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
