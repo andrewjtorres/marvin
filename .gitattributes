@@ -1,0 +1,13 @@
+# Automatically normalize line endings for all text-based files
+# https://git-scm.com/docs/gitattributes#_end_of_line_conversion
+* text=auto
+
+# For the following file types, normalize line endings to LF on check-in and
+# prevent conversion to CRLF when they are checked out
+.*      text eol=lf
+*.json  text eol=lf
+*.lock  text eol=lf
+*.md    text eol=lf
+*.py    text eol=lf
+*.svg   text eol=lf
+*.toml  text eol=lf

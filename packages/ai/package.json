@@ -1,0 +1,46 @@
+{
+  "name": "@marvin/ai",
+  "version": "0.1.0",
+  "description": "The brains of the operation",
+  "keywords": [
+    "artificial-intelligence",
+    "machine-learning",
+    "natural-language-processing",
+    "neural-network"
+  ],
+  "homepage": "https://github.com/ajtorres9/marvin#readme",
+  "bugs": "https://github.com/ajtorres9/marvin/issues",
+  "license": "MIT",
+  "contributors": [
+    "Andrew Torres <andrew.jonathan.torres@gmail.com> (https://andrewjtorr.es)",
+    "Brian Lee <briandl92391@gmail.com> (https://brian-dlee.surge.sh)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajtorres9/marvin",
+    "directory": "packages/ai"
+  },
+  "scripts": {
+    "lint": "yarn lint-scripts",
+    "lint-scripts": "poetry run flake8",
+    "test": "yarn test-units",
+    "test-units": "poetry run pytest tests"
+  },
+  "engines": {
+    "node": ">=10.15.1",
+    "yarn": ">=1.13.0"
+  },
+  "private": true,
+  "lint-staged": {
+    "linters": {
+      "*.py": [
+        "poetry run black",
+        "git add"
+      ],
+      "*.toml": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  }
+}
