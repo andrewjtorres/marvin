@@ -1,0 +1,62 @@
+{
+  "name": "marvin",
+  "version": "0.1.0",
+  "description": "The artificial intelligence afflicted with severe depression and boredom",
+  "keywords": [
+    "artificial-intelligence",
+    "machine-learning",
+    "natural-language-processing",
+    "neural-network"
+  ],
+  "homepage": "https://github.com/ajtorres9/marvin#readme",
+  "bugs": "https://github.com/ajtorres9/marvin/issues",
+  "license": "MIT",
+  "contributors": [
+    "Andrew Torres <andrew.jonathan.torres@gmail.com> (https://andrewjtorr.es)",
+    "Brian Lee <briandl92391@gmail.com> (https://brian-dlee.surge.sh)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajtorres9/marvin"
+  },
+  "scripts": {},
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.3.1",
+    "lerna": "^3.13.1",
+    "lint-staged": "^8.1.3",
+    "prettier": "^1.16.4",
+    "prettier-plugin-toml": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=10.15.1",
+    "yarn": ">=1.13.0"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && lerna run --concurrency 1 --stream lint-staged"
+    }
+  },
+  "lint-staged": {
+    "ignore": [
+      "packages/**"
+    ],
+    "linters": {
+      "*.{json,md,yml}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  }
+}
