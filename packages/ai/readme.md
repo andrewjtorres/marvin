@@ -4,7 +4,7 @@
 
 ## Setup
 
-Dependencies in this project are maintained by [Poetry](https://poetry.eustace.io/).
+Dependencies in this package are maintained by [Poetry](https://poetry.eustace.io/).
 
 ### Installing Poetry
 
@@ -22,3 +22,8 @@ In many cases, we want to install `poetry` to be used with `python3`.
 pip3 install poetry
 ```
 
+### Installing dependencies
+
+```shell
+poetry install
+```
