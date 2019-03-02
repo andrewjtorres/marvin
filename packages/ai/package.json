@@ -34,7 +34,7 @@
   "lint-staged": {
     "linters": {
       "*.py": [
-        "poetry run black",
+        "poetry run flake8",
         "git add"
       ],
       "*.toml": [
