@@ -14,12 +14,12 @@
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
+<!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
 | [<img src="https://avatars0.githubusercontent.com/u/450495?v=4" width="100px;" alt="Andrew Torres"/><br /><sub><b>Andrew Torres</b></sub>](https://andrewjtorr.es)<br />[💻](https://github.com/ajtorres9/marvin/commits?author=ajtorres9 "Code") [📖](https://github.com/ajtorres9/marvin/commits?author=ajtorres9 "Documentation") [🚇](#infra-ajtorres9 "Infrastructure (Hosting, Build-Tools, etc)") |
 | :---: |
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- prettier-ignore-end -->
 
 This project follows the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
 
