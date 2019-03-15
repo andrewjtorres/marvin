@@ -24,7 +24,7 @@ repository = "https://github.com/ajtorres9/marvin/tree/master/packages/ai"
 python = "^3.7.2"
 
 [tool.poetry.dev-dependencies]
-black = "^18.9-alpha.0"
+black = "^19.3b0"
 flake8 = "^3.7.7"
 flake8-black = "^0.0.3"
 pytest = "^4.3.1"
