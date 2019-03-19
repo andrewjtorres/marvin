@@ -34,10 +34,11 @@
     "lerna": "^3.13.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
-    "prettier-plugin-toml": "^0.3.1"
+    "prettier-plugin-toml": "^0.3.1",
+    "prettylint": "^1.0.0"
   },
   "engines": {
-    "node": ">=10.15.1",
+    "node": ">=10.15.3",
     "yarn": ">=1.13.0"
   },
   "private": true,
@@ -57,7 +58,7 @@
     ],
     "linters": {
       "*.{json,md,yml}": [
-        "prettier --write",
+        "prettylint --fix",
         "git add"
       ]
     }

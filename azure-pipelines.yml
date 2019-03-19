@@ -1,0 +1,43 @@
+resources:
+  containers:
+    - container: node10
+      image: 10.15.3-alpine
+    - container: node11
+      image: 11.12.0-alpine
+    - container: python3
+      image: 3.7.2-alpine
+jobs:
+  - job: root
+    strategy:
+      matrix:
+        node10:
+          container: node10
+        node11:
+          container: node11
+    pool:
+      vmImage: ubuntu-16.04
+    container: $[variables[container]]
+    steps:
+      - checkout: self
+      - script: yarn --no-progress install
+      - script: yarn --silent prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'
+  - job: ai
+    strategy:
+      matrix:
+        python3:
+          container: python3
+    pool:
+      vmImage: ubuntu-16.04
+    container: $[variables[container]]
+    steps:
+      - checkout: self
+      - script: curl --location --show-error --silent https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+      - script: yarn --no-progress install
+      - script: poetry install
+        workingDirectory: packages/ai
+      - script: yarn --silent lint-misc
+        workingDirectory: packages/ai
+      - script: yarn --silent lint-scripts
+        workingDirectory: packages/ai
+      - script: yarn --silent test-units
+        workingDirectory: packages/ai

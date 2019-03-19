@@ -21,24 +21,25 @@
     "directory": "packages/ai"
   },
   "scripts": {
-    "lint": "yarn lint-scripts",
+    "lint": "yarn lint-misc && yarn lint-scripts",
+    "lint-misc": "prettylint --ignore-path .gitignore '**/*.{json,md,toml}'",
     "lint-scripts": "poetry run flake8",
     "test": "yarn test-units",
     "test-units": "poetry run pytest tests"
   },
   "engines": {
-    "node": ">=10.15.1",
+    "node": ">=10.15.3",
     "yarn": ">=1.13.0"
   },
   "private": true,
   "lint-staged": {
     "linters": {
-      "*.py": [
-        "poetry run flake8",
+      "*.{json,md,toml}": [
+        "prettylint --fix",
         "git add"
       ],
-      "*.toml": [
-        "prettier --write",
+      "*.py": [
+        "poetry run flake8",
         "git add"
       ]
     }
