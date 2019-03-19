@@ -5,9 +5,15 @@
   The artificial intelligence afflicted with severe depression and boredom
 </p>
 <p align="center">
-  <a href="#contributors"><img alt="All Contributors" src="https://flat.badgen.net/badge/all%20contributors/2/orange"></a>
-  <a href="https://github.com/commitizen/cz-cli"><img alt="Commitizen" src="https://flat.badgen.net/badge/commitizen/friendly/green"></a>
-  <a href="license"><img alt="License" src="https://flat.badgen.net/github/license/ajtorres9/marvin"></a>
+  <a href="#contributors">
+    <img alt="All Contributors" src="https://flat.badgen.net/badge/all%20contributors/2/orange">
+  </a>
+  <a href="https://github.com/commitizen/cz-cli">
+    <img alt="Commitizen" src="https://flat.badgen.net/badge/commitizen/friendly/green">
+  </a>
+  <a href="license">
+    <img alt="License" src="https://flat.badgen.net/github/license/ajtorres9/marvin">
+  </a>
 </p>
 
 ## Contributors
@@ -21,7 +27,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
+This project follows the [all-contributors](https://allcontributors.org)
+specification. Contributions of any kind are welcome!
 
 ## License
 
