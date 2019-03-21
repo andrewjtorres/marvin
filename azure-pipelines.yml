@@ -32,11 +32,12 @@ jobs:
     steps:
       - checkout: self
       - script: |
+          curl --location --output - https://yarnpkg.com/install.sh | bash
+          yarn --no-progress install
+      - script: |
           curl --location --show-error --silent https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
           source $HOME/.poetry/env
           poetry install
-      - script: curl --location --output - https://yarnpkg.com/install.sh | bash
-      - script: yarn --no-progress install
         workingDirectory: packages/ai
       - script: yarn --silent lint-misc
         workingDirectory: packages/ai
