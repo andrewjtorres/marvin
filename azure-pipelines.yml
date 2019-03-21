@@ -16,7 +16,7 @@ jobs:
           container: node11
     pool:
       vmImage: ubuntu-16.04
-    container: $[variables[container]]
+    container: $[variables['container']]
     steps:
       - checkout: self
       - script: yarn --no-progress install
@@ -28,7 +28,7 @@ jobs:
           container: python3
     pool:
       vmImage: ubuntu-16.04
-    container: $[variables[container]]
+    container: $[variables['container']]
     steps:
       - checkout: self
       - script: curl --location --show-error --silent https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
