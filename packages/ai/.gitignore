@@ -1,5 +1,9 @@
 # Read about how to use .gitignore: https://git-scm.com/docs/gitignore
 
+# Compiled output
+.pytest_cache
+__pycache__
+
 # Dependencies
 node_modules
 
