@@ -47,6 +47,11 @@ jobs:
       - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
+      - template: build/azure-pipelines/publish-code-coverage.yml
+        parameters:
+          options: --file $(workingDirectory)/coverage.xml
+          reportDirectory: $(workingDirectory)/htmlcov
+          summaryFileLocation: $(workingDirectory)/coverage.xml
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
           artifactName: ai-reports

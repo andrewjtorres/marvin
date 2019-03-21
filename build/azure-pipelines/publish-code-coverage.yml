@@ -1,0 +1,13 @@
+parameters:
+  options:
+  reportDirectory: '**/htmlcov'
+  summaryFileLocation: '**/coverage.xml'
+steps:
+  - task: PublishCodeCoverageResults@1
+    displayName: Publish code coverage results
+    inputs:
+      codeCoverageTool: cobertura
+      summaryFileLocation: $(System.DefaultWorkingDirectory)/
+      reportDirectory: $(System.DefaultWorkingDirectory)/${{ parameters.reportDirectory }}
+  - script: yarn --silent codecov ${{ parameters.options }}
+    displayName: Publish code coverage results to Codecov
