@@ -5,7 +5,7 @@ resources:
     - container: node11
       image: node:11.12.0
     - container: python3
-      image: python:3.7.2
+      image: ajtorres9/marvin-python:3.7.2
 jobs:
   - job: root
     strategy:
@@ -31,13 +31,8 @@ jobs:
     container: $[variables['container']]
     steps:
       - checkout: self
-      - script: |
-          curl --location --output - https://yarnpkg.com/install.sh | bash
-          yarn --no-progress install
-      - script: |
-          curl --location --show-error --silent https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-          source $HOME/.poetry/env
-          poetry install
+      - script: yarn --no-progress install
+      - script: poetry install
         workingDirectory: packages/ai
       - script: yarn --silent lint-misc
         workingDirectory: packages/ai
