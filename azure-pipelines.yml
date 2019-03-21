@@ -32,6 +32,7 @@ jobs:
     steps:
       - checkout: self
       - script: curl --location --show-error --silent https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+      - script: source $HOME/.poetry/env
       - script: poetry install
       - script: curl --location --output - https://yarnpkg.com/install.sh | bash
       - script: yarn --no-progress install
