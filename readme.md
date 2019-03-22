@@ -5,17 +5,17 @@
   The artificial intelligence afflicted with severe depression and boredom
 </p>
 <p align="center">
-  <a href="https://dev.azure.com/prettier/prettier/_build/latest?definitionId=5">
-    <img alt="Azure Pipelines" src="https://img.shields.io/azure-devops/build/ajtorres9/3c0635f2-1758-437e-aefb-26568bbbc91f/1/master.svg?style=flat-square">
+  <a href="https://dev.azure.com/ajtorres9/marvin/_build/latest?definitionId=1">
+    <img alt="Azure Pipelines" src="https://flat.badgen.net/azure-pipelines/ajtorres9/marvin/ajtorres9.marvin/master?label=build">
   </a>
   <a href="#contributors">
-    <img alt="All Contributors" src="https://img.shields.io/badge/all%20contributors-2-orange.svg?style=flat-square">
+    <img alt="All Contributors" src="https://flat.badgen.net/badge/all%20contributors/2/orange">
   </a>
   <a href="https://github.com/commitizen/cz-cli">
-    <img alt="Commitizen" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
+    <img alt="Commitizen" src="https://flat.badgen.net/badge/commitizen/friendly/green">
   </a>
   <a href="license">
-    <img alt="License" src="https://img.shields.io/github/license/ajtorres9/marvin.svg?color=blue&style=flat-square">
+    <img alt="License" src="https://flat.badgen.net/github/license/ajtorres9/marvin">
   </a>
 </p>
 

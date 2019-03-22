@@ -32,11 +32,10 @@ jobs:
     steps:
       - checkout: self
       - script: yarn --no-progress install
-      - script: poetry install
-        workingDirectory: packages/ai
-      - script: yarn --silent lint-misc
-        workingDirectory: packages/ai
-      - script: yarn --silent lint-scripts
-        workingDirectory: packages/ai
-      - script: yarn --silent test-units
+      - script: |
+          poetry install
+          mkdir --parents reports/junit
+          yarn --silent lint-misc
+          yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
+          yarn --silent test-units --junitxml reports/junit/test-units-results.xml
         workingDirectory: packages/ai
