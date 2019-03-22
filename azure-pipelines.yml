@@ -1,46 +1,39 @@
-resources:
-  containers:
-    - container: node10
-      image: node:10.15.3-slim
-    - container: node11
-      image: node:11.12.0-slim
-    - container: python3
-      image: ajtorres9/marvin-python:3.7.2
 jobs:
   - job: root
-    strategy:
-      matrix:
-        node10:
-          container: node10
-        node11:
-          container: node11
     pool:
       vmImage: ubuntu-16.04
-    container: $[variables['container']]
     steps:
       - checkout: self
+      - task: NodeTool@0
+        displayName: Install Node.js
+        inputs:
+          versionSpec: 10.15.3
       - script: yarn --no-progress install
-        displayName: Install Node dependencies
+        displayName: Install dependencies
       - script: yarn --silent prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'
         displayName: Run static analysis
   - job: ai
-    strategy:
-      matrix:
-        python3:
-          container: python3
     pool:
       vmImage: ubuntu-16.04
-    container: $[variables['container']]
     steps:
       - checkout: self
-      - script: yarn --no-progress install
-        displayName: Install Node dependencies
-      - script: poetry install
-        displayName: Install Python dependencies
-        workingDirectory: packages/ai
-      - script: mkdir --parents reports/junit
+      - task: NodeTool@0
+        displayName: Install Node.js
+        inputs:
+          versionSpec: 10.15.3
+      - task: UsePythonVersion@0
+        displayName: Pin Python version
+        inputs:
+          versionSpec: 3.7.2
+      - script: |
+          pip install poetry == 0.12.11
+          mkdir --parents reports/junit
         displayName: Setup
         workingDirectory: packages/ai
+      - script: |
+          yarn --no-progress install
+          poetry install
+        displayName: Install dependencies
       - script: |
           yarn --silent lint-misc
           yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
