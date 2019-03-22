@@ -49,6 +49,7 @@ jobs:
         workingDirectory: $(workingDirectory)
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
+          artifactName: ai-reports
           targetPath: $(workingDirectory)/reports
       - template: build/azure-pipelines/publish-tests-results.yml
         parameters:
