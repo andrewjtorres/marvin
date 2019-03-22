@@ -197,8 +197,8 @@ python-versions = "*"
 version = "0.10.0"
 
 [metadata]
-content-hash = "caaa27a63dd6bdd44224e27fa0d9c9c74a35492bd8bdd119c630987d94e68fb9"
-python-versions = "^3.7.2"
+content-hash = "ba75844de9ca8de3978835a1e28e1ffd0dcbcc74ba6d4375339b33f2602cb6c5"
+python-versions = "^3.7.0"
 
 [metadata.hashes]
 appdirs = ["9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92", "d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e"]
