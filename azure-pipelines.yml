@@ -47,6 +47,9 @@ jobs:
       - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
+      - template: build/azure-pipelines/publish-pipeline-artifact.yml
+        parameters:
+          targetPath: $(workingDirectory)/reports
       - template: build/azure-pipelines/publish-tests-results.yml
         parameters:
           searchFolder: $(workingDirectory)/reports/junit
