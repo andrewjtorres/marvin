@@ -1,0 +1,7 @@
+parameters:
+  version: 3.x
+steps:
+  - task: UsePythonVersion@0
+    displayName: Use Python version
+    inputs:
+      versionSpec: ${{ parameters.version }}

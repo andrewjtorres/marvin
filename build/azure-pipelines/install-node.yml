@@ -1,0 +1,7 @@
+parameters:
+  version: 10.x
+steps:
+  - task: NodeTool@0
+    displayName: Install Node.js
+    inputs:
+      versionSpec: ${{ parameters.version }}

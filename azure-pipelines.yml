@@ -1,50 +1,55 @@
+variables:
+  nodeVersion: 10.15.3
+  pythonVersion: 3.7.0
 jobs:
   - job: root
+    displayName: Root
     pool:
       vmImage: ubuntu-16.04
     steps:
       - checkout: self
-      - task: NodeTool@0
-        displayName: Install Node.js
-        inputs:
-          versionSpec: 10.15.3
-      - script: yarn --no-progress install
-        displayName: Install dependencies
+      - template: build/azure-pipelines/install-node.yml
+        parameters:
+          version: $(nodeVersion)
+      - template: build/azure-pipelines/install-node-dependencies.yml
       - script: yarn --silent prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'
         displayName: Run static analysis
   - job: ai
+    displayName: AI
     pool:
       vmImage: ubuntu-16.04
     steps:
       - checkout: self
-      - task: NodeTool@0
-        displayName: Install Node.js
-        inputs:
-          versionSpec: 10.15.3
-      - task: UsePythonVersion@0
-        displayName: Pin Python version
-        inputs:
-          versionSpec: 3.7.0
+      - template: build/azure-pipelines/install-node.yml
+        parameters:
+          version: $(nodeVersion)
+      - template: build/azure-pipelines/use-python-version.yml
+        parameters:
+          version: $(pythonVersion)
+      - template: build/azure-pipelines/install-node-dependencies.yml
       - script: |
-          pip install poetry==0.12.11
-          mkdir --parents reports/junit
-        displayName: Setup
-        workingDirectory: packages/ai
-      - script: |
-          yarn --no-progress install
-          poetry install
-        displayName: Install dependencies
-      - script: |
-          yarn --silent lint-misc
-          yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
-        displayName: Run static analysis
-        workingDirectory: packages/ai
-      - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
-        displayName: Run tests
-        workingDirectory: packages/ai
-      - task: PublishTestResults@2
-        displayName: Publish static analysis and tests results
-        condition: succeededOrFailed()
-        inputs:
-          testResultsFiles: '**/*-results.xml'
-          searchFolder: $(System.DefaultWorkingDirectory)/packages/ai/reports/junit
+          pwd
+          ls -ahl
+        displayName: Where am I
+      # - script: |
+      #     pip install --upgrade pip
+      #     pip install poetry==0.12.11
+      #     mkdir --parents reports/junit
+      #   displayName: Setup
+      #   workingDirectory: packages/ai
+      # - script: poetry install
+      #   displayName: Install Python dependencies
+      # - script: |
+      #     yarn --silent lint-misc
+      #     yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
+      #   displayName: Run static analysis
+      #   workingDirectory: packages/ai
+      # - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
+      #   displayName: Run tests
+      #   workingDirectory: packages/ai
+      # - task: PublishTestResults@2
+      #   displayName: Publish static analysis and tests results
+      #   condition: succeededOrFailed()
+      #   inputs:
+      #     testResultsFiles: '**/*-results.xml'
+      #     searchFolder: $(System.DefaultWorkingDirectory)/packages/ai/reports/junit
