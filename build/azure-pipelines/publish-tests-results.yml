@@ -1,0 +1,10 @@
+parameters:
+  testResultsFiles: '**/*-results.xml'
+  searchFolder: reports/junit
+steps:
+  - task: PublishTestResults@2
+    displayName: Publish tests results
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFiles: ${{ parameters.testResultsFiles }}
+      searchFolder: $(System.DefaultWorkingDirectory)/${{ parameters.searchFolder }}

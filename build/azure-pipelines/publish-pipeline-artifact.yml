@@ -1,0 +1,9 @@
+parameters:
+  artifactName: reports
+  targetPath: reports
+steps:
+  - task: PublishPipelineArtifact@0
+    displayName: Publish pipeline artifact
+    inputs:
+      artifactName: ${{ parameters.artifactName }}
+      targetPath: ${{ parameters.targetPath }}
