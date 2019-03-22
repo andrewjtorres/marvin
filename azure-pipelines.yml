@@ -20,6 +20,7 @@ jobs:
     variables:
       poetryVersion: 0.12.11
       pythonVersion: 3.7.0
+      workingDirectory: packages/ai
     steps:
       - checkout: self
       - template: build/azure-pipelines/install-node.yml
@@ -34,20 +35,18 @@ jobs:
           pip install poetry==$(poetryVersion)
           mkdir --parents reports/junit
         displayName: Setup
-        workingDirectory: packages/ai
-      # - script: poetry install
-      #   displayName: Install Python dependencies
-      # - script: |
-      #     yarn --silent lint-misc
-      #     yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
-      #   displayName: Run static analysis
-      #   workingDirectory: packages/ai
-      # - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
-      #   displayName: Run tests
-      #   workingDirectory: packages/ai
-      # - task: PublishTestResults@2
-      #   displayName: Publish static analysis and tests results
-      #   condition: succeededOrFailed()
-      #   inputs:
-      #     testResultsFiles: '**/*-results.xml'
-      #     searchFolder: $(System.DefaultWorkingDirectory)/packages/ai/reports/junit
+        workingDirectory: $(workingDirectory)
+      - script: poetry install
+        displayName: Install Python dependencies
+        workingDirectory: $(workingDirectory)
+      - script: |
+          yarn --silent lint-misc
+          yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
+        displayName: Run static analysis
+        workingDirectory: $(workingDirectory)
+      - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
+        displayName: Run tests
+        workingDirectory: $(workingDirectory)
+      - template: build/azure-pipelines/publish-tests-results.yml
+        parameters:
+          searchFolder: $(workingDirectory)/reports/junit
