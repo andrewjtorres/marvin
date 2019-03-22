@@ -39,3 +39,7 @@ jobs:
           yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
           yarn --silent test-units --junitxml reports/junit/test-units-results.xml
         workingDirectory: packages/ai
+      - task: PublishTestResults@2
+        condition: succeededOrFailed()
+        inputs:
+          testResultsFiles: packages/ai/reports/junit/*-results.xml
