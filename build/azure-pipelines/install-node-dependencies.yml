@@ -1,0 +1,5 @@
+parameters:
+  options:
+steps:
+  - script: yarn install ${{ parameters.options }}
+    displayName: Install Node dependencies

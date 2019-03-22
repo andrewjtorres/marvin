@@ -5,6 +5,9 @@
   The artificial intelligence afflicted with severe depression and boredom
 </p>
 <p align="center">
+  <a href="https://dev.azure.com/ajtorres9/marvin/_build/latest?definitionId=1">
+    <img alt="Azure Pipelines" src="https://flat.badgen.net/azure-pipelines/ajtorres9/marvin/ajtorres9.marvin/master?label=build">
+  </a>
   <a href="#contributors">
     <img alt="All Contributors" src="https://flat.badgen.net/badge/all%20contributors/2/orange">
   </a>

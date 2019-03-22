@@ -1,43 +1,56 @@
-resources:
-  containers:
-    - container: node10
-      image: 10.15.3-alpine
-    - container: node11
-      image: 11.12.0-alpine
-    - container: python3
-      image: 3.7.2-alpine
+variables:
+  nodeVersion: 10.15.3
 jobs:
-  - job: root
-    strategy:
-      matrix:
-        node10:
-          container: node10
-        node11:
-          container: node11
+  - job: root_linux
+    displayName: Root on Linux
     pool:
       vmImage: ubuntu-16.04
-    container: $[variables[container]]
     steps:
       - checkout: self
-      - script: yarn --no-progress install
+      - template: build/azure-pipelines/install-node.yml
+        parameters:
+          version: $(nodeVersion)
+      - template: build/azure-pipelines/install-node-dependencies.yml
       - script: yarn --silent prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'
-  - job: ai
-    strategy:
-      matrix:
-        python3:
-          container: python3
+        displayName: Run static analysis
+  - job: ai_linux
+    displayName: AI on Linux
     pool:
       vmImage: ubuntu-16.04
-    container: $[variables[container]]
+    variables:
+      poetryVersion: 0.12.11
+      pythonVersion: 3.7.0
+      workingDirectory: packages/ai
     steps:
       - checkout: self
-      - script: curl --location --show-error --silent https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-      - script: yarn --no-progress install
+      - template: build/azure-pipelines/install-node.yml
+        parameters:
+          version: $(nodeVersion)
+      - template: build/azure-pipelines/use-python-version.yml
+        parameters:
+          version: $(pythonVersion)
+      - template: build/azure-pipelines/install-node-dependencies.yml
+      - script: |
+          pip install --upgrade pip
+          pip install poetry==$(poetryVersion)
+          mkdir --parents reports/junit
+        displayName: Setup
+        workingDirectory: $(workingDirectory)
       - script: poetry install
-        workingDirectory: packages/ai
-      - script: yarn --silent lint-misc
-        workingDirectory: packages/ai
-      - script: yarn --silent lint-scripts
-        workingDirectory: packages/ai
-      - script: yarn --silent test-units
-        workingDirectory: packages/ai
+        displayName: Install Python dependencies
+        workingDirectory: $(workingDirectory)
+      - script: |
+          yarn --silent lint-misc
+          yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
+        displayName: Run static analysis
+        workingDirectory: $(workingDirectory)
+      - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
+        displayName: Run tests
+        workingDirectory: $(workingDirectory)
+      - template: build/azure-pipelines/publish-pipeline-artifact.yml
+        parameters:
+          artifactName: ai-reports
+          targetPath: $(workingDirectory)/reports
+      - template: build/azure-pipelines/publish-tests-results.yml
+        parameters:
+          searchFolder: $(workingDirectory)/reports/junit
