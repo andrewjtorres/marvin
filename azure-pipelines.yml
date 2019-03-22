@@ -20,7 +20,9 @@ jobs:
     steps:
       - checkout: self
       - script: yarn --no-progress install
+        displayName: Install Node dependencies
       - script: yarn --silent prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'
+        displayName: Run static analysis
   - job: ai
     strategy:
       matrix:
@@ -32,14 +34,24 @@ jobs:
     steps:
       - checkout: self
       - script: yarn --no-progress install
+        displayName: Install Node dependencies
+      - script: poetry install
+        displayName: Install Python dependencies
+        workingDirectory: packages/ai
+      - script: mkdir --parents reports/junit
+        displayName: Setup
+        workingDirectory: packages/ai
       - script: |
-          poetry install
-          mkdir --parents reports/junit
           yarn --silent lint-misc
           yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
-          yarn --silent test-units --junitxml reports/junit/test-units-results.xml
+        displayName: Run static analysis
+        workingDirectory: packages/ai
+      - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
+        displayName: Run tests
         workingDirectory: packages/ai
       - task: PublishTestResults@2
+        displayName: Publish static analysis and tests results
         condition: succeededOrFailed()
         inputs:
-          testResultsFiles: packages/ai/reports/junit/*-results.xml
+          testResultsFiles: '**/*-results.xml'
+          searchFolder: packages/ai/reports/junit
