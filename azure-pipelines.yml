@@ -54,4 +54,4 @@ jobs:
         condition: succeededOrFailed()
         inputs:
           testResultsFiles: '**/*-results.xml'
-          searchFolder: packages/ai/reports/junit
+          searchFolder: $(System.DefaultWorkingDirectory)/packages/ai/reports/junit
