@@ -44,7 +44,7 @@ jobs:
           yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --junitxml reports/junit/test-units-results.xml
+      - script: yarn --silent test-units --cov ai --cov-report html --cov-report xml --junitxml reports/junit/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
       - template: build/azure-pipelines/publish-code-coverage.yml
