@@ -49,7 +49,7 @@ jobs:
         workingDirectory: $(workingDirectory)
       - template: build/azure-pipelines/publish-code-coverage.yml
         parameters:
-          options: --file $(workingDirectory)/coverage.xml
+          options: --file $(workingDirectory)/coverage.xml --token $(codecovToken)
           reportDirectory: $(workingDirectory)/htmlcov
           summaryFileLocation: $(workingDirectory)/coverage.xml
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
