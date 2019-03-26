@@ -44,12 +44,12 @@ jobs:
           yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --cov ai --cov-report xml --junitxml reports/junit/test-units-results.xml
+      - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml reports/junit/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
       - template: build/azure-pipelines/publish-code-coverage.yml
         parameters:
-          options: --clear -f $(workingDirectory)/coverage.xml -t $(codecovToken)
+          options: -F ai --clear -f $(workingDirectory)/coverage.xml -t $(codecovToken)
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
           artifactName: ai-reports
