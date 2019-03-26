@@ -19,10 +19,10 @@
       "contributions": [
         "code",
         "doc",
+        "ideas",
         "infra",
-        "test",
         "review",
-        "ideas"
+        "test"
       ]
     },
     {
@@ -32,6 +32,8 @@
       "profile": "https://github.com/brian-dlee",
       "contributions": [
         "doc",
+        "ideas",
+        "question",
         "review"
       ]
     }
