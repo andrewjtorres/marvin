@@ -49,13 +49,13 @@ jobs:
       - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml $(reportsDirectory)/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
-      - template: build/azure-pipelines/publish-code-coverage.yml
-        parameters:
-          options: -F ai --clear -f $(workingDirectory)/$(coverageDirectory)/coverage.xml -t $(codecovToken)
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
           artifactName: coverage
           targetPath: $(workingDirectory)/coverage
+      - template: build/azure-pipelines/publish-code-coverage.yml
+        parameters:
+          options: -F ai --clear -f $(workingDirectory)/$(coverageDirectory)/coverage.xml -t $(codecovToken)
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
           artifactName: reports
