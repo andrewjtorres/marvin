@@ -18,8 +18,10 @@ jobs:
     pool:
       vmImage: ubuntu-16.04
     variables:
+      coverageDirectory: coverage/ai
       poetryVersion: 0.12.11
       pythonVersion: 3.7.0
+      reportsDirectory: reports/ai
       workingDirectory: packages/ai
     steps:
       - checkout: self
@@ -33,7 +35,7 @@ jobs:
       - script: |
           pip install --upgrade pip
           pip install poetry==$(poetryVersion)
-          mkdir --parents coverage/ai reports/ai
+          mkdir --parents $(coverageDirectory) $(reportsDirectory)
         displayName: Setup
         workingDirectory: $(workingDirectory)
       - script: poetry install
@@ -41,15 +43,15 @@ jobs:
         workingDirectory: $(workingDirectory)
       - script: |
           yarn --silent lint-misc
-          yarn --silent lint-scripts --format junit-xml --output-file reports/ai/lint-scripts-results.xml
+          yarn --silent lint-scripts --format junit-xml --output-file $(reportsDirectory)/lint-scripts-results.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml reports/ai/test-units-results.xml
+      - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml $(reportsDirectory)/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
       - template: build/azure-pipelines/publish-code-coverage.yml
         parameters:
-          options: -F ai --clear -f $(workingDirectory)/coverage.xml -t $(codecovToken)
+          options: -F ai --clear -f $(workingDirectory)/$(coverageDirectory)/coverage.xml -t $(codecovToken)
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
           artifactName: coverage
@@ -60,4 +62,4 @@ jobs:
           targetPath: $(workingDirectory)/reports
       - template: build/azure-pipelines/publish-tests-results.yml
         parameters:
-          searchFolder: $(workingDirectory)/reports/junit
+          searchFolder: $(workingDirectory)/$(reportsDirectory)
