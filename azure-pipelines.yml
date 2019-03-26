@@ -33,7 +33,7 @@ jobs:
       - script: |
           pip install --upgrade pip
           pip install poetry==$(poetryVersion)
-          mkdir --parents reports/junit
+          mkdir --parents coverage/ai reports/ai
         displayName: Setup
         workingDirectory: $(workingDirectory)
       - script: poetry install
@@ -41,10 +41,10 @@ jobs:
         workingDirectory: $(workingDirectory)
       - script: |
           yarn --silent lint-misc
-          yarn --silent lint-scripts --format junit-xml --output-file reports/junit/lint-scripts-results.xml
+          yarn --silent lint-scripts --format junit-xml --output-file reports/ai/lint-scripts-results.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml reports/junit/test-units-results.xml
+      - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml reports/ai/test-units-results.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
       - template: build/azure-pipelines/publish-code-coverage.yml
@@ -52,7 +52,11 @@ jobs:
           options: -F ai --clear -f $(workingDirectory)/coverage.xml -t $(codecovToken)
       - template: build/azure-pipelines/publish-pipeline-artifact.yml
         parameters:
-          artifactName: ai-reports
+          artifactName: coverage
+          targetPath: $(workingDirectory)/coverage
+      - template: build/azure-pipelines/publish-pipeline-artifact.yml
+        parameters:
+          artifactName: reports
           targetPath: $(workingDirectory)/reports
       - template: build/azure-pipelines/publish-tests-results.yml
         parameters:
