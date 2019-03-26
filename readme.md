@@ -25,8 +25,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/450495?v=4" width="100px;" alt="Andrew Torres"/><br /><sub><b>Andrew Torres</b></sub>](https://andrewjtorr.es)<br />[💻](https://github.com/ajtorres9/marvin/commits?author=ajtorres9 "Code") [📖](https://github.com/ajtorres9/marvin/commits?author=ajtorres9 "Documentation") [🚇](#infra-ajtorres9 "Infrastructure (Hosting, Build-Tools, etc)") | [<img src="https://avatars2.githubusercontent.com/u/15238587?v=4" width="100px;" alt="Brian Lee"/><br /><sub><b>Brian Lee</b></sub>](https://github.com/brian-dlee)<br />[📖](https://github.com/ajtorres9/marvin/commits?author=brian-dlee "Documentation") |
-| :---: | :---: |
+<table><tr><td align="center"><a href="https://andrewjtorr.es"><img src="https://avatars2.githubusercontent.com/u/450495?v=4" width="100px;" alt="Andrew Torres"/><br /><sub><b>Andrew Torres</b></sub></a><br /><a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Code">💻</a> <a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Documentation">📖</a> <a href="#infra-ajtorres9" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Tests">⚠️</a></td><td align="center"><a href="https://github.com/brian-dlee"><img src="https://avatars2.githubusercontent.com/u/15238587?v=4" width="100px;" alt="Brian Lee"/><br /><sub><b>Brian Lee</b></sub></a><br /><a href="https://github.com/ajtorres9/marvin/commits?author=brian-dlee" title="Documentation">📖</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
