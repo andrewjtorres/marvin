@@ -6,7 +6,7 @@ build-backend = "poetry.masonry.api"
 line-length = 80
 
 [tool.poetry]
-name = "marvin.ai"
+name = "ai"
 version = "0.1.0"
 description = "The brains of the operation"
 keywords = [
@@ -33,3 +33,4 @@ flake8 = "^3.7.7"
 flake8-black = "^0.0.4"
 flake8-formatter-junit-xml = "^0.0.6"
 pytest = "^4.3.1"
+pytest-cov = "^2.6.1"

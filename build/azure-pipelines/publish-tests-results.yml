@@ -1,6 +1,6 @@
 parameters:
   testResultsFiles: '**/*-results.xml'
-  searchFolder: reports/junit
+  searchFolder: '**/reports'
 steps:
   - task: PublishTestResults@2
     displayName: Publish tests results

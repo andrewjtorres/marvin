@@ -1,0 +1,7 @@
+[report]
+fail_under = 100
+precision = 2
+show_missing = true
+
+[xml]
+output = coverage/ai/coverage.xml

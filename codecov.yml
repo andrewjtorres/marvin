@@ -1,0 +1,11 @@
+coverage:
+  status:
+    project:
+      default: off
+      ai:
+        target: 100%
+        flags: ai
+flags:
+  ai:
+    paths:
+      - packages/ai
