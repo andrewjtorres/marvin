@@ -1,0 +1,5 @@
+parameters:
+  options:
+steps:
+  - script: yarn --silent codecov ${{ parameters.options }}
+    displayName: Publish code coverage results

@@ -1,11 +1,18 @@
 # Read about how to use .gitignore: https://git-scm.com/docs/gitignore
 
-# Compiled output
-.pytest_cache
+# Compiled Output
+*.egg-info
 __pycache__
+dist
 
 # Dependencies
 node_modules
+
+# Test and Code Coverage
+.pytest_cache
+htmlcov
+.coverage
+coverage.xml
 
 # Logs
 *.log*
