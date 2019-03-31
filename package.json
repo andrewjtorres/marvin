@@ -20,8 +20,9 @@
     "url": "git+https://github.com/ajtorres9/marvin"
   },
   "scripts": {
-    "lint": "lerna run lint",
-    "test": "lerna run test"
+    "lint": "yarn lint-files && lerna run --stream lint",
+    "lint-files": "prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'",
+    "test": "lerna run --stream test"
   },
   "config": {
     "commitizen": {
@@ -50,7 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && lerna run --concurrency 1 --stream lint-staged"
+      "pre-commit": "lint-staged && lerna exec --concurrency 1 --stream lint-staged"
     }
   },
   "lint-staged": {
