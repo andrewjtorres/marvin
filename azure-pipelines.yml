@@ -7,11 +7,13 @@ jobs:
       vmImage: ubuntu-16.04
     steps:
       - checkout: self
-      - template: build/azure-pipelines/install-node.yml
-        parameters:
-          version: $(nodeVersion)
-      - template: build/azure-pipelines/install-node-dependencies.yml
-      - script: yarn --silent prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'
+      - task: NodeTool@0
+        displayName: Install Node
+        inputs:
+          versionSpec: $(nodeVersion)
+      - script: yarn install
+        displayName: Install Node dependencies
+      - script: yarn --silent lint-files
         displayName: Run static analysis
   - job: ai_linux
     displayName: AI on Linux
@@ -25,41 +27,47 @@ jobs:
       workingDirectory: packages/ai
     steps:
       - checkout: self
-      - template: build/azure-pipelines/install-node.yml
-        parameters:
-          version: $(nodeVersion)
-      - template: build/azure-pipelines/use-python-version.yml
-        parameters:
-          version: $(pythonVersion)
-      - template: build/azure-pipelines/install-node-dependencies.yml
+      - task: NodeTool@0
+        displayName: Install Node
+        inputs:
+          versionSpec: $(nodeVersion)
+      - task: UsePythonVersion@0
+        displayName: Use Python version
+        inputs:
+          versionSpec: $(pythonVersion)
+      - script: yarn install
+        displayName: Install Node dependencies
       - script: |
-          pip install --upgrade pip
-          pip install poetry==$(poetryVersion)
           mkdir --parents $(coverageDirectory) $(reportsDirectory)
+          pip install --upgrade pip poetry==$(poetryVersion)
         displayName: Setup
         workingDirectory: $(workingDirectory)
       - script: poetry install
         displayName: Install Python dependencies
         workingDirectory: $(workingDirectory)
       - script: |
-          yarn --silent lint-misc
-          yarn --silent lint-scripts --format junit-xml --output-file $(reportsDirectory)/lint-scripts-results.xml
+          yarn --silent lint-files
+          yarn --silent lint-scripts --format junit-xml --output-file $(reportsDirectory)/lint-scripts.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --cov ai --cov-branch --cov-report xml --junitxml $(reportsDirectory)/test-units-results.xml
+      - script: yarn --silent test-units --cov ai --cov-branch --cov-report html --cov-report xml --junitxml $(reportsDirectory)/test-units.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
-      - template: build/azure-pipelines/publish-pipeline-artifact.yml
-        parameters:
+      - script: yarn --silent codecov --flags=ai --token=$(codecovToken)
+        displayName: Publish code coverage results
+      - task: PublishPipelineArtifact@0
+        displayName: Publish coverage artifact
+        inputs:
           artifactName: coverage
           targetPath: $(workingDirectory)/coverage
-      - template: build/azure-pipelines/publish-code-coverage.yml
-        parameters:
-          options: -F ai --clear -f $(workingDirectory)/$(coverageDirectory)/coverage.xml -t $(codecovToken)
-      - template: build/azure-pipelines/publish-pipeline-artifact.yml
-        parameters:
+      - task: PublishPipelineArtifact@0
+        displayName: Publish reports artifact
+        inputs:
           artifactName: reports
           targetPath: $(workingDirectory)/reports
-      - template: build/azure-pipelines/publish-tests-results.yml
-        parameters:
-          searchFolder: $(workingDirectory)/$(reportsDirectory)
+      - task: PublishTestResults@2
+        displayName: Publish tests results
+        condition: succeededOrFailed()
+        inputs:
+          testResultsFiles: '**/*.xml'
+          searchFolder: $(System.DefaultWorkingDirectory)/$(workingDirectory)/$(reportsDirectory)
