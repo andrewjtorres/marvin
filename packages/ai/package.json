@@ -21,8 +21,8 @@
     "directory": "packages/ai"
   },
   "scripts": {
-    "lint": "yarn lint-misc && yarn lint-scripts",
-    "lint-misc": "prettylint --ignore-path .gitignore '**/*.{json,md,toml}'",
+    "lint": "yarn lint-files && yarn lint-scripts",
+    "lint-files": "prettylint --ignore-path .gitignore '**/*.{json,md,toml}'",
     "lint-scripts": "poetry run flake8",
     "test": "yarn test-units",
     "test-units": "poetry run pytest tests"
