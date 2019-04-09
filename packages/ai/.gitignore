@@ -8,6 +8,9 @@ dist
 # Dependencies
 node_modules
 
+# Static Typing
+.mypy_cache
+
 # Test and Code Coverage
 .pytest_cache
 coverage

@@ -22,8 +22,9 @@
   },
   "scripts": {
     "lint": "yarn lint-files && yarn lint-scripts",
-    "lint-files": "prettylint --ignore-path .gitignore '**/*.{json,md,toml}'",
-    "lint-scripts": "poetry run flake8",
+    "lint-files": "prettylint --ignore-path .gitignore **/*.{json,md,toml}",
+    "lint-scripts": "poetry run flake8 **/*.py",
+    "lint-types": "poetry run mypy **/*.py",
     "test": "yarn test-units",
     "test-units": "poetry run pytest tests"
   },
@@ -39,7 +40,9 @@
         "git add"
       ],
       "*.py": [
+        "poetry run black",
         "poetry run flake8",
+        "poetry run mypy",
         "git add"
       ]
     }

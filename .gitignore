@@ -5,3 +5,6 @@ node_modules
 
 # Logs
 *.log*
+
+# Environments
+.env*
