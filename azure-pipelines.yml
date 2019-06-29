@@ -22,7 +22,7 @@ jobs:
     variables:
       coverageDirectory: coverage/ai
       poetryVersion: 0.12.16
-      pythonVersion: 3.7.3
+      pythonVersion: 3.7.2
       reportsDirectory: reports/ai
       workingDirectory: packages/ai
     steps:
