@@ -1,5 +1,3 @@
-# Read about how to use .gitignore: https://git-scm.com/docs/gitignore
-
 # Dependencies
 node_modules
 

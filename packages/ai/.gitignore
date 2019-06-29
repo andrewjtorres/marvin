@@ -1,5 +1,3 @@
-# Read about how to use .gitignore: https://git-scm.com/docs/gitignore
-
 # Compiled Output
 *.egg-info
 __pycache__
@@ -7,6 +5,9 @@ dist
 
 # Dependencies
 node_modules
+
+# Static Typing
+.mypy_cache
 
 # Test and Code Coverage
 .pytest_cache
