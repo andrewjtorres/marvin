@@ -1,7 +1,9 @@
+from typing import Any
+
 from ai import main
 
 
-def test_ai(capfd):
+def test_ai(capfd: Any) -> None:
     main()
 
     out, err = capfd.readouterr()

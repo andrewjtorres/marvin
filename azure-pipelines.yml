@@ -1,5 +1,5 @@
 variables:
-  nodeVersion: 10.15.3
+  nodeVersion: 10.16.0
 jobs:
   - job: root_linux
     displayName: Root on Linux
@@ -21,8 +21,8 @@ jobs:
       vmImage: ubuntu-16.04
     variables:
       coverageDirectory: coverage/ai
-      poetryVersion: 0.12.11
-      pythonVersion: 3.7.0
+      poetryVersion: 0.12.16
+      pythonVersion: 3.7.2
       reportsDirectory: reports/ai
       workingDirectory: packages/ai
     steps:
@@ -48,9 +48,10 @@ jobs:
       - script: |
           yarn --silent lint-files
           yarn --silent lint-scripts --format junit-xml --output-file $(reportsDirectory)/lint-scripts.xml
+          yarn --silent lint-types --junit-xml $(reportsDirectory)/lint-types.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --cov ai --cov-branch --cov-report html --cov-report xml --junitxml $(reportsDirectory)/test-units.xml
+      - script: yarn --silent test-units --cov ai --cov-branch --cov-report html --cov-report xml --doctest-modules --junit-xml $(reportsDirectory)/test-units.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
       - script: yarn --silent codecov --flags=ai --token=$(codecovToken)
