@@ -8,7 +8,7 @@
   <a href="https://dev.azure.com/ajtorres9/marvin/_build/latest?definitionId=1">
     <img alt="Azure Pipelines" src="https://flat.badgen.net/azure-pipelines/ajtorres9/marvin/ajtorres9.marvin/master?label=build">
   </a>
-  <a href="https://www.codecov.io/gh/ajtorres9/marvin">
+  <a href="https://codecov.io/gh/ajtorres9/marvin">
     <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ajtorres9/marvin/master">
   </a>
   <a href="#contributors">

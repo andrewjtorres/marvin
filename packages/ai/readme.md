@@ -4,7 +4,7 @@
 
 ## Setup
 
-Dependencies in this package are maintained by [Poetry](https://poetry.eustace.io/).
+Dependencies in this package are maintained by [Poetry](https://poetry.eustace.io).
 
 ### Installing Poetry
 
