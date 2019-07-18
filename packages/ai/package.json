@@ -21,12 +21,12 @@
     "directory": "packages/ai"
   },
   "scripts": {
-    "lint": "yarn lint-files && yarn lint-scripts && yarn lint-types",
-    "lint-files": "prettylint --ignore-path .gitignore '**/*.{json,md,toml}'",
-    "lint-scripts": "poetry run flake8 **/*.py",
-    "lint-types": "poetry run mypy **/*.py",
-    "test": "yarn test-units",
-    "test-units": "poetry run pytest tests"
+    "lint": "yarn lint:files && yarn lint:scripts && yarn lint:types",
+    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",
+    "lint:scripts": "poetry run flake8 **/*.py",
+    "lint:types": "poetry run mypy **/*.py",
+    "test": "yarn test:units",
+    "test:units": "poetry run pytest tests"
   },
   "engines": {
     "node": ">=10.16.0",

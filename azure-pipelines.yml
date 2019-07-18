@@ -13,7 +13,7 @@ jobs:
           versionSpec: $(nodeVersion)
       - script: yarn install
         displayName: Install Node dependencies
-      - script: yarn --silent lint-files
+      - script: yarn --silent lint:files
         displayName: Run static analysis
   - job: ai_linux
     displayName: AI on Linux
@@ -46,12 +46,12 @@ jobs:
         displayName: Install Python dependencies
         workingDirectory: $(workingDirectory)
       - script: |
-          yarn --silent lint-files
-          yarn --silent lint-scripts --format junit-xml --output-file $(reportsDirectory)/lint-scripts.xml
-          yarn --silent lint-types --junit-xml $(reportsDirectory)/lint-types.xml
+          yarn --silent lint:files
+          yarn --silent lint:scripts --format junit-xml --output-file $(reportsDirectory)/lint-scripts.xml
+          yarn --silent lint:types --junit-xml $(reportsDirectory)/lint-types.xml
         displayName: Run static analysis
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent test-units --cov ai --cov-branch --cov-report html --cov-report xml --doctest-modules --junit-xml $(reportsDirectory)/test-units.xml
+      - script: yarn --silent test:units --cov ai --cov-branch --cov-report html --cov-report xml --doctest-modules --junit-xml $(reportsDirectory)/test-units.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
       - script: yarn --silent codecov --flags=ai --token=$(codecovToken)

@@ -20,8 +20,8 @@
     "url": "git+https://github.com/ajtorres9/marvin.git"
   },
   "scripts": {
-    "lint": "yarn lint-files && lerna run --stream lint",
-    "lint-files": "prettylint --ignore-path .gitignore '**/*.{json,md,yml}' '!packages/**'",
+    "lint": "yarn lint:files && lerna run --stream lint",
+    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,yml}\" \"!packages/**\"",
     "test": "lerna run --stream test"
   },
   "config": {
