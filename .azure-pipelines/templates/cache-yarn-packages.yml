@@ -1,0 +1,25 @@
+parameters:
+  key: 'yarn.lock'
+  path: ''
+  version: 'v1'
+steps:
+  - bash: |
+      if [[ -z "${{ parameters.path }}" ]]; then
+        echo '##vso[task.logissue type=error;]Missing template parameter "path"'
+        echo '##vso[task.complete result=Failed;]DONE'
+      fi
+    displayName: Check for required parameters
+  - bash: |
+      if [[ -z "$(system.pullRequest.sourceBranch)" ]]; then
+        echo "##vso[task.setvariable variable=SOURCE_BRANCH;]$(build.sourceBranchName)"
+      else
+        echo "##vso[task.setvariable variable=SOURCE_BRANCH;]$(system.pullRequest.sourceBranch)"
+      fi
+    displayName: Set source branch
+  - task: CacheBeta@0
+    inputs:
+      key: |
+        yarn-packages-${{ parameters.version }}-$(SOURCE_BRANCH)
+        $(build.sourcesDirectory)/${{ parameters.key }}
+      path: ${{ parameters.path }}
+    displayName: Cache Yarn packages
