@@ -4,7 +4,7 @@ variables:
   - name: POETRY_VERSION
     value: 0.12.17
   - name: PYTHON_VERSION
-    value: 3.7.3
+    value: 3.7.2
   - name: YARN_CACHE_DIR
     value: $(pipeline.workspace)/.yarn
 stages:
