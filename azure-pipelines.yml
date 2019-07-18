@@ -21,8 +21,8 @@ jobs:
       vmImage: ubuntu-16.04
     variables:
       coverageDirectory: coverage/ai
-      poetryVersion: 0.12.16
-      pythonVersion: 3.7.2
+      poetryVersion: 0.12.17
+      pythonVersion: 3.7.3
       reportsDirectory: reports/ai
       workingDirectory: packages/ai
     steps:
