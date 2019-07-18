@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ajtorres9/marvin"
+    "url": "git+https://github.com/ajtorres9/marvin.git"
   },
   "scripts": {
     "lint": "yarn lint-files && lerna run --stream lint",
@@ -55,14 +55,9 @@
     }
   },
   "lint-staged": {
-    "ignore": [
-      "packages/**"
-    ],
-    "linters": {
-      "*.{json,md,yml}": [
-        "prettylint --fix",
-        "git add"
-      ]
-    }
+    "!(packages/**)*.{json,md,yml}": [
+      "prettylint --fix",
+      "git add"
+    ]
   }
 }
