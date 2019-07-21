@@ -54,7 +54,7 @@ jobs:
       - script: yarn --silent test:units --cov ai --cov-branch --cov-report html --cov-report xml --doctest-modules --junit-xml $(reportsDirectory)/test-units.xml
         displayName: Run tests
         workingDirectory: $(workingDirectory)
-      - script: yarn --silent codecov --flags=ai --token=$(codecovToken)
+      - script: yarn --silent codecov --flags=ai --token=$(CODECOV_TOKEN)
         displayName: Publish code coverage results
       - task: PublishTestResults@2
         displayName: Publish tests results
