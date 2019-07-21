@@ -56,19 +56,17 @@ jobs:
         workingDirectory: $(workingDirectory)
       - script: yarn --silent codecov --flags=ai --token=$(codecovToken)
         displayName: Publish code coverage results
-      - task: PublishPipelineArtifact@0
-        displayName: Publish coverage artifact
-        inputs:
-          artifactName: coverage
-          targetPath: $(workingDirectory)/coverage
-      - task: PublishPipelineArtifact@0
-        displayName: Publish reports artifact
-        inputs:
-          artifactName: reports
-          targetPath: $(workingDirectory)/reports
       - task: PublishTestResults@2
         displayName: Publish tests results
         condition: succeededOrFailed()
         inputs:
           testResultsFiles: '**/*.xml'
           searchFolder: $(System.DefaultWorkingDirectory)/$(workingDirectory)/$(reportsDirectory)
+trigger:
+  branches:
+    include:
+      - master
+pr:
+  branches:
+    include:
+      - master
