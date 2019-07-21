@@ -70,10 +70,11 @@ stages:
             parameters:
               key: $(WORKING_DIR)/poetry.lock
               path: $(POETRY_CACHE_DIR)
-          - script: |
-              pip install --upgrade pip poetry==$(POETRY_VERSION)
-              poetry config settings.virtualenvs.path $(POETRY_CACHE_DIR)
-              poetry install
+          - script: pip install --upgrade pip poetry==$(POETRY_VERSION)
+            displayName: Install Poetry
+          - script: poetry config settings.virtualenvs.path $(POETRY_CACHE_DIR)
+            displayName: Configure Poetry
+          - script: poetry install
             displayName: Install Python dependencies
             workingDirectory: $(WORKING_DIR)
       - job: static_analysis
@@ -100,10 +101,11 @@ stages:
             parameters:
               key: $(WORKING_DIR)/poetry.lock
               path: $(POETRY_CACHE_DIR)
-          - script: |
-              pip install --upgrade pip poetry==$(POETRY_VERSION)
-              poetry config settings.virtualenvs.path $(POETRY_CACHE_DIR)
-              poetry install
+          - script: pip install --upgrade pip poetry==$(POETRY_VERSION)
+            displayName: Install Poetry
+          - script: poetry config settings.virtualenvs.path $(POETRY_CACHE_DIR)
+            displayName: Configure Poetry
+          - script: poetry install
             displayName: Install Python dependencies
             workingDirectory: $(WORKING_DIR)
           - script: yarn --silent lint:files
@@ -145,10 +147,11 @@ stages:
             parameters:
               key: $(WORKING_DIR)/poetry.lock
               path: $(POETRY_CACHE_DIR)
-          - script: |
-              pip install --upgrade pip poetry==$(POETRY_VERSION)
-              poetry config settings.virtualenvs.path $(POETRY_CACHE_DIR)
-              poetry install
+          - script: pip install --upgrade pip poetry==$(POETRY_VERSION)
+            displayName: Install Poetry
+          - script: poetry config settings.virtualenvs.path $(POETRY_CACHE_DIR)
+            displayName: Configure Poetry
+          - script: poetry install
             displayName: Install Python dependencies
             workingDirectory: $(WORKING_DIR)
           - script: yarn --silent test:units --cov ai --cov-branch --cov-report html --cov-report xml --doctest-modules --junit-xml $(REPORTS_DIR)/test-units.xml
