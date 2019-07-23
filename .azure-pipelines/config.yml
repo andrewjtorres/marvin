@@ -26,6 +26,9 @@ stages:
               yarn --version
           - script: yarn install --cache-folder $(YARN_CACHE_DIR) --frozen-lockfile
             displayName: Install Node dependencies
+          - script: |
+              yarn add --global yarn
+              yarn --version
       - job: static_analysis
         displayName: Static Analysis
         dependsOn:
