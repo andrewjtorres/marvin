@@ -19,7 +19,7 @@ steps:
   - task: CacheBeta@0
     inputs:
       key: |
-        yarn-packages-${{ parameters.version }}-$(SOURCE_BRANCH)
+        yarn-packages--${{ parameters.version }}--$(SOURCE_BRANCH)
         $(build.sourcesDirectory)/${{ parameters.key }}
       path: ${{ parameters.path }}
     displayName: Cache Yarn packages

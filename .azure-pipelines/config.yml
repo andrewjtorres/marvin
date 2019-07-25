@@ -111,7 +111,9 @@ stages:
               key: $(WORKING_DIR)/poetry.lock
               path: $(POETRY_CACHE_DIR)
           - script: |
-              ls -ahl $(POETRY_CACHE_DIR)
+              ls -ahl $(pipeline.workspace)
+              ls -ahl $(pipeline.workspace)/$(WORKING_DIR)
+              ls -ahl $(pipeline.workspace)/$(WORKING_DIR)/.poetry
               poetry install
             displayName: Install Python dependencies
             workingDirectory: $(WORKING_DIR)
