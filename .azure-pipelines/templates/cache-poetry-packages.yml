@@ -1,7 +1,7 @@
 parameters:
   key: 'poetry.lock'
   path: ''
-  version: 'v1'
+  version: 'v2'
 steps:
   - bash: |
       if [[ -z "${{ parameters.path }}" ]]; then
