@@ -55,7 +55,7 @@ stages:
       - name: COVERAGE_DIR
         value: coverage
       - name: POETRY_CACHE_DIR
-        value: $(pipeline.workspace)/$(WORKING_DIR)/.poetry
+        value: $(pipeline.workspace)/.ai-poetry
       - name: REPORTS_DIR
         value: reports
       - name: WORKING_DIR
