@@ -18,6 +18,9 @@ stages:
             displayName: Install Node
             inputs:
               versionSpec: $(NODE_VERSION)
+
+          - script: which yarn
+
           - template: templates/setup-yarn.yml
             parameters:
               path: $(YARN_CACHE_DIR)
