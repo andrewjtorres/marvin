@@ -18,18 +18,12 @@ stages:
             displayName: Install Node
             inputs:
               versionSpec: $(NODE_VERSION)
-
-          - script: which yarn
-
           - template: templates/setup-yarn.yml
             parameters:
               path: $(YARN_CACHE_DIR)
           - template: templates/cache-yarn-packages.yml
             parameters:
               path: $(YARN_CACHE_DIR)
-
-          - script: yarn --version
-
           - script: yarn install --frozen-lockfile
             displayName: Install Node dependencies
       - job: static_analysis
@@ -116,7 +110,9 @@ stages:
             parameters:
               key: $(WORKING_DIR)/poetry.lock
               path: $(POETRY_CACHE_DIR)
-          - script: poetry install
+          - script: |
+              ls -ahl $(POETRY_CACHE_DIR)
+              poetry install
             displayName: Install Python dependencies
             workingDirectory: $(WORKING_DIR)
           - script: yarn --silent lint:files
