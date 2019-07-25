@@ -1,0 +1,14 @@
+parameters:
+  path: ''
+  version: 1.17.3
+steps:
+  - bash: |
+      if [[ -z "${{ parameters.path }}" ]]; then
+        echo '##vso[task.logissue type=error;]Missing template parameter "path"'
+        echo '##vso[task.complete result=Failed;]DONE'
+      fi
+    displayName: Check for required parameters
+  - bash: curl --compressed --location https://yarnpkg.com/install.sh --output - | bash -s -- --version ${{ parameters.version }}
+    displayName: Install Yarn
+  - script: yarn config set cache-folder ${{ parameters.path }}
+    displayName: Configure Yarn

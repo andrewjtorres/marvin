@@ -18,17 +18,17 @@ stages:
             displayName: Install Node
             inputs:
               versionSpec: $(NODE_VERSION)
+          - template: templates/setup-yarn.yml
+            parameters:
+              path: $(YARN_CACHE_DIR)
           - template: templates/cache-yarn-packages.yml
             parameters:
               path: $(YARN_CACHE_DIR)
-          - script: |
-              yarn add --global yarn
-              yarn --version
-          - script: yarn install --cache-folder $(YARN_CACHE_DIR) --frozen-lockfile
+
+          - script: yarn --version
+
+          - script: yarn install --frozen-lockfile
             displayName: Install Node dependencies
-          - script: |
-              yarn add --global yarn
-              yarn --version
       - job: static_analysis
         displayName: Static Analysis
         dependsOn:
@@ -40,10 +40,13 @@ stages:
             displayName: Install Node
             inputs:
               versionSpec: $(NODE_VERSION)
+          - template: templates/setup-yarn.yml
+            parameters:
+              path: $(YARN_CACHE_DIR)
           - template: templates/cache-yarn-packages.yml
             parameters:
               path: $(YARN_CACHE_DIR)
-          - script: yarn install --cache-folder $(YARN_CACHE_DIR) --frozen-lockfile
+          - script: yarn install --frozen-lockfile
             displayName: Install Node dependencies
           - script: yarn --silent lint:files
             displayName: Lint files
@@ -91,10 +94,13 @@ stages:
             displayName: Install Node
             inputs:
               versionSpec: $(NODE_VERSION)
+          - template: templates/setup-yarn.yml
+            parameters:
+              path: $(YARN_CACHE_DIR)
           - template: templates/cache-yarn-packages.yml
             parameters:
               path: $(YARN_CACHE_DIR)
-          - script: yarn install --cache-folder $(YARN_CACHE_DIR) --frozen-lockfile
+          - script: yarn install --frozen-lockfile
             displayName: Install Node dependencies
           - task: UsePythonVersion@0
             displayName: Use Python version
@@ -136,10 +142,13 @@ stages:
             displayName: Install Node
             inputs:
               versionSpec: $(NODE_VERSION)
+          - template: templates/setup-yarn.yml
+            parameters:
+              path: $(YARN_CACHE_DIR)
           - template: templates/cache-yarn-packages.yml
             parameters:
               path: $(YARN_CACHE_DIR)
-          - script: yarn install --cache-folder $(YARN_CACHE_DIR) --frozen-lockfile
+          - script: yarn install --frozen-lockfile
             displayName: Install Node dependencies
           - task: UsePythonVersion@0
             displayName: Use Python version
