@@ -8,9 +8,7 @@ steps:
         echo '##vso[task.complete result=Failed;]DONE'
       fi
     displayName: Check for required parameters
-  - script: |
-      curl --compressed --location https://dl.yarnpkg.com/debian/pubkey.gpg --show-error --silent | gpg --import
-      curl --compressed --location https://yarnpkg.com/install.sh --show-error --silent | bash -s -- --version ${{ parameters.version }}
+  - script: npm install --global yarn@${{ parameters.version }}
     displayName: Install Yarn
   - script: yarn config set cache-folder ${{ parameters.path }}
     displayName: Configure Yarn
