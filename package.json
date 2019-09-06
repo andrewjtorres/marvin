@@ -40,8 +40,8 @@
     "prettylint": "^1.0.0"
   },
   "engines": {
-    "node": ">=10.16.0",
-    "yarn": ">=1.15.2"
+    "node": ">=10.16",
+    "yarn": ">=1.17"
   },
   "private": true,
   "workspaces": {
