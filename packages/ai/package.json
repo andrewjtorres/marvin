@@ -29,8 +29,8 @@
     "test:units": "poetry run pytest tests"
   },
   "engines": {
-    "node": ">=10.16.0",
-    "yarn": ">=1.15.2"
+    "node": ">=10.16",
+    "yarn": ">=1.17"
   },
   "private": true,
   "lint-staged": {
