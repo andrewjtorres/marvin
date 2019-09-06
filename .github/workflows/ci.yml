@@ -1,0 +1,85 @@
+name: CI
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+jobs:
+  root_static_analysis:
+    name: Root Static Analysis
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1.0.0
+      - name: Setup Node
+        uses: actions/setup-node@v1.1.1
+        with:
+          node-version: 10.16
+      - name: Install Yarn
+        run: npm install --global yarn@1.17
+      - name: Install Node dependencies
+        run: yarn install --frozen-lockfile
+      - name: Lint files
+        run: yarn --silent lint:files
+  ai_static_analysis:
+    name: AI Static Analysis
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1.0.0
+      - name: Setup Node
+        uses: actions/setup-node@v1.1.1
+        with:
+          node-version: 10.16
+      - name: Install Yarn
+        run: npm install --global yarn@1.17
+      - name: Install Node dependencies
+        run: yarn install --frozen-lockfile
+      - name: Setup Python
+        uses: actions/setup-python@v1.0.1
+        with:
+          python-version: 3.7
+      - name: Install Poetry
+        run: pip install --upgrade pip poetry==0.12
+      - name: Install Python dependencies
+        run: poetry install
+        working-directory: packages/ai
+      - name: Lint files
+        run: yarn --silent lint:files
+        working-directory: packages/ai
+      - name: Lint scripts
+        run: yarn --silent lint:scripts
+        working-directory: packages/ai
+      - name: Lint types
+        run: yarn --silent lint:types
+        working-directory: packages/ai
+  ai_test:
+    name: AI Test
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1.0.0
+      - name: Setup Node
+        uses: actions/setup-node@v1.1.1
+        with:
+          node-version: 10.16
+      - name: Install Yarn
+        run: npm install --global yarn@1.17
+      - name: Install Node dependencies
+        run: yarn install --frozen-lockfile
+      - name: Setup Python
+        uses: actions/setup-python@v1.0.1
+        with:
+          python-version: 3.7
+      - name: Install Poetry
+        run: pip install --upgrade pip poetry==0.12
+      - name: Install Python dependencies
+        run: poetry install
+        working-directory: packages/ai
+      - name: Test units
+        run: yarn --silent test:units --cov ai --cov-branch --cov-report html --cov-report xml --doctest-modules
+        working-directory: packages/ai
+      - name: Publish code coverage results
+        run: yarn codecov -F ai -t ${{  secrets.CODECOV_TOKEN }}
