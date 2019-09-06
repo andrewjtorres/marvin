@@ -42,9 +42,7 @@ jobs:
         with:
           python-version: 3.7
       - name: Install Poetry
-        run: |
-          pip install --upgrade pip poetry>=0.12
-          poetry --version
+        run: pip install --upgrade pip poetry>=0.12
       - name: Install Python dependencies
         run: poetry install
         working-directory: packages/ai
@@ -76,9 +74,7 @@ jobs:
         with:
           python-version: 3.7
       - name: Install Poetry
-        run: |
-          pip install --upgrade pip poetry>=0.12
-          poetry --version
+        run: pip install --upgrade pip poetry>=0.12
       - name: Install Python dependencies
         run: poetry install
         working-directory: packages/ai
