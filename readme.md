@@ -5,6 +5,9 @@
   The artificial intelligence afflicted with severe depression and boredom
 </p>
 <p align="center">
+  <a href="https://lgtm.com/projects/g/ajtorres9/marvin">
+    <img alt="LGTM" src="https://flat.badgen.net/lgtm/grade/g/ajtorres9/marvin?label=code%20quality">
+  </a>
   <a href="https://codecov.io/gh/ajtorres9/marvin">
     <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ajtorres9/marvin/master">
   </a>
