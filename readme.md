@@ -14,6 +14,9 @@
   <a href="#contributors">
     <img alt="All Contributors" src="https://flat.badgen.net/badge/all%20contributors/2/orange">
   </a>
+  <a href="https://github.com/prettier/prettier">
+    <img alt="Code Style" src="https://flat.badgen.net/badge/code%20style/prettier/ff69b4">
+  </a>
   <a href="https://github.com/commitizen/cz-cli">
     <img alt="Commitizen" src="https://flat.badgen.net/badge/commitizen/friendly/green">
   </a>

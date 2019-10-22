@@ -2,6 +2,8 @@
 
 > The brains of the operation
 
+[![Code Style](https://flat.badgen.net/badge/code%20style/black/000000)](https://github.com/psf/black)
+
 ## Setup
 
 Dependencies in this package are maintained by [Poetry](https://poetry.eustace.io).
