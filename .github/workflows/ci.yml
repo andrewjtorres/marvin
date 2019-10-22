@@ -84,6 +84,5 @@ jobs:
       - name: Publish code coverage results
         uses: codecov/codecov-action@v1.0.3
         with:
-          flags:
-            - ai
+          flags: ai
           token: ${{ secrets.CODECOV_TOKEN }}
