@@ -171,7 +171,7 @@ description = "Python docstring reStructuredText (RST) validator"
 name = "flake8-rst-docstrings"
 optional = false
 python-versions = "*"
-version = "0.0.11"
+version = "0.0.12"
 
 [package.dependencies]
 flake8 = ">=3.0.0"
@@ -438,7 +438,7 @@ version = "0.6.0"
 more-itertools = "*"
 
 [metadata]
-content-hash = "b6ac9262348d8601855e8de432d94c60dff6d0f4e50be0498ba83f0c0d169fed"
+content-hash = "241bde02ab92c4ab49b481ea718e07e7aff959747b236301b707ffed3ab8f13c"
 python-versions = "^3.7"
 
 [metadata.hashes]
@@ -458,7 +458,7 @@ flake8-docstrings = ["3d5a31c7ec6b7367ea6506a87ec293b94a0a46c0bce2bb4975b7f1d09b
 flake8-formatter-junit-xml = ["1ddd9356bb30ba736c3f14c769c837cfacf4f79c3d383ab963ef9d38eea05a9c", "6358a44ecafdf0f9c8ee5314859b8d6f553dc2e55e946a24c538185e1eba7ce6"]
 flake8-import-order = ["90a80e46886259b9c396b578d75c749801a41ee969a235e163cfe1be7afd2543", "a28dc39545ea4606c1ac3c24e9d05c849c6e5444a50fb7e9cdd430fc94de6e92"]
 flake8-polyfill = ["12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9", "e44b087597f6da52ec6393a709e7108b2905317d0c0b744cdca6208e670d8eda"]
-flake8-rst-docstrings = ["a2fa35c6ef978422234afae8c345f23ff721571d43f2895e29817e94be92dd6c"]
+flake8-rst-docstrings = ["01d38327801781b26c3dfeb71ae37e5a02c5ca1b774a686f63feab8824ca6f9c"]
 importlib-metadata = ["aa18d7378b00b40847790e7c27e11673d7fed219354109d0e7b9e5b25dc3ad26", "d5f18a79777f3aa179c145737780282e27b508fc8fd688cb17c7a813e8bd39af"]
 junit-xml = ["602f1c480a19d64edb452bf7632f76b5f2cb92c1938c6e071dcda8ff9541dc21"]
 mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
