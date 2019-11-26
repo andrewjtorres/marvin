@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: 10.16
+          node-version: 12.13
       - name: Install Yarn
         run: npm install --global yarn@1.19
       - name: Install Node dependencies
@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: 10.16
+          node-version: 12.13
       - name: Install Yarn
         run: npm install --global yarn@1.19
       - name: Install Node dependencies
@@ -64,7 +64,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: 10.16
+          node-version: 12.13
       - name: Install Yarn
         run: npm install --global yarn@1.19
       - name: Install Node dependencies

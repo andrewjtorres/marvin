@@ -29,7 +29,7 @@
     "test:units": "poetry run pytest tests"
   },
   "engines": {
-    "node": ">=10.16",
+    "node": ">=12.13",
     "yarn": ">=1.19"
   },
   "private": true,

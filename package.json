@@ -39,7 +39,7 @@
     "prettylint": "^1.0.0"
   },
   "engines": {
-    "node": ">=10.16",
+    "node": ">=12.13",
     "yarn": ">=1.19"
   },
   "private": true,
