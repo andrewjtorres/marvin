@@ -12,7 +12,9 @@
     <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ajtorres9/marvin/master">
   </a>
   <a href="#contributors">
+    <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
     <img alt="All Contributors" src="https://flat.badgen.net/badge/all%20contributors/2/orange">
+    <!-- ALL-CONTRIBUTORS-BADGE:END -->
   </a>
   <a href="https://github.com/prettier/prettier">
     <img alt="Code Style" src="https://flat.badgen.net/badge/code%20style/prettier/ff69b4">
@@ -30,13 +32,22 @@
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://andrewjtorr.es"><img src="https://avatars2.githubusercontent.com/u/450495?v=4" width="100px;" alt="Andrew Torres"/><br /><sub><b>Andrew Torres</b></sub></a><br /><a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Code">💻</a> <a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Documentation">📖</a> <a href="#ideas-ajtorres9" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-ajtorres9" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#review-ajtorres9" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Tests">⚠️</a></td><td align="center"><a href="https://github.com/brian-dlee"><img src="https://avatars2.githubusercontent.com/u/15238587?v=4" width="100px;" alt="Brian Lee"/><br /><sub><b>Brian Lee</b></sub></a><br /><a href="https://github.com/ajtorres9/marvin/commits?author=brian-dlee" title="Documentation">📖</a> <a href="#ideas-brian-dlee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-brian-dlee" title="Answering Questions">💬</a> <a href="#review-brian-dlee" title="Reviewed Pull Requests">👀</a></td></tr></table>
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://andrewjtorr.es"><img src="https://avatars1.githubusercontent.com/u/450495?v=4" width="100px;" alt="Andrew Torres"/><br /><sub><b>Andrew Torres</b></sub></a><br /><a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Code">💻</a> <a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Documentation">📖</a> <a href="#ideas-ajtorres9" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-ajtorres9" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/ajtorres9/marvin/pulls?q=is%3Apr+reviewed-by%3Aajtorres9" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/ajtorres9/marvin/commits?author=ajtorres9" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/brian-dlee"><img src="https://avatars2.githubusercontent.com/u/15238587?v=4" width="100px;" alt="Brian Lee"/><br /><sub><b>Brian Lee</b></sub></a><br /><a href="https://github.com/ajtorres9/marvin/commits?author=brian-dlee" title="Documentation">📖</a> <a href="#ideas-brian-dlee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-brian-dlee" title="Answering Questions">💬</a> <a href="https://github.com/ajtorres9/marvin/pulls?q=is%3Apr+reviewed-by%3Abrian-dlee" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://allcontributors.org)
-specification. Contributions of any kind are welcome!
+This project follows the [all-contributors](https://allcontributors.org) specification. Contributions of any
+kind are welcome!
 
 ## License
 
