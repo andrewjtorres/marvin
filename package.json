@@ -21,7 +21,7 @@
   },
   "scripts": {
     "lint": "yarn lint:files && lerna run --stream lint",
-    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,yml}\" \"!packages/**\"",
+    "lint:files": "prettylint \"**/*.{json,md,yml}\" \"!packages/**\"",
     "test": "lerna run --stream test"
   },
   "config": {
