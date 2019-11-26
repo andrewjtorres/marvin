@@ -8,13 +8,14 @@
   ],
   "imageSize": 100,
   "commit": false,
+  "commitConvention": "angular",
   "contributorsPerLine": 7,
-  "badgeTemplate": "  <a href=\"#contributors\"><img alt=\"All Contributors\" src=\"https://flat.badgen.net/badge/all%20contributors/<%= contributors.length %>/orange\"></a>",
+  "badgeTemplate": "\n    <img alt=\"All Contributors\" src=\"https://flat.badgen.net/badge/all%20contributors/<%= contributors.length %>/orange\">\n    ",
   "contributors": [
     {
       "login": "ajtorres9",
       "name": "Andrew Torres",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/450495?v=4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/450495?v=4",
       "profile": "https://andrewjtorr.es",
       "contributions": [
         "code",
