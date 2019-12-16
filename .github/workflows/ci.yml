@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1.2.0
+        uses: actions/checkout@v2.0.0
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1.2.0
+        uses: actions/checkout@v2.0.0
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1.2.0
+        uses: actions/checkout@v2.0.0
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
