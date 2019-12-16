@@ -60,7 +60,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Install Poetry
-        run: pip install --upgrade pip poetry==1.0.0b8
+        run: pip install --upgrade pip poetry>=1.0
       - name: Set Poetry cache directory
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
@@ -110,7 +110,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Install Poetry
-        run: pip install --upgrade pip poetry==1.0.0b8
+        run: pip install --upgrade pip poetry>=1.0
       - name: Set Poetry cache directory
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
