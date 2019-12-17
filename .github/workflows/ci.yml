@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 12.13
       - name: Install Yarn
-        run: npm install --global yarn@1.19
+        run: npm install --global yarn@1.21
       - name: Set Yarn cache directory
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: 12.13
       - name: Install Yarn
-        run: npm install --global yarn@1.19
+        run: npm install --global yarn@1.21
       - name: Set Yarn cache directory
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -93,7 +93,7 @@ jobs:
         with:
           node-version: 12.13
       - name: Install Yarn
-        run: npm install --global yarn@1.19
+        run: npm install --global yarn@1.21
       - name: Set Yarn cache directory
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
