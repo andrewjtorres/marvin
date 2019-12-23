@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: 12.13
+          node-version: 12.14
       - name: Install Yarn
         run: npm install --global yarn@1.21
       - name: Set Yarn cache directory
@@ -41,7 +41,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: 12.13
+          node-version: 12.14
       - name: Install Yarn
         run: npm install --global yarn@1.21
       - name: Set Yarn cache directory
@@ -91,7 +91,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1.3.0
         with:
-          node-version: 12.13
+          node-version: 12.14
       - name: Install Yarn
         run: npm install --global yarn@1.21
       - name: Set Yarn cache directory
