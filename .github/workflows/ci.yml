@@ -73,14 +73,8 @@ jobs:
       - name: Install Python dependencies
         run: poetry install
         working-directory: packages/ai
-      - name: Lint files
-        run: yarn --silent lint:files
-        working-directory: packages/ai
-      - name: Lint scripts
-        run: yarn --silent lint:scripts
-        working-directory: packages/ai
-      - name: Lint types
-        run: yarn --silent lint:types
+      - name: Lint files, scripts, and types
+        run: yarn --silent lint
         working-directory: packages/ai
   ai_test:
     name: AI Test
