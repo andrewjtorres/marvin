@@ -21,11 +21,11 @@
     "directory": "packages/ai"
   },
   "scripts": {
-    "lint": "yarn lint:files && yarn lint:scripts && yarn lint:types",
+    "lint": "npm-run-all --parallel \"lint:*\"",
     "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",
     "lint:scripts": "poetry run flake8 **/*.py",
     "lint:types": "poetry run mypy **/*.py",
-    "test": "yarn test:units",
+    "test": "npm-run-all --parallel \"test:*\"",
     "test:units": "poetry run pytest tests"
   },
   "engines": {
