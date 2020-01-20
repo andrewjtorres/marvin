@@ -58,8 +58,7 @@
   },
   "lint-staged": {
     "!(packages/**)*.{json,md,yml}": [
-      "prettylint --fix",
-      "git add"
+      "prettylint --fix"
     ]
   }
 }
