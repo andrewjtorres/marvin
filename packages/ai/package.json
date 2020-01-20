@@ -35,14 +35,12 @@
   "private": true,
   "lint-staged": {
     "*.{json,md,toml}": [
-      "prettylint --fix",
-      "git add"
+      "prettylint --fix"
     ],
     "*.py": [
       "poetry run black",
       "poetry run flake8",
-      "poetry run mypy",
-      "git add"
+      "poetry run mypy"
     ]
   }
 }
