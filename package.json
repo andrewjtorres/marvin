@@ -22,7 +22,7 @@
   "scripts": {
     "hook:pre-commit": "lint-staged",
     "lint": "npm-run-all --parallel \"lint:*\"",
-    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,yml}\" \"!packages/**\"",
+    "lint:files": "prettylint \"**/*.{json,md,yml}\" \"!packages/**\"",
     "lint:workspaces": "lerna run --stream lint",
     "test": "npm-run-all --parallel \"test:*\"",
     "test:workspaces": "lerna run --stream test"
