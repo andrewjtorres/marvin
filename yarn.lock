@@ -1796,9 +1796,9 @@ __metadata:
   linkType: hard
 
 "chownr@npm:^1.1.1, chownr@npm:^1.1.2":
-  version: 1.1.3
-  resolution: "chownr@npm:1.1.3"
-  checksum: 384cf62ef219f12f1af1159777163154f68c455405217d94b8e2e107164242884521b5e92d4d8f510fd17f66f5aafaa83f2ed7b0d59be19f3d448d8d05301947
+  version: 1.1.4
+  resolution: "chownr@npm:1.1.4"
+  checksum: 48e6e84a0a5ff15d35c5365b1bbb05bed163550bb29e2167af8f073f80154a560311c30a8aff334223197e548f6d7638a2b1a23e61d90ef36c90726a9b10b58a
   languageName: node
   linkType: hard
 
@@ -2846,10 +2846,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"extsprintf@npm:1.3.0, extsprintf@npm:^1.2.0":
+"extsprintf@npm:1.3.0":
   version: 1.3.0
   resolution: "extsprintf@npm:1.3.0"
   checksum: 8cf20d3044b6333076eacb7b134fa56586273e9d47ad4fa3e396ce0b6f79d575c32212c579db2de1c1991c02b58f71ad269cfdffdbd193fa040b0bfff233955f
+  languageName: node
+  linkType: hard
+
+"extsprintf@npm:^1.2.0":
+  version: 1.4.0
+  resolution: "extsprintf@npm:1.4.0"
+  checksum: 5ce016ed485f47f742ac65cc26a49fd2a05515beec3f860baaf1e201cf26c1f15e3a97847c19ce82a926d820ec21a3356c7190b64fb74c42ac7dabc879a47a3e
   languageName: node
   linkType: hard
 
@@ -3588,9 +3595,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "husky@npm:4.2.1"
+"husky@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "husky@npm:4.2.2"
   dependencies:
     chalk: ^3.0.0
     ci-info: ^2.0.0
@@ -3605,7 +3612,7 @@ __metadata:
   bin:
     husky-run: bin/run.js
     husky-upgrade: lib/upgrader/bin.js
-  checksum: 687d8482f0fd5d4e0723bb3e91bd64fb7b9abbb1fda7ac86f5f6cac56f6318a96a8b5302e33a80f26098a8734e6a9373f2b2a21ad1f2969424b6935736ed9b7b
+  checksum: 7c6408e58bdec449b68afeece53931a7391c042881fe0fe138c8ab214ee7fe5d670e8726a47ca8749318dadfd8143d9d15dc760899e95543c30f3f85ce818879
   languageName: node
   linkType: hard
 
@@ -3750,7 +3757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:6.5.0, inquirer@npm:^6.2.0":
+"inquirer@npm:6.5.0":
   version: 6.5.0
   resolution: "inquirer@npm:6.5.0"
   dependencies:
@@ -3768,6 +3775,27 @@ __metadata:
     strip-ansi: ^5.1.0
     through: ^2.3.6
   checksum: 292ad51caf333cc0739f7faa8631b5b8daa3a2036f51f8a26dca3b498240d512111ce78aa92c9e96c3f585ee18d4a1cb19f7b154118e7e0d43f5bb5f7de370cc
+  languageName: node
+  linkType: hard
+
+"inquirer@npm:^6.2.0":
+  version: 6.5.2
+  resolution: "inquirer@npm:6.5.2"
+  dependencies:
+    ansi-escapes: ^3.2.0
+    chalk: ^2.4.2
+    cli-cursor: ^2.1.0
+    cli-width: ^2.0.0
+    external-editor: ^3.0.3
+    figures: ^2.0.0
+    lodash: ^4.17.12
+    mute-stream: 0.0.7
+    run-async: ^2.2.0
+    rxjs: ^6.4.0
+    string-width: ^2.1.0
+    strip-ansi: ^5.1.0
+    through: ^2.3.6
+  checksum: da09f7177219f92b43939314eccd2679b40f593b5b81ba427f1e3616cec6d43d7d485011514dffbc910d8dfdf1bc1beb3f135d627464d16df02e7e64eb3011a1
   languageName: node
   linkType: hard
 
@@ -4675,7 +4703,7 @@ __metadata:
   resolution: "marvin@workspace:."
   dependencies:
     cz-conventional-changelog: ^3.1.0
-    husky: ^4.2.1
+    husky: ^4.2.2
     lerna: ^3.20.2
     lint-staged: ^10.0.7
     npm-run-all: ^4.1.5
@@ -4851,7 +4879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:0.0.8, minimist@npm:~0.0.1":
+"minimist@npm:0.0.8":
   version: 0.0.8
   resolution: "minimist@npm:0.0.8"
   checksum: 007f9b6af3b3eeb48eb7f8df6384e57daa112db8cae745f55539835e1900eab0242cca890cb4420e7361bcad397eba316b24317d995b1f452c1486cf6fb09934
@@ -4862,6 +4890,13 @@ __metadata:
   version: 1.2.0
   resolution: "minimist@npm:1.2.0"
   checksum: 06755eb86c09cfff6a239cc3a0a21fac046f333952c508ffdba6b796511725467f930bb0e2cf070401b4287d3383ce29cedb28d1d4b53d569fabc209af8d8706
+  languageName: node
+  linkType: hard
+
+"minimist@npm:~0.0.1":
+  version: 0.0.10
+  resolution: "minimist@npm:0.0.10"
+  checksum: b8ee0d628f1fc9d669309ac0b2153167dd3e7733c450cf0dbd9c6ec00d07ef32f8150e5e7462ffe607a2a974981a00c67c82077d836168afb929d96d57d36186
   languageName: node
   linkType: hard
 
@@ -4921,7 +4956,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mkdirp@npm:*, mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1":
+"mkdirp@npm:*":
+  version: 1.0.3
+  resolution: "mkdirp@npm:1.0.3"
+  bin:
+    mkdirp: bin/cmd.js
+  checksum: 8c3f00e9bba32181159cbe3be25afe25f51e106d13327d8d20b5e43e7414eb8e98c1bfb3b2a2a60417dc16e4cf40cf683e7b481167ee107026cfe93be165a34b
+  languageName: node
+  linkType: hard
+
+"mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1":
   version: 0.5.1
   resolution: "mkdirp@npm:0.5.1"
   dependencies:
@@ -4979,10 +5023,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mute-stream@npm:0.0.7, mute-stream@npm:~0.0.4":
+"mute-stream@npm:0.0.7":
   version: 0.0.7
   resolution: "mute-stream@npm:0.0.7"
   checksum: db35852d403605ab69fc21592534ea581b574a9fe6b53e5cedf7cb1a3a21ebaa00b8050c60b336fc88de38ce1ad357bbcfdb01fccc630bff2af0745c3f6b05c9
+  languageName: node
+  linkType: hard
+
+"mute-stream@npm:~0.0.4":
+  version: 0.0.8
+  resolution: "mute-stream@npm:0.0.8"
+  checksum: 1951ec52b1ea2d0e3cc46eee5dc00ac7ad75331f47e7e9ab695a7771d2ebe6348ab6742ec2d15f914214c35e342da05ba41392e5889f6fbb96f065acccdbe0fc
   languageName: node
   linkType: hard
 
@@ -6047,7 +6098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:1 || 2, readable-stream@npm:2 || 3, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
+"readable-stream@npm:1 || 2, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
   version: 2.3.7
   resolution: "readable-stream@npm:2.3.7"
   dependencies:
@@ -6062,7 +6113,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.0.2":
+"readable-stream@npm:2 || 3, readable-stream@npm:^3.0.2":
   version: 3.5.0
   resolution: "readable-stream@npm:3.5.0"
   dependencies:
@@ -6353,7 +6404,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"safe-buffer@npm:^5.0.1, safe-buffer@npm:^5.1.1, safe-buffer@npm:^5.1.2, safe-buffer@npm:^5.2.0":
+"safe-buffer@npm:^5.0.1, safe-buffer@npm:^5.1.1, safe-buffer@npm:^5.1.2, safe-buffer@npm:^5.2.0, safe-buffer@npm:~5.2.0":
   version: 5.2.0
   resolution: "safe-buffer@npm:5.2.0"
   checksum: 4577ff3526b671703fa907756021c0cf1360d664c7a4b2db07fedaf3a63df00f6638a16aa8d43d56658e73bd56eab432767b5b2ae3d138e77b875f77529338f3
@@ -6830,7 +6881,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string_decoder@npm:^1.1.1, string_decoder@npm:~1.1.1":
+"string_decoder@npm:^1.1.1":
+  version: 1.3.0
+  resolution: "string_decoder@npm:1.3.0"
+  dependencies:
+    safe-buffer: ~5.2.0
+  checksum: 35d2847ef06201a83990a864a5c4643581e8c34911ab22b9548c165b52f37059c7bb230a435607d1fbea70b51cc0b3c7c02e886c9a194b374854bb9edff407cd
+  languageName: node
+  linkType: hard
+
+"string_decoder@npm:~1.1.1":
   version: 1.1.1
   resolution: "string_decoder@npm:1.1.1"
   dependencies:
