@@ -111,7 +111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["cz-conventional-changelog", "npm:3.1.0"],
-            ["husky", "npm:4.2.1"],
+            ["husky", "npm:4.2.2"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.0.7"],
             ["npm-run-all", "npm:4.1.5"],
@@ -249,7 +249,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@evocateur/npm-registry-fetch", "npm:4.0.0"],
             ["bluebird", "npm:3.7.2"],
             ["cacache", "npm:12.0.3"],
-            ["chownr", "npm:1.1.3"],
+            ["chownr", "npm:1.1.4"],
             ["figgy-pudding", "npm:3.5.1"],
             ["get-stream", "npm:4.1.0"],
             ["glob", "npm:7.1.6"],
@@ -915,7 +915,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@lerna-prompt-npm-3.18.5-ba3e7368a8-1.zip/node_modules/@lerna/prompt/",
           "packageDependencies": [
             ["@lerna/prompt", "npm:3.18.5"],
-            ["inquirer", "npm:6.5.0"],
+            ["inquirer", "npm:6.5.2"],
             ["npmlog", "npm:4.1.2"]
           ],
           "linkType": "HARD"
@@ -1908,7 +1908,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["cacache", "npm:12.0.3"],
             ["bluebird", "npm:3.7.2"],
-            ["chownr", "npm:1.1.3"],
+            ["chownr", "npm:1.1.4"],
             ["figgy-pudding", "npm:3.5.1"],
             ["glob", "npm:7.1.6"],
             ["graceful-fs", "npm:4.2.3"],
@@ -2104,10 +2104,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["chownr", [
-        ["npm:1.1.3", {
-          "packageLocation": "./.yarn/cache/chownr-npm-1.1.3-706dbfd282-1.zip/node_modules/chownr/",
+        ["npm:1.1.4", {
+          "packageLocation": "./.yarn/cache/chownr-npm-1.1.4-5bd400ab08-1.zip/node_modules/chownr/",
           "packageDependencies": [
-            ["chownr", "npm:1.1.3"]
+            ["chownr", "npm:1.1.4"]
           ],
           "linkType": "HARD"
         }]
@@ -3260,6 +3260,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["extsprintf", "npm:1.3.0"]
           ],
           "linkType": "HARD"
+        }],
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/extsprintf-npm-1.4.0-2b015bcaab-1.zip/node_modules/extsprintf/",
+          "packageDependencies": [
+            ["extsprintf", "npm:1.4.0"]
+          ],
+          "linkType": "HARD"
         }]
       ]],
       ["fast-deep-equal", [
@@ -4066,10 +4073,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:4.2.1", {
-          "packageLocation": "./.yarn/cache/husky-npm-4.2.1-aa787446b4-1.zip/node_modules/husky/",
+        ["npm:4.2.2", {
+          "packageLocation": "./.yarn/cache/husky-npm-4.2.2-60c5957d10-1.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:4.2.1"],
+            ["husky", "npm:4.2.2"],
             ["chalk", "npm:3.0.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.5.1"],
@@ -4246,6 +4253,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/inquirer-npm-6.5.0-60501c9560-1.zip/node_modules/inquirer/",
           "packageDependencies": [
             ["inquirer", "npm:6.5.0"],
+            ["ansi-escapes", "npm:3.2.0"],
+            ["chalk", "npm:2.4.2"],
+            ["cli-cursor", "npm:2.1.0"],
+            ["cli-width", "npm:2.2.0"],
+            ["external-editor", "npm:3.1.0"],
+            ["figures", "npm:2.0.0"],
+            ["lodash", "npm:4.17.15"],
+            ["mute-stream", "npm:0.0.7"],
+            ["run-async", "npm:2.3.0"],
+            ["rxjs", "npm:6.5.4"],
+            ["string-width", "npm:2.1.1"],
+            ["strip-ansi", "npm:5.2.0"],
+            ["through", "npm:2.3.8"]
+          ],
+          "linkType": "HARD"
+        }],
+        ["npm:6.5.2", {
+          "packageLocation": "./.yarn/cache/inquirer-npm-6.5.2-4f6408c247-1.zip/node_modules/inquirer/",
+          "packageDependencies": [
+            ["inquirer", "npm:6.5.2"],
             ["ansi-escapes", "npm:3.2.0"],
             ["chalk", "npm:2.4.2"],
             ["cli-cursor", "npm:2.1.0"],
@@ -5269,7 +5296,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["marvin", "workspace:."],
             ["cz-conventional-changelog", "npm:3.1.0"],
-            ["husky", "npm:4.2.1"],
+            ["husky", "npm:4.2.2"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.0.7"],
             ["npm-run-all", "npm:4.1.5"],
@@ -5445,6 +5472,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["minimist", [
+        ["npm:0.0.10", {
+          "packageLocation": "./.yarn/cache/minimist-npm-0.0.10-df9c22163e-1.zip/node_modules/minimist/",
+          "packageDependencies": [
+            ["minimist", "npm:0.0.10"]
+          ],
+          "linkType": "HARD"
+        }],
         ["npm:0.0.8", {
           "packageLocation": "./.yarn/cache/minimist-npm-0.0.8-8139f8b2f5-1.zip/node_modules/minimist/",
           "packageDependencies": [
@@ -5530,6 +5564,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:0.0.8"]
           ],
           "linkType": "HARD"
+        }],
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/mkdirp-npm-1.0.3-02fc91ac70-1.zip/node_modules/mkdirp/",
+          "packageDependencies": [
+            ["mkdirp", "npm:1.0.3"]
+          ],
+          "linkType": "HARD"
         }]
       ]],
       ["mkdirp-promise", [
@@ -5537,7 +5578,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/mkdirp-promise-npm-5.0.1-b9705bf08a-1.zip/node_modules/mkdirp-promise/",
           "packageDependencies": [
             ["mkdirp-promise", "npm:5.0.1"],
-            ["mkdirp", "npm:0.5.1"]
+            ["mkdirp", "npm:1.0.3"]
           ],
           "linkType": "HARD"
         }]
@@ -5600,6 +5641,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/mute-stream-npm-0.0.7-22b59a65dd-1.zip/node_modules/mute-stream/",
           "packageDependencies": [
             ["mute-stream", "npm:0.0.7"]
+          ],
+          "linkType": "HARD"
+        }],
+        ["npm:0.0.8", {
+          "packageLocation": "./.yarn/cache/mute-stream-npm-0.0.8-489a7d6c2b-1.zip/node_modules/mute-stream/",
+          "packageDependencies": [
+            ["mute-stream", "npm:0.0.8"]
           ],
           "linkType": "HARD"
         }]
@@ -6011,7 +6059,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/optimist-npm-0.6.1-b1b5ef4c06-1.zip/node_modules/optimist/",
           "packageDependencies": [
             ["optimist", "npm:0.6.1"],
-            ["minimist", "npm:0.0.8"],
+            ["minimist", "npm:0.0.10"],
             ["wordwrap", "npm:0.0.3"]
           ],
           "linkType": "HARD"
@@ -6693,7 +6741,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/read-npm-1.0.7-950ec74ca8-1.zip/node_modules/read/",
           "packageDependencies": [
             ["read", "npm:1.0.7"],
-            ["mute-stream", "npm:0.0.7"]
+            ["mute-stream", "npm:0.0.8"]
           ],
           "linkType": "HARD"
         }]
@@ -6796,7 +6844,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["readable-stream", "npm:3.5.0"],
             ["inherits", "npm:2.0.4"],
-            ["string_decoder", "npm:1.1.1"],
+            ["string_decoder", "npm:1.3.0"],
             ["util-deprecate", "npm:1.0.2"]
           ],
           "linkType": "HARD"
@@ -7644,6 +7692,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safe-buffer", "npm:5.1.2"]
           ],
           "linkType": "HARD"
+        }],
+        ["npm:1.3.0", {
+          "packageLocation": "./.yarn/cache/string_decoder-npm-1.3.0-2422117fd0-1.zip/node_modules/string_decoder/",
+          "packageDependencies": [
+            ["string_decoder", "npm:1.3.0"],
+            ["safe-buffer", "npm:5.2.0"]
+          ],
+          "linkType": "HARD"
         }]
       ]],
       ["stringify-object", [
@@ -7803,7 +7859,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tar-npm-4.4.13-2a4e7ee80f-1.zip/node_modules/tar/",
           "packageDependencies": [
             ["tar", "npm:4.4.13"],
-            ["chownr", "npm:1.1.3"],
+            ["chownr", "npm:1.1.4"],
             ["fs-minipass", "npm:1.2.7"],
             ["minipass", "npm:2.9.0"],
             ["minizlib", "npm:1.3.3"],
@@ -7890,7 +7946,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/through2-npm-3.0.1-dcc4042403-1.zip/node_modules/through2/",
           "packageDependencies": [
             ["through2", "npm:3.0.1"],
-            ["readable-stream", "npm:2.3.7"]
+            ["readable-stream", "npm:3.5.0"]
           ],
           "linkType": "HARD"
         }]
@@ -8224,7 +8280,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["verror", "npm:1.10.0"],
             ["assert-plus", "npm:1.0.0"],
             ["core-util-is", "npm:1.0.2"],
-            ["extsprintf", "npm:1.3.0"]
+            ["extsprintf", "npm:1.4.0"]
           ],
           "linkType": "HARD"
         }]
