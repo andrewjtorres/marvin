@@ -21,16 +21,23 @@
     "directory": "packages/ai"
   },
   "scripts": {
+    "hook:pre-commit": "lint-staged",
     "lint": "npm-run-all --parallel \"lint:*\"",
     "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",
-    "lint:scripts": "poetry run flake8 **/*.py",
-    "lint:types": "poetry run mypy **/*.py",
+    "lint:scripts": "poetry run flake8 ai tests",
+    "lint:types": "poetry run mypy ai tests",
     "test": "npm-run-all --parallel \"test:*\"",
     "test:units": "poetry run pytest tests"
   },
+  "devDependencies": {
+    "lint-staged": "^10.0.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "prettylint": "^1.0.0"
+  },
   "engines": {
     "node": ">=12.14",
-    "yarn": ">=1.21"
+    "yarn": ">=1.22"
   },
   "private": true,
   "lint-staged": {

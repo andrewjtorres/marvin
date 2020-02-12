@@ -1,5 +1,7 @@
 {
+  "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "independent"
+  "loglevel": "success",
+  "packages": ["packages/*"]
 }

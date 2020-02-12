@@ -4,6 +4,8 @@ __pycache__
 dist
 
 # Dependencies
+.yarn/unplugged
+.yarn/build-state.yml
 node_modules
 
 # Static Typing
