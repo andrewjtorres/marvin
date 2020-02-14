@@ -111,7 +111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["cz-conventional-changelog", "npm:3.1.0"],
-            ["husky", "npm:4.2.2"],
+            ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.0.7"],
             ["npm-run-all", "npm:4.1.5"],
@@ -4073,10 +4073,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:4.2.2", {
-          "packageLocation": "./.yarn/cache/husky-npm-4.2.2-60c5957d10-1.zip/node_modules/husky/",
+        ["npm:4.2.3", {
+          "packageLocation": "./.yarn/cache/husky-npm-4.2.3-b5c1a5429e-1.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:4.2.2"],
+            ["husky", "npm:4.2.3"],
             ["chalk", "npm:3.0.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.5.1"],
@@ -5296,7 +5296,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["marvin", "workspace:."],
             ["cz-conventional-changelog", "npm:3.1.0"],
-            ["husky", "npm:4.2.2"],
+            ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.0.7"],
             ["npm-run-all", "npm:4.1.5"],
