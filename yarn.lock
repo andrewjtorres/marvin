@@ -3595,9 +3595,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "husky@npm:4.2.2"
+"husky@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "husky@npm:4.2.3"
   dependencies:
     chalk: ^3.0.0
     ci-info: ^2.0.0
@@ -3612,7 +3612,7 @@ __metadata:
   bin:
     husky-run: bin/run.js
     husky-upgrade: lib/upgrader/bin.js
-  checksum: 7c6408e58bdec449b68afeece53931a7391c042881fe0fe138c8ab214ee7fe5d670e8726a47ca8749318dadfd8143d9d15dc760899e95543c30f3f85ce818879
+  checksum: 60614c0dfcadb2ada6a5c52a235b3974b84c560133370cc9166da57bc001bece2d765a33a779f8fe1a0086254064bc658d80b3aad9c26b3e0ae5f8c981be1b70
   languageName: node
   linkType: hard
 
@@ -4703,7 +4703,7 @@ __metadata:
   resolution: "marvin@workspace:."
   dependencies:
     cz-conventional-changelog: ^3.1.0
-    husky: ^4.2.2
+    husky: ^4.2.3
     lerna: ^3.20.2
     lint-staged: ^10.0.7
     npm-run-all: ^4.1.5
