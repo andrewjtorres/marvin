@@ -196,7 +196,7 @@ description = "Creates JUnit XML test result documents that can be read by tools
 name = "junit-xml"
 optional = false
 python-versions = "*"
-version = "1.8"
+version = "1.9"
 
 [package.dependencies]
 six = "*"
@@ -431,7 +431,7 @@ python-versions = "*"
 version = "0.1.8"
 
 [metadata]
-content-hash = "524381b7b99775fc08442f359b967c611e9024f4340b6b02072be18d15199378"
+content-hash = "fc630540fd3465ce917c08073738ec144811fa957fa0d50d4242844e99c494b3"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -531,7 +531,7 @@ flake8-rst-docstrings = [
     {file = "flake8-rst-docstrings-0.0.12.tar.gz", hash = "sha256:01d38327801781b26c3dfeb71ae37e5a02c5ca1b774a686f63feab8824ca6f9c"},
 ]
 junit-xml = [
-    {file = "junit-xml-1.8.tar.gz", hash = "sha256:602f1c480a19d64edb452bf7632f76b5f2cb92c1938c6e071dcda8ff9541dc21"},
+    {file = "junit_xml-1.9-py2.py3-none-any.whl", hash = "sha256:ec5ca1a55aefdd76d28fcc0b135251d156c7106fa979686a4b48d62b761b4732"},
 ]
 mccabe = [
     {file = "mccabe-0.6.1-py2.py3-none-any.whl", hash = "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"},
