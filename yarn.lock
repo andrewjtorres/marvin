@@ -958,7 +958,7 @@ __metadata:
   dependencies:
     lint-staged: ^10.0.8
     npm-run-all: ^4.1.5
-    prettier: ^1.19.1
+    prettier: ^2.0.2
     prettylint: ^1.0.0
   languageName: unknown
   linkType: soft
@@ -4707,7 +4707,7 @@ __metadata:
     lerna: ^3.20.2
     lint-staged: ^10.0.8
     npm-run-all: ^4.1.5
-    prettier: ^1.19.1
+    prettier: ^2.0.2
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     rxjs: ^6.5.4
@@ -5861,12 +5861,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^1.16.0, prettier@npm:^1.19.1":
+"prettier@npm:^1.16.0":
   version: 1.19.1
   resolution: "prettier@npm:1.19.1"
   bin:
     prettier: ./bin-prettier.js
   checksum: 0b8665fa22259378feaf46a54a559a09bd2c367e6391015af5068e88c6fb8d96e20afc56a6a6b2bac2eb0ad1ad26302ea634377e6397eca09301f64b01f3021a
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "prettier@npm:2.0.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 5eaa36cd3ed2b0d46586e786c99bf63cb7a0e1ee9950c52d580e8fc03400bd2d36fb098b4c5033ec4d95a0c90e5ec6a1cd54c8027d5d3809fd2103f497fc2723
   languageName: node
   linkType: hard
 
