@@ -2,6 +2,7 @@
 .yarn/unplugged
 .yarn/build-state.yml
 node_modules
+.pnp.js
 
 # Logs
 *.log*
