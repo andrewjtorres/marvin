@@ -98,7 +98,6 @@ jobs:
         run: yarn test:units --cov ai --cov-branch --cov-report xml --doctest-modules
         working-directory: packages/ai
       - name: Publish code coverage results
-        uses: codecov/codecov-action@v1.0.5
+        uses: codecov/codecov-action@v1.0.6
         with:
           flags: ai
-          token: ${{ secrets.CODECOV_TOKEN }}
