@@ -38,7 +38,7 @@ jobs:
       - name: Install Node dependencies
         run: yarn install --immutable --immutable-cache
       - name: Setup Python
-        uses: actions/setup-python@v1.1.1
+        uses: actions/setup-python@v1.2.0
         with:
           python-version: 3.8
       - name: Install Poetry
@@ -75,7 +75,7 @@ jobs:
       - name: Install Node dependencies
         run: yarn install --immutable --immutable-cache
       - name: Setup Python
-        uses: actions/setup-python@v1.1.1
+        uses: actions/setup-python@v1.2.0
         with:
           python-version: 3.8
       - name: Install Poetry
