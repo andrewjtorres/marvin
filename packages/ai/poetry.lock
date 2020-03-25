@@ -184,7 +184,7 @@ description = "Python docstring reStructuredText (RST) validator"
 name = "flake8-rst-docstrings"
 optional = false
 python-versions = "*"
-version = "0.0.12"
+version = "0.0.13"
 
 [package.dependencies]
 flake8 = ">=3.0.0"
@@ -431,7 +431,7 @@ python-versions = "*"
 version = "0.1.9"
 
 [metadata]
-content-hash = "04ad940b8e2a9701cdbc50463f510fa1276baedecb299cc0e9dad5abf099cd47"
+content-hash = "e6a134e53e25bfc7c5ba8b94305b8b0b25853c188f65b7809a1d325ea385bfbe"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -528,7 +528,7 @@ flake8-polyfill = [
     {file = "flake8_polyfill-1.0.2-py2.py3-none-any.whl", hash = "sha256:12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9"},
 ]
 flake8-rst-docstrings = [
-    {file = "flake8-rst-docstrings-0.0.12.tar.gz", hash = "sha256:01d38327801781b26c3dfeb71ae37e5a02c5ca1b774a686f63feab8824ca6f9c"},
+    {file = "flake8-rst-docstrings-0.0.13.tar.gz", hash = "sha256:b1b619d81d879b874533973ac04ee5d823fdbe8c9f3701bfe802bb41813997b4"},
 ]
 junit-xml = [
     {file = "junit_xml-1.9-py2.py3-none-any.whl", hash = "sha256:ec5ca1a55aefdd76d28fcc0b135251d156c7106fa979686a4b48d62b761b4732"},
