@@ -50,10 +50,8 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
-          key: ${{ runner.os }}-poetry-cache-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-poetry-cache-
-            ${{ runner.os }}-
+          key: ${{ runner.os }}-ai-poetry-cache-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: ${{ runner.os }}-ai-poetry-cache-
       - name: Install Python dependencies
         run: poetry install
         working-directory: packages/ai
@@ -87,10 +85,8 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
-          key: ${{ runner.os }}-poetry-cache-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-poetry-cache-
-            ${{ runner.os }}-
+          key: ${{ runner.os }}-ai-poetry-cache-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: ${{ runner.os }}-ai-poetry-cache-
       - name: Install Python dependencies
         run: poetry install
         working-directory: packages/ai
