@@ -114,7 +114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.0.10"],
+            ["lint-staged", "npm:10.1.1"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -1158,7 +1158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/ai/",
           "packageDependencies": [
             ["@marvin/ai", "workspace:packages/ai"],
-            ["lint-staged", "npm:10.0.10"],
+            ["lint-staged", "npm:10.1.1"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"]
@@ -1316,7 +1316,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-types-npm-2.5.1-57f57b86bc-1.zip/node_modules/@octokit/types/",
           "packageDependencies": [
             ["@octokit/types", "npm:2.5.1"],
-            ["@types/node", "npm:13.9.5"]
+            ["@types/node", "npm:13.9.8"]
           ],
           "linkType": "HARD"
         }]
@@ -1377,7 +1377,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/glob", "npm:7.1.1"],
             ["@types/events", "npm:3.0.0"],
             ["@types/minimatch", "npm:3.0.3"],
-            ["@types/node", "npm:13.9.5"]
+            ["@types/node", "npm:13.9.8"]
           ],
           "linkType": "HARD"
         }]
@@ -1392,10 +1392,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:13.9.5", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-13.9.5-ea997862ab-1.zip/node_modules/@types/node/",
+        ["npm:13.9.8", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-13.9.8-71b44edd15-1.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:13.9.5"]
+            ["@types/node", "npm:13.9.8"]
           ],
           "linkType": "HARD"
         }]
@@ -3055,8 +3055,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["object-inspect", "npm:1.7.0"],
             ["object-keys", "npm:1.1.1"],
             ["object.assign", "npm:4.1.0"],
-            ["string.prototype.trimleft", "npm:2.1.1"],
-            ["string.prototype.trimright", "npm:2.1.1"]
+            ["string.prototype.trimleft", "npm:2.1.2"],
+            ["string.prototype.trimright", "npm:2.1.2"]
           ],
           "linkType": "HARD"
         }]
@@ -4901,10 +4901,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:10.0.10", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-10.0.10-87fe2241ea-1.zip/node_modules/lint-staged/",
+        ["npm:10.1.1", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.1-56cf0814bf-1.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:10.0.10"],
+            ["lint-staged", "npm:10.1.1"],
             ["chalk", "npm:3.0.0"],
             ["commander", "npm:4.1.1"],
             ["cosmiconfig", "npm:6.0.0"],
@@ -5309,7 +5309,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.0.10"],
+            ["lint-staged", "npm:10.1.1"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -7680,24 +7680,48 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"
         }]
       ]],
-      ["string.prototype.trimleft", [
-        ["npm:2.1.1", {
-          "packageLocation": "./.yarn/cache/string.prototype.trimleft-npm-2.1.1-96b7e999e2-1.zip/node_modules/string.prototype.trimleft/",
+      ["string.prototype.trimend", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/string.prototype.trimend-npm-1.0.0-108b6ffa0d-1.zip/node_modules/string.prototype.trimend/",
           "packageDependencies": [
-            ["string.prototype.trimleft", "npm:2.1.1"],
+            ["string.prototype.trimend", "npm:1.0.0"],
             ["define-properties", "npm:1.1.3"],
-            ["function-bind", "npm:1.1.1"]
+            ["es-abstract", "npm:1.17.5"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["string.prototype.trimleft", [
+        ["npm:2.1.2", {
+          "packageLocation": "./.yarn/cache/string.prototype.trimleft-npm-2.1.2-ae3615d81f-1.zip/node_modules/string.prototype.trimleft/",
+          "packageDependencies": [
+            ["string.prototype.trimleft", "npm:2.1.2"],
+            ["define-properties", "npm:1.1.3"],
+            ["es-abstract", "npm:1.17.5"],
+            ["string.prototype.trimstart", "npm:1.0.0"]
           ],
           "linkType": "HARD"
         }]
       ]],
       ["string.prototype.trimright", [
-        ["npm:2.1.1", {
-          "packageLocation": "./.yarn/cache/string.prototype.trimright-npm-2.1.1-6247e528ee-1.zip/node_modules/string.prototype.trimright/",
+        ["npm:2.1.2", {
+          "packageLocation": "./.yarn/cache/string.prototype.trimright-npm-2.1.2-634eb1e814-1.zip/node_modules/string.prototype.trimright/",
           "packageDependencies": [
-            ["string.prototype.trimright", "npm:2.1.1"],
+            ["string.prototype.trimright", "npm:2.1.2"],
             ["define-properties", "npm:1.1.3"],
-            ["function-bind", "npm:1.1.1"]
+            ["es-abstract", "npm:1.17.5"],
+            ["string.prototype.trimend", "npm:1.0.0"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["string.prototype.trimstart", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/string.prototype.trimstart-npm-1.0.0-105508ab58-1.zip/node_modules/string.prototype.trimstart/",
+          "packageDependencies": [
+            ["string.prototype.trimstart", "npm:1.0.0"],
+            ["define-properties", "npm:1.1.3"],
+            ["es-abstract", "npm:1.17.5"]
           ],
           "linkType": "HARD"
         }]
