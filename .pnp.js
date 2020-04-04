@@ -119,7 +119,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"],
-            ["rxjs", "npm:6.5.4"]
+            ["rxjs", "npm:6.5.5"]
           ],
           "linkType": "SOFT"
         }]
@@ -1316,7 +1316,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-types-npm-2.5.1-57f57b86bc-1.zip/node_modules/@octokit/types/",
           "packageDependencies": [
             ["@octokit/types", "npm:2.5.1"],
-            ["@types/node", "npm:13.9.8"]
+            ["@types/node", "npm:13.11.0"]
           ],
           "linkType": "HARD"
         }]
@@ -1377,7 +1377,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/glob", "npm:7.1.1"],
             ["@types/events", "npm:3.0.0"],
             ["@types/minimatch", "npm:3.0.3"],
-            ["@types/node", "npm:13.9.8"]
+            ["@types/node", "npm:13.11.0"]
           ],
           "linkType": "HARD"
         }]
@@ -1392,10 +1392,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:13.9.8", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-13.9.8-71b44edd15-1.zip/node_modules/@types/node/",
+        ["npm:13.11.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-13.11.0-2749432806-1.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:13.9.8"]
+            ["@types/node", "npm:13.11.0"]
           ],
           "linkType": "HARD"
         }]
@@ -2464,7 +2464,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["compare-func", "npm:1.3.2"],
             ["conventional-commits-filter", "npm:2.0.2"],
             ["dateformat", "npm:3.0.3"],
-            ["handlebars", "npm:4.7.3"],
+            ["handlebars", "npm:4.7.5"],
             ["json-stringify-safe", "npm:5.0.1"],
             ["lodash", "npm:4.17.15"],
             ["meow", "npm:5.0.0"],
@@ -3876,14 +3876,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["handlebars", [
-        ["npm:4.7.3", {
-          "packageLocation": "./.yarn/cache/handlebars-npm-4.7.3-b8cac58784-1.zip/node_modules/handlebars/",
+        ["npm:4.7.5", {
+          "packageLocation": "./.yarn/cache/handlebars-npm-4.7.5-b73f509066-1.zip/node_modules/handlebars/",
           "packageDependencies": [
-            ["handlebars", "npm:4.7.3"],
+            ["handlebars", "npm:4.7.5"],
             ["neo-async", "npm:2.6.1"],
-            ["optimist", "npm:0.6.1"],
             ["source-map", "npm:0.6.1"],
-            ["uglify-js", "npm:3.8.1"]
+            ["uglify-js", "npm:3.8.1"],
+            ["yargs", "npm:14.2.3"]
           ],
           "linkType": "HARD"
         }]
@@ -4273,7 +4273,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.15"],
             ["mute-stream", "npm:0.0.7"],
             ["run-async", "npm:2.4.0"],
-            ["rxjs", "npm:6.5.4"],
+            ["rxjs", "npm:6.5.5"],
             ["string-width", "npm:2.1.1"],
             ["strip-ansi", "npm:5.2.0"],
             ["through", "npm:2.3.8"]
@@ -4293,7 +4293,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.15"],
             ["mute-stream", "npm:0.0.7"],
             ["run-async", "npm:2.4.0"],
-            ["rxjs", "npm:6.5.4"],
+            ["rxjs", "npm:6.5.5"],
             ["string-width", "npm:2.1.1"],
             ["strip-ansi", "npm:5.2.0"],
             ["through", "npm:2.3.8"]
@@ -4935,7 +4935,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["listr-update-renderer", "virtual:f9030beb58c47c1141ba8b09c2df04fef48a2f5eb49ae3c8132ed2ffb349f2b1c2584d8259aba093199758c25920e8ec85b45ef2f0e68231c1e99dada643a9c5#npm:0.5.0"],
             ["listr-verbose-renderer", "npm:0.5.0"],
             ["p-map", "npm:2.1.0"],
-            ["rxjs", "npm:6.5.4"]
+            ["rxjs", "npm:6.5.5"]
           ],
           "linkType": "HARD"
         }]
@@ -5314,7 +5314,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"],
-            ["rxjs", "npm:6.5.4"]
+            ["rxjs", "npm:6.5.5"]
           ],
           "linkType": "SOFT"
         }]
@@ -5483,13 +5483,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["minimist", [
-        ["npm:0.0.10", {
-          "packageLocation": "./.yarn/cache/minimist-npm-0.0.10-df9c22163e-1.zip/node_modules/minimist/",
-          "packageDependencies": [
-            ["minimist", "npm:0.0.10"]
-          ],
-          "linkType": "HARD"
-        }],
         ["npm:1.2.0", {
           "packageLocation": "./.yarn/cache/minimist-npm-1.2.0-214f53c090-1.zip/node_modules/minimist/",
           "packageDependencies": [
@@ -6061,17 +6054,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/opencollective-postinstall-npm-2.0.2-08cf9e2f3d-1.zip/node_modules/opencollective-postinstall/",
           "packageDependencies": [
             ["opencollective-postinstall", "npm:2.0.2"]
-          ],
-          "linkType": "HARD"
-        }]
-      ]],
-      ["optimist", [
-        ["npm:0.6.1", {
-          "packageLocation": "./.yarn/cache/optimist-npm-0.6.1-b1b5ef4c06-1.zip/node_modules/optimist/",
-          "packageDependencies": [
-            ["optimist", "npm:0.6.1"],
-            ["minimist", "npm:0.0.10"],
-            ["wordwrap", "npm:0.0.3"]
           ],
           "linkType": "HARD"
         }]
@@ -7164,10 +7146,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["rxjs", [
-        ["npm:6.5.4", {
-          "packageLocation": "./.yarn/cache/rxjs-npm-6.5.4-8c1301c00a-1.zip/node_modules/rxjs/",
+        ["npm:6.5.5", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-6.5.5-c43270ece8-1.zip/node_modules/rxjs/",
           "packageDependencies": [
-            ["rxjs", "npm:6.5.4"],
+            ["rxjs", "npm:6.5.5"],
             ["tslib", "npm:1.11.1"]
           ],
           "linkType": "HARD"
@@ -8427,15 +8409,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/word-wrap-npm-1.2.3-7fb15ab002-1.zip/node_modules/word-wrap/",
           "packageDependencies": [
             ["word-wrap", "npm:1.2.3"]
-          ],
-          "linkType": "HARD"
-        }]
-      ]],
-      ["wordwrap", [
-        ["npm:0.0.3", {
-          "packageLocation": "./.yarn/cache/wordwrap-npm-0.0.3-ab90803074-1.zip/node_modules/wordwrap/",
-          "packageDependencies": [
-            ["wordwrap", "npm:0.0.3"]
           ],
           "linkType": "HARD"
         }]
