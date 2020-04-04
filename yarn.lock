@@ -1172,9 +1172,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 13.9.8
-  resolution: "@types/node@npm:13.9.8"
-  checksum: bed2d450eb982e39d8090b0f5a01c3f69d71fb382108ca38be812a1d8aa3dddf829427632db51b9e5f9bba57679485264208ec4f8cbd0de2f3340a9070cef60a
+  version: 13.11.0
+  resolution: "@types/node@npm:13.11.0"
+  checksum: 978e16b8a0db4d2678176f81d93b979191216d7ad4d3af6bee20eda4ee6539802bf943d8f401eab9880ae4724452eec6c6fc4fa2da8a0a6f31a99ca5b87a9aa1
   languageName: node
   linkType: hard
 
@@ -3418,19 +3418,19 @@ __metadata:
   linkType: hard
 
 "handlebars@npm:^4.4.0":
-  version: 4.7.3
-  resolution: "handlebars@npm:4.7.3"
+  version: 4.7.5
+  resolution: "handlebars@npm:4.7.5"
   dependencies:
     neo-async: ^2.6.0
-    optimist: ^0.6.1
     source-map: ^0.6.1
     uglify-js: ^3.1.4
+    yargs: ^14.2.3
   dependenciesMeta:
     uglify-js:
       optional: true
   bin:
     handlebars: bin/handlebars
-  checksum: f5dd25468bc9222beb9d57e72fead5c03f25f7963129093c84561c1cfd54709672ebdc2f4e6dc19df87c1f6593a7f4093c216135f9ab1976a28f4d41e7de6139
+  checksum: 0ce6ab514d8f42ca3a885eec0876516ec1777bee5c25333549e526c66dfc1e694b8941852132c16c612e182fd064c39a3eb4fd66001e5086d2c480c53ee45340
   languageName: node
   linkType: hard
 
@@ -4721,7 +4721,7 @@ __metadata:
     prettier: ^2.0.2
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
-    rxjs: ^6.5.4
+    rxjs: ^6.5.5
   dependenciesMeta:
     core-js:
       built: false
@@ -4901,13 +4901,6 @@ __metadata:
   version: 1.2.5
   resolution: "minimist@npm:1.2.5"
   checksum: 5ac4259ffedd770e1533f352a5ddf4e6196fb296c2ab43b982b30ddf47ae348e6fe8b9f4c359092fe110ac4385315e70fd7d029e306622f87f6f71676460f006
-  languageName: node
-  linkType: hard
-
-"minimist@npm:~0.0.1":
-  version: 0.0.10
-  resolution: "minimist@npm:0.0.10"
-  checksum: b8ee0d628f1fc9d669309ac0b2153167dd3e7733c450cf0dbd9c6ec00d07ef32f8150e5e7462ffe607a2a974981a00c67c82077d836168afb929d96d57d36186
   languageName: node
   linkType: hard
 
@@ -5412,16 +5405,6 @@ __metadata:
   bin:
     opencollective-postinstall: index.js
   checksum: f958ea8a3cba005e715012912de6bdad8eb42470824358ec3193e4c820dab7c192435be0152f00c816c54d08decd20b1cb4905722c48c50a47edf0d02d73e7c7
-  languageName: node
-  linkType: hard
-
-"optimist@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "optimist@npm:0.6.1"
-  dependencies:
-    minimist: ~0.0.1
-    wordwrap: ~0.0.2
-  checksum: 977347fe2694653cb099fb74a08ff4dafffc7fc9d2400c1b35473fea6ca5436d83070317d09960b8c7fb0cb8ea1c6f2539185fc49797e80156cb7fa74f5b74a0
   languageName: node
   linkType: hard
 
@@ -6415,12 +6398,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^6.3.3, rxjs@npm:^6.4.0, rxjs@npm:^6.5.4":
-  version: 6.5.4
-  resolution: "rxjs@npm:6.5.4"
+"rxjs@npm:^6.3.3, rxjs@npm:^6.4.0, rxjs@npm:^6.5.5":
+  version: 6.5.5
+  resolution: "rxjs@npm:6.5.5"
   dependencies:
     tslib: ^1.9.0
-  checksum: 97f27923771f4391f43b73cb8694c461b3a24e19c690c010ee87bc72df2708735d3981d8f2726a19d9c27411dfa8529a4137b0ba74cc821ba2fd3a788097e696
+  checksum: 35fa1ddc158f001714691c1b61e93415807d5157d2672457b38aa6a9e89e8d62cb37425e20de7a2c3fdf57a1f6d208d2c5760c212e7566a9dd9baad25178d96e
   languageName: node
   linkType: hard
 
@@ -7563,13 +7546,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wordwrap@npm:~0.0.2":
-  version: 0.0.3
-  resolution: "wordwrap@npm:0.0.3"
-  checksum: 23e585299f6268d7e876917e02472227a1edbbb0e473f26aa9b502b20affadfa9c4958ce7d0b1cefea429b3369dc6112883e98baf09a0fc003ff692ff5b9dbd4
-  languageName: node
-  linkType: hard
-
 "wrap-ansi@npm:^3.0.1":
   version: 3.0.1
   resolution: "wrap-ansi@npm:3.0.1"
@@ -7696,7 +7672,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^14.2.2":
+"yargs@npm:^14.2.2, yargs@npm:^14.2.3":
   version: 14.2.3
   resolution: "yargs@npm:14.2.3"
   dependencies:
