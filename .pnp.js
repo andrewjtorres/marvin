@@ -114,7 +114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -269,7 +269,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimatch", "npm:3.0.4"],
             ["minipass", "npm:2.9.0"],
             ["mississippi", "npm:3.0.0"],
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["normalize-package-data", "npm:2.5.0"],
             ["npm-package-arg", "npm:6.1.1"],
             ["npm-packlist", "npm:1.4.8"],
@@ -1158,7 +1158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/ai/",
           "packageDependencies": [
             ["@marvin/ai", "workspace:packages/ai"],
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"]
@@ -1935,7 +1935,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["infer-owner", "npm:1.0.4"],
             ["lru-cache", "npm:5.1.1"],
             ["mississippi", "npm:3.0.0"],
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["move-concurrently", "npm:1.0.1"],
             ["promise-inflight", "npm:1.0.1"],
             ["rimraf", "npm:2.7.1"],
@@ -2464,7 +2464,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["compare-func", "npm:1.3.2"],
             ["conventional-commits-filter", "npm:2.0.2"],
             ["dateformat", "npm:3.0.3"],
-            ["handlebars", "npm:4.7.5"],
+            ["handlebars", "npm:4.7.6"],
             ["json-stringify-safe", "npm:5.0.1"],
             ["lodash", "npm:4.17.15"],
             ["meow", "npm:5.0.0"],
@@ -2543,7 +2543,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aproba", "npm:1.2.0"],
             ["fs-write-stream-atomic", "npm:1.0.10"],
             ["iferr", "npm:0.1.5"],
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["rimraf", "npm:2.7.1"],
             ["run-queue", "npm:1.0.3"]
           ],
@@ -2615,10 +2615,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD"
         }],
-        ["npm:7.0.1", {
-          "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.1-ef4846765e-1.zip/node_modules/cross-spawn/",
+        ["npm:7.0.2", {
+          "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.2-fef0e84eed-1.zip/node_modules/cross-spawn/",
           "packageDependencies": [
-            ["cross-spawn", "npm:7.0.1"],
+            ["cross-spawn", "npm:7.0.2"],
             ["path-key", "npm:3.1.1"],
             ["shebang-command", "npm:2.0.0"],
             ["which", "npm:2.0.2"]
@@ -3167,7 +3167,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/execa-npm-3.4.0-ac88a31854-1.zip/node_modules/execa/",
           "packageDependencies": [
             ["execa", "npm:3.4.0"],
-            ["cross-spawn", "npm:7.0.1"],
+            ["cross-spawn", "npm:7.0.2"],
             ["get-stream", "npm:5.1.0"],
             ["human-signals", "npm:1.1.1"],
             ["is-stream", "npm:2.0.0"],
@@ -3876,14 +3876,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["handlebars", [
-        ["npm:4.7.5", {
-          "packageLocation": "./.yarn/cache/handlebars-npm-4.7.5-b73f509066-1.zip/node_modules/handlebars/",
+        ["npm:4.7.6", {
+          "packageLocation": "./.yarn/cache/handlebars-npm-4.7.6-f64e7514e4-1.zip/node_modules/handlebars/",
           "packageDependencies": [
-            ["handlebars", "npm:4.7.5"],
+            ["handlebars", "npm:4.7.6"],
+            ["minimist", "npm:1.2.5"],
             ["neo-async", "npm:2.6.1"],
             ["source-map", "npm:0.6.1"],
             ["uglify-js", "npm:3.8.1"],
-            ["yargs", "npm:14.2.3"]
+            ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD"
         }]
@@ -4901,10 +4902,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:10.1.1", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.1-56cf0814bf-1.zip/node_modules/lint-staged/",
+        ["npm:10.1.2", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.2-be9d974a3e-1.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["chalk", "npm:3.0.0"],
             ["commander", "npm:4.1.1"],
             ["cosmiconfig", "npm:6.0.0"],
@@ -5309,7 +5310,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -5561,18 +5562,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["mkdirp", [
-        ["npm:0.5.4", {
-          "packageLocation": "./.yarn/cache/mkdirp-npm-0.5.4-544383b09d-1.zip/node_modules/mkdirp/",
+        ["npm:0.5.5", {
+          "packageLocation": "./.yarn/cache/mkdirp-npm-0.5.5-6bc76534fc-1.zip/node_modules/mkdirp/",
           "packageDependencies": [
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["minimist", "npm:1.2.5"]
           ],
           "linkType": "HARD"
         }],
-        ["npm:1.0.3", {
-          "packageLocation": "./.yarn/cache/mkdirp-npm-1.0.3-02fc91ac70-1.zip/node_modules/mkdirp/",
+        ["npm:1.0.4", {
+          "packageLocation": "./.yarn/cache/mkdirp-npm-1.0.4-37f6ef56b9-1.zip/node_modules/mkdirp/",
           "packageDependencies": [
-            ["mkdirp", "npm:1.0.3"]
+            ["mkdirp", "npm:1.0.4"]
           ],
           "linkType": "HARD"
         }]
@@ -5582,7 +5583,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/mkdirp-promise-npm-5.0.1-b9705bf08a-1.zip/node_modules/mkdirp-promise/",
           "packageDependencies": [
             ["mkdirp-promise", "npm:5.0.1"],
-            ["mkdirp", "npm:1.0.3"]
+            ["mkdirp", "npm:1.0.4"]
           ],
           "linkType": "HARD"
         }]
@@ -5604,7 +5605,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aproba", "npm:1.2.0"],
             ["copy-concurrently", "npm:1.0.5"],
             ["fs-write-stream-atomic", "npm:1.0.10"],
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["rimraf", "npm:2.7.1"],
             ["run-queue", "npm:1.0.3"]
           ],
@@ -5735,7 +5736,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["env-paths", "npm:2.2.0"],
             ["glob", "npm:7.1.6"],
             ["graceful-fs", "npm:4.2.3"],
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["nopt", "npm:4.0.3"],
             ["npmlog", "npm:4.1.2"],
             ["request", "npm:2.88.2"],
@@ -7887,7 +7888,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-minipass", "npm:1.2.7"],
             ["minipass", "npm:2.9.0"],
             ["minizlib", "npm:1.3.3"],
-            ["mkdirp", "npm:0.5.4"],
+            ["mkdirp", "npm:0.5.5"],
             ["safe-buffer", "npm:5.2.0"],
             ["yallist", "npm:3.1.1"]
           ],
@@ -8409,6 +8410,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/word-wrap-npm-1.2.3-7fb15ab002-1.zip/node_modules/word-wrap/",
           "packageDependencies": [
             ["word-wrap", "npm:1.2.3"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["wordwrap", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/wordwrap-npm-1.0.0-ae57a645e8-1.zip/node_modules/wordwrap/",
+          "packageDependencies": [
+            ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD"
         }]
