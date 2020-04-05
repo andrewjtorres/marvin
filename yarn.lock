@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.1.1
+    lint-staged: ^10.1.2
     npm-run-all: ^4.1.5
     prettier: ^2.0.2
     prettylint: ^1.0.0
@@ -2265,13 +2265,13 @@ __metadata:
   linkType: hard
 
 "cross-spawn@npm:^7.0.0":
-  version: 7.0.1
-  resolution: "cross-spawn@npm:7.0.1"
+  version: 7.0.2
+  resolution: "cross-spawn@npm:7.0.2"
   dependencies:
     path-key: ^3.1.0
     shebang-command: ^2.0.0
     which: ^2.0.1
-  checksum: 63d23ab6119e61fd9fc1c008b7e03bd59282962978dc3bd83f227203c35007bbfe83cd329b1a50393e5f655c2de1236eab59c2a715977ae7784d596f1b119540
+  checksum: b1dd4360115a6dfe4699bad4584fe7b017772ac9a7a576f5a52419802e55e3853e9fc60157696f6be0687091d4d28b788b6251ffc73a8359cf6b94b3eb9ca851
   languageName: node
   linkType: hard
 
@@ -3418,19 +3418,20 @@ __metadata:
   linkType: hard
 
 "handlebars@npm:^4.4.0":
-  version: 4.7.5
-  resolution: "handlebars@npm:4.7.5"
+  version: 4.7.6
+  resolution: "handlebars@npm:4.7.6"
   dependencies:
+    minimist: ^1.2.5
     neo-async: ^2.6.0
     source-map: ^0.6.1
     uglify-js: ^3.1.4
-    yargs: ^14.2.3
+    wordwrap: ^1.0.0
   dependenciesMeta:
     uglify-js:
       optional: true
   bin:
     handlebars: bin/handlebars
-  checksum: 0ce6ab514d8f42ca3a885eec0876516ec1777bee5c25333549e526c66dfc1e694b8941852132c16c612e182fd064c39a3eb4fd66001e5086d2c480c53ee45340
+  checksum: 655a8a2c2d5f1d6da80493a00b83d539539f9cbc45f20a5e55e1c033fb3233fbbd1e32a060246b1136a9b86b53f7ce3d7667c6f1438f7720432d28dfeab893b3
   languageName: node
   linkType: hard
 
@@ -4344,9 +4345,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "lint-staged@npm:10.1.1"
+"lint-staged@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "lint-staged@npm:10.1.2"
   dependencies:
     chalk: ^3.0.0
     commander: ^4.0.1
@@ -4363,7 +4364,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 18e14045ee6d172ebfd413888920874bbece8f99385da09010907c6ec2a2208c6e731e23bf40b33b3880e87f77e135a5e579ad8f24e035a3c9b59c7a5e608b04
+  checksum: 266da02fd77f89218166f5b3f2e5df86608bc7df35a73e0a466d49b285004024b9eafe4522ba34a7bbf0a103aae78ab1ef8ed3814ddfcc99b4b649c0f7f32927
   languageName: node
   linkType: hard
 
@@ -4716,7 +4717,7 @@ __metadata:
     cz-conventional-changelog: ^3.1.0
     husky: ^4.2.3
     lerna: ^3.20.2
-    lint-staged: ^10.1.1
+    lint-staged: ^10.1.2
     npm-run-all: ^4.1.5
     prettier: ^2.0.2
     prettier-plugin-toml: ^0.3.1
@@ -4961,22 +4962,22 @@ __metadata:
   linkType: hard
 
 "mkdirp@npm:*":
-  version: 1.0.3
-  resolution: "mkdirp@npm:1.0.3"
+  version: 1.0.4
+  resolution: "mkdirp@npm:1.0.4"
   bin:
     mkdirp: bin/cmd.js
-  checksum: 8c3f00e9bba32181159cbe3be25afe25f51e106d13327d8d20b5e43e7414eb8e98c1bfb3b2a2a60417dc16e4cf40cf683e7b481167ee107026cfe93be165a34b
+  checksum: 8117ee178626ce3b785a48e511944b9cf5ec77855b2f1ed496a886ff84d05cc1c1750ad58f9971967574cf6737a51d6b653c224236fa43e6de36d308fdbd851f
   languageName: node
   linkType: hard
 
 "mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1":
-  version: 0.5.4
-  resolution: "mkdirp@npm:0.5.4"
+  version: 0.5.5
+  resolution: "mkdirp@npm:0.5.5"
   dependencies:
     minimist: ^1.2.5
   bin:
     mkdirp: bin/cmd.js
-  checksum: 6b1f4f33650506c289d99a12689c93ab3c161f41b0d16a09fda0c7a026ce828f827946d2f9bb0563d6d5f93ee8e5a17c5165d8aaa316d792b64a1891daf3bdd3
+  checksum: 2feda58ba711f4a8e3eb377b24f44f273b78d19361033894292b677b1d50d6dd926a4c2c06213a78dead4196efca06e4fe4aa3ad0173faa19924f1197a924fdb
   languageName: node
   linkType: hard
 
@@ -7546,6 +7547,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"wordwrap@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "wordwrap@npm:1.0.0"
+  checksum: 1e54504346e84b862eab11464e32c04b1f9b197523cb50caa07ccb2f80e3b2e6b070912dd7b538027be9cc9b7d74857fd16a8c2a1b08729c9d225fcf23cf799c
+  languageName: node
+  linkType: hard
+
 "wrap-ansi@npm:^3.0.1":
   version: 3.0.1
   resolution: "wrap-ansi@npm:3.0.1"
@@ -7672,7 +7680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^14.2.2, yargs@npm:^14.2.3":
+"yargs@npm:^14.2.2":
   version: 14.2.3
   resolution: "yargs@npm:14.2.3"
   dependencies:
