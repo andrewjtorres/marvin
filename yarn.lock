@@ -965,7 +965,7 @@ __metadata:
   dependencies:
     lint-staged: ^10.1.2
     npm-run-all: ^4.1.5
-    prettier: ^2.0.3
+    prettier: ^2.0.4
     prettylint: ^1.0.0
   languageName: unknown
   linkType: soft
@@ -4719,7 +4719,7 @@ __metadata:
     lerna: ^3.20.2
     lint-staged: ^10.1.2
     npm-run-all: ^4.1.5
-    prettier: ^2.0.3
+    prettier: ^2.0.4
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     rxjs: ^6.5.5
@@ -5865,12 +5865,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "prettier@npm:2.0.3"
+"prettier@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "prettier@npm:2.0.4"
   bin:
     prettier: bin-prettier.js
-  checksum: 8f6008b9ffd66ad43f49faa73ad0c020fdf38b7a90ca02faa9a4458f307a65e53211733db295185c26262ae08307f02743d5441019075bc4158354156bd0e053
+  checksum: 7918862f0fcce3690e6c51d01a61c583acc7cc140b8546d7374a186b9c091d713262d85d9caa8c48fe6ecb3c61dd6237065062a427b93faac7fcf42dbf7b1417
   languageName: node
   linkType: hard
 
@@ -7532,11 +7532,11 @@ __metadata:
   linkType: hard
 
 "windows-release@npm:^3.1.0":
-  version: 3.2.0
-  resolution: "windows-release@npm:3.2.0"
+  version: 3.3.0
+  resolution: "windows-release@npm:3.3.0"
   dependencies:
     execa: ^1.0.0
-  checksum: cb2314ef5ce1ccb4461452a6ed054b480816cb398efcbd0ae16989f9dab69cbdd65a88db116589e6a008d36415551c6c4871c60e3050308f01b5ebd9007e3a4f
+  checksum: 082fb3f14ba2ac64d69762fc354e478e997aa33638246e2fa50d32cb3aa18f021f221795af631507afefc7673d8a46e9f37d0290ab02946e20bad9561bd1869f
   languageName: node
   linkType: hard
 
