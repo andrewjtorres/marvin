@@ -14,9 +14,9 @@ __metadata:
   linkType: hard
 
 "@babel/helper-validator-identifier@npm:^7.9.0":
-  version: 7.9.0
-  resolution: "@babel/helper-validator-identifier@npm:7.9.0"
-  checksum: 2f406ac0cdd6bcc29627aac6f058d0cf1631c5488c4e31453bd44e87415e117c1a48c7b9a67c3e9db08bb22765100d4fad107004a24b0e448a857d050b8aa5f2
+  version: 7.9.5
+  resolution: "@babel/helper-validator-identifier@npm:7.9.5"
+  checksum: 26c619e23f0e11495ad4f6f4da48478d902c5e3e8766b776a004dd6c4a1cdfb776719ebe4582994ac91bfb49e69723dd434f45596855678cf40f2d10f37f127e
   languageName: node
   linkType: hard
 
@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.1.2
+    lint-staged: ^10.1.3
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettylint: ^1.0.0
@@ -1103,11 +1103,11 @@ __metadata:
   linkType: hard
 
 "@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.0.1":
-  version: 2.5.1
-  resolution: "@octokit/types@npm:2.5.1"
+  version: 2.8.0
+  resolution: "@octokit/types@npm:2.8.0"
   dependencies:
     "@types/node": ">= 8"
-  checksum: 0f5aa12ab84f2273e50b0a33a589c0915872433cd4b8c00b2d59a420fa07c95dc4dce412e586ba9a53acc6663d988fabc79ecbcd52d958f20db3493b3e93e512
+  checksum: 5671cb702510b910068cd1a40f760bb29be8fcadb3607f7f9c331a47f11160240518168b4eff2f27e0476dd1c0142c5b5c8868001632944c6a2dbf4ab6472b1c
   languageName: node
   linkType: hard
 
@@ -1172,9 +1172,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 13.11.0
-  resolution: "@types/node@npm:13.11.0"
-  checksum: 978e16b8a0db4d2678176f81d93b979191216d7ad4d3af6bee20eda4ee6539802bf943d8f401eab9880ae4724452eec6c6fc4fa2da8a0a6f31a99ca5b87a9aa1
+  version: 13.11.1
+  resolution: "@types/node@npm:13.11.1"
+  checksum: 1fc71eb7ef99427fd137e5f68ed3a30e59bbec0bce9f13a52e894bc6ed2646c5600387b9313f1b6f9553e5dbaf7b2a404c7c951fd60b21e71ef5539f957460b3
   languageName: node
   linkType: hard
 
@@ -1977,8 +1977,8 @@ __metadata:
   linkType: hard
 
 "commitizen@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "commitizen@npm:4.0.3"
+  version: 4.0.4
+  resolution: "commitizen@npm:4.0.4"
   dependencies:
     cachedir: 2.2.0
     cz-conventional-changelog: 3.0.1
@@ -1991,14 +1991,14 @@ __metadata:
     inquirer: 6.5.0
     is-utf8: ^0.2.1
     lodash: 4.17.15
-    minimist: 1.2.0
+    minimist: 1.2.3
     shelljs: 0.7.6
     strip-bom: 4.0.0
     strip-json-comments: 3.0.1
   bin:
     commitizen: ./bin/commitizen
     git-cz: ./bin/git-cz
-  checksum: 872e6b340ad7659892de6e21ad01453d22f88c08ec7c55304892fe72268ee9b302a8f0dc07dfbbf589b67149de270841ca58dc1b2d8cb3bce649dbaf5938754a
+  checksum: 3e2bb7cd6bc2b422c2be00b9d645e8fc503b9e806f3564d691272a768a6e3210bc8862efa21cb896757519af8d4e9756e44c17280ee4979b9fc67d2695f6405e
   languageName: node
   linkType: hard
 
@@ -4345,9 +4345,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.1.2":
-  version: 10.1.2
-  resolution: "lint-staged@npm:10.1.2"
+"lint-staged@npm:^10.1.3":
+  version: 10.1.3
+  resolution: "lint-staged@npm:10.1.3"
   dependencies:
     chalk: ^3.0.0
     commander: ^4.0.1
@@ -4364,7 +4364,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 266da02fd77f89218166f5b3f2e5df86608bc7df35a73e0a466d49b285004024b9eafe4522ba34a7bbf0a103aae78ab1ef8ed3814ddfcc99b4b649c0f7f32927
+  checksum: 80a8c95a9178bf5c9401df90e6e5d8e1af2a0139a50c1773b3215d8b61b53be29d55f53c287c572c2571f0ffaa872baf0fcea525220a9db3a680fc18ff48889f
   languageName: node
   linkType: hard
 
@@ -4717,7 +4717,7 @@ __metadata:
     cz-conventional-changelog: ^3.1.0
     husky: ^4.2.3
     lerna: ^3.20.2
-    lint-staged: ^10.1.2
+    lint-staged: ^10.1.3
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettier-plugin-toml: ^0.3.1
@@ -4891,10 +4891,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:1.2.0":
-  version: 1.2.0
-  resolution: "minimist@npm:1.2.0"
-  checksum: 06755eb86c09cfff6a239cc3a0a21fac046f333952c508ffdba6b796511725467f930bb0e2cf070401b4287d3383ce29cedb28d1d4b53d569fabc209af8d8706
+"minimist@npm:1.2.3":
+  version: 1.2.3
+  resolution: "minimist@npm:1.2.3"
+  checksum: 632edb9fc8fd96410b5358e9408bd938050ed5a77973fe779a702da265410383f7a68276ddb7ebfa9216a73facea019aa126d47aece5a169e8393830f617b510
   languageName: node
   linkType: hard
 
