@@ -112,7 +112,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["cz-conventional-changelog", "npm:3.1.0"],
-            ["husky", "npm:4.2.3"],
+            ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.1.3"],
             ["npm-run-all", "npm:4.1.5"],
@@ -1191,7 +1191,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-auth-token-npm-2.4.0-6817ec03e3-1.zip/node_modules/@octokit/auth-token/",
           "packageDependencies": [
             ["@octokit/auth-token", "npm:2.4.0"],
-            ["@octokit/types", "npm:2.8.0"]
+            ["@octokit/types", "npm:2.8.1"]
           ],
           "linkType": "HARD"
         }]
@@ -1201,7 +1201,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-6.0.0-1a4740ff57-1.zip/node_modules/@octokit/endpoint/",
           "packageDependencies": [
             ["@octokit/endpoint", "npm:6.0.0"],
-            ["@octokit/types", "npm:2.8.0"],
+            ["@octokit/types", "npm:2.8.1"],
             ["is-plain-object", "npm:3.0.0"],
             ["universal-user-agent", "npm:5.0.0"]
           ],
@@ -1222,7 +1222,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-plugin-paginate-rest-npm-1.1.2-b0b3e646dc-1.zip/node_modules/@octokit/plugin-paginate-rest/",
           "packageDependencies": [
             ["@octokit/plugin-paginate-rest", "npm:1.1.2"],
-            ["@octokit/types", "npm:2.8.0"]
+            ["@octokit/types", "npm:2.8.1"]
           ],
           "linkType": "HARD"
         }]
@@ -1241,7 +1241,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-plugin-rest-endpoint-methods-npm-2.4.0-c786d75f5b-1.zip/node_modules/@octokit/plugin-rest-endpoint-methods/",
           "packageDependencies": [
             ["@octokit/plugin-rest-endpoint-methods", "npm:2.4.0"],
-            ["@octokit/types", "npm:2.8.0"],
+            ["@octokit/types", "npm:2.8.1"],
             ["deprecation", "npm:2.3.1"]
           ],
           "linkType": "HARD"
@@ -1254,7 +1254,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/request", "npm:5.3.4"],
             ["@octokit/endpoint", "npm:6.0.0"],
             ["@octokit/request-error", "npm:2.0.0"],
-            ["@octokit/types", "npm:2.8.0"],
+            ["@octokit/types", "npm:2.8.1"],
             ["deprecation", "npm:2.3.1"],
             ["is-plain-object", "npm:3.0.0"],
             ["node-fetch", "npm:2.6.0"],
@@ -1269,7 +1269,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-request-error-npm-1.2.1-0af51a468f-1.zip/node_modules/@octokit/request-error/",
           "packageDependencies": [
             ["@octokit/request-error", "npm:1.2.1"],
-            ["@octokit/types", "npm:2.8.0"],
+            ["@octokit/types", "npm:2.8.1"],
             ["deprecation", "npm:2.3.1"],
             ["once", "npm:1.4.0"]
           ],
@@ -1279,7 +1279,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-request-error-npm-2.0.0-b9ad8279cc-1.zip/node_modules/@octokit/request-error/",
           "packageDependencies": [
             ["@octokit/request-error", "npm:2.0.0"],
-            ["@octokit/types", "npm:2.8.0"],
+            ["@octokit/types", "npm:2.8.1"],
             ["deprecation", "npm:2.3.1"],
             ["once", "npm:1.4.0"]
           ],
@@ -1312,10 +1312,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@octokit/types", [
-        ["npm:2.8.0", {
-          "packageLocation": "./.yarn/cache/@octokit-types-npm-2.8.0-a0c2cc748a-1.zip/node_modules/@octokit/types/",
+        ["npm:2.8.1", {
+          "packageLocation": "./.yarn/cache/@octokit-types-npm-2.8.1-526e39c2c6-1.zip/node_modules/@octokit/types/",
           "packageDependencies": [
-            ["@octokit/types", "npm:2.8.0"],
+            ["@octokit/types", "npm:2.8.1"],
             ["@types/node", "npm:13.11.1"]
           ],
           "linkType": "HARD"
@@ -2098,6 +2098,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chalk-npm-3.0.0-e813208025-1.zip/node_modules/chalk/",
           "packageDependencies": [
             ["chalk", "npm:3.0.0"],
+            ["ansi-styles", "npm:4.2.1"],
+            ["supports-color", "npm:7.1.0"]
+          ],
+          "linkType": "HARD"
+        }],
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/chalk-npm-4.0.0-50e5418ea0-1.zip/node_modules/chalk/",
+          "packageDependencies": [
+            ["chalk", "npm:4.0.0"],
             ["ansi-styles", "npm:4.2.1"],
             ["supports-color", "npm:7.1.0"]
           ],
@@ -4085,11 +4094,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:4.2.3", {
-          "packageLocation": "./.yarn/cache/husky-npm-4.2.3-b5c1a5429e-1.zip/node_modules/husky/",
+        ["npm:4.2.5", {
+          "packageLocation": "./.yarn/cache/husky-npm-4.2.5-30d80a2ef8-1.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:4.2.3"],
-            ["chalk", "npm:3.0.0"],
+            ["husky", "npm:4.2.5"],
+            ["chalk", "npm:4.0.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.6.0"],
             ["cosmiconfig", "npm:6.0.0"],
@@ -5308,7 +5317,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["marvin", "workspace:."],
             ["cz-conventional-changelog", "npm:3.1.0"],
-            ["husky", "npm:4.2.3"],
+            ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.1.3"],
             ["npm-run-all", "npm:4.1.5"],
@@ -7664,10 +7673,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["string.prototype.trimend", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/string.prototype.trimend-npm-1.0.0-108b6ffa0d-1.zip/node_modules/string.prototype.trimend/",
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/string.prototype.trimend-npm-1.0.1-c110c5981f-1.zip/node_modules/string.prototype.trimend/",
           "packageDependencies": [
-            ["string.prototype.trimend", "npm:1.0.0"],
+            ["string.prototype.trimend", "npm:1.0.1"],
             ["define-properties", "npm:1.1.3"],
             ["es-abstract", "npm:1.17.5"]
           ],
@@ -7681,7 +7690,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string.prototype.trimleft", "npm:2.1.2"],
             ["define-properties", "npm:1.1.3"],
             ["es-abstract", "npm:1.17.5"],
-            ["string.prototype.trimstart", "npm:1.0.0"]
+            ["string.prototype.trimstart", "npm:1.0.1"]
           ],
           "linkType": "HARD"
         }]
@@ -7693,16 +7702,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string.prototype.trimright", "npm:2.1.2"],
             ["define-properties", "npm:1.1.3"],
             ["es-abstract", "npm:1.17.5"],
-            ["string.prototype.trimend", "npm:1.0.0"]
+            ["string.prototype.trimend", "npm:1.0.1"]
           ],
           "linkType": "HARD"
         }]
       ]],
       ["string.prototype.trimstart", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/string.prototype.trimstart-npm-1.0.0-105508ab58-1.zip/node_modules/string.prototype.trimstart/",
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/string.prototype.trimstart-npm-1.0.1-86888269b6-1.zip/node_modules/string.prototype.trimstart/",
           "packageDependencies": [
-            ["string.prototype.trimstart", "npm:1.0.0"],
+            ["string.prototype.trimstart", "npm:1.0.1"],
             ["define-properties", "npm:1.1.3"],
             ["es-abstract", "npm:1.17.5"]
           ],
