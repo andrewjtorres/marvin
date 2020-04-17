@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.1.3
+    lint-staged: ^10.1.4
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettylint: ^1.0.0
@@ -1063,18 +1063,18 @@ __metadata:
   linkType: hard
 
 "@octokit/request@npm:^5.2.0":
-  version: 5.3.4
-  resolution: "@octokit/request@npm:5.3.4"
+  version: 5.4.0
+  resolution: "@octokit/request@npm:5.4.0"
   dependencies:
     "@octokit/endpoint": ^6.0.0
     "@octokit/request-error": ^2.0.0
-    "@octokit/types": ^2.0.0
+    "@octokit/types": ^2.8.2
     deprecation: ^2.0.0
     is-plain-object: ^3.0.0
     node-fetch: ^2.3.0
     once: ^1.4.0
     universal-user-agent: ^5.0.0
-  checksum: 2a41bc88d338e198843aad0854db7250d765e6503d0984a2a100d68459486e33cba02290c3f2495f7b06beadbb71eaff72c63abd1678d674661ba124f393a418
+  checksum: 6b2708e2eb476df08a9a58ccf5ba8138cd376001529f87a247617a358f068e4a4fd4a800000f651bebe9b5fb71b35dbe812fa2477d21f1eda6b27a3646909317
   languageName: node
   linkType: hard
 
@@ -1102,12 +1102,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.0.1":
-  version: 2.8.1
-  resolution: "@octokit/types@npm:2.8.1"
+"@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.0.1, @octokit/types@npm:^2.8.2":
+  version: 2.10.0
+  resolution: "@octokit/types@npm:2.10.0"
   dependencies:
     "@types/node": ">= 8"
-  checksum: 0365c0aeaf29cefa0f5a3bb04cd8efce83b9da19ddf243538aae2aa425c7266e9b5a75a5f877d880a9af44944c72c903c47593d1941dc7f8a209af9e81c44b5a
+  checksum: 5ba213e6c3f035a34f2fbbf9b0711ec559dc019f77ecbe17ffcbe0992c3d3263970a0a710bc0204f19213ab08a5b836813db9c04011ea5c2bb2ace9755f64d9f
   languageName: node
   linkType: hard
 
@@ -1869,9 +1869,9 @@ __metadata:
   linkType: hard
 
 "cli-width@npm:^2.0.0":
-  version: 2.2.0
-  resolution: "cli-width@npm:2.2.0"
-  checksum: 2d7814cb2f23e9c70a3db5f68e927d942eb6e42dbfc9ad5bb45c82a4c133bd0b53ce4f8f370f11915ccdc2ec00fb6b255c1f2bbf8b1935b45a451dea502a4b68
+  version: 2.2.1
+  resolution: "cli-width@npm:2.2.1"
+  checksum: cf33bc0f01561dbd9937e20854a7fcf1e172b7c499e9745ceea68e24051093cd38c3c2434ff5236d877356fa1ad723dc0c7664fc9d653abb119783609da7c632
   languageName: node
   linkType: hard
 
@@ -4355,9 +4355,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.1.3":
-  version: 10.1.3
-  resolution: "lint-staged@npm:10.1.3"
+"lint-staged@npm:^10.1.4":
+  version: 10.1.4
+  resolution: "lint-staged@npm:10.1.4"
   dependencies:
     chalk: ^3.0.0
     commander: ^4.0.1
@@ -4374,7 +4374,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 80a8c95a9178bf5c9401df90e6e5d8e1af2a0139a50c1773b3215d8b61b53be29d55f53c287c572c2571f0ffaa872baf0fcea525220a9db3a680fc18ff48889f
+  checksum: 2136a4b450b73216eb79b8358626cb4124ccbc23c782328e30a490626154385306bb48cb9a2fbbbfe96e18cdbbce178de05de9c0e6f1158235b4e87413a89ce4
   languageName: node
   linkType: hard
 
@@ -4727,7 +4727,7 @@ __metadata:
     cz-conventional-changelog: ^3.1.0
     husky: ^4.2.5
     lerna: ^3.20.2
-    lint-staged: ^10.1.3
+    lint-staged: ^10.1.4
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettier-plugin-toml: ^0.3.1
@@ -6332,20 +6332,20 @@ __metadata:
   linkType: hard
 
 "resolve@^1.1.6, resolve@^1.10.0":
-  version: 1.15.1
-  resolution: "resolve@npm:1.15.1"
+  version: 1.16.0
+  resolution: "resolve@npm:1.16.0"
   dependencies:
     path-parse: ^1.0.6
-  checksum: 8d9910fbd8598a172700c8f5f31e487e8c7eb4a3a7297240c77ec7d2d6647c0c5471d5202ce76b2a359ad9fdd56e352619066b2d0cc340065f45c6886e10209c
+  checksum: d38b9090fc162ef759bd5db1070dc6a93b72bff949178a88227a0e0d0c0f717fb04f7cc5de685154ca3e4558427c73b53fe9909c54f8a27579c869fac356cbe1
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>":
-  version: 1.15.1
-  resolution: "resolve@patch:resolve@npm%3A1.15.1#builtin<compat/resolve>::version=1.15.1&hash=8fccd0"
+  version: 1.16.0
+  resolution: "resolve@patch:resolve@npm%3A1.16.0#builtin<compat/resolve>::version=1.16.0&hash=8fccd0"
   dependencies:
     path-parse: ^1.0.6
-  checksum: b500c7e6383c3f9e70390706827a1bca80115bbc22203a6c2220ba1f5e1fd0fd95fe123685854f4b4db5791bf3147c95e5477c428e97f8d41dec805b957ed6ee
+  checksum: b43d14aa53e838e0c0094399890ca20b7ebd3e613f6fb7097fa7c82123888a7259fb4e9c4c0eb5051a43def2f4254baf71fdfde114f5391274f8b094e5c4501a
   languageName: node
   linkType: hard
 
@@ -6694,7 +6694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.6.1, source-map@npm:~0.6.1":
+"source-map@npm:^0.6.1":
   version: 0.6.1
   resolution: "source-map@npm:0.6.1"
   checksum: fa17f30e37dfa8d8065fc98e8c51ae80d7050055f90dbd40e8644269bda04707386180c4c43af7104a29af56109663e994ccbc2cf766af01e915285c7f93cc40
@@ -7294,14 +7294,13 @@ __metadata:
   linkType: hard
 
 "uglify-js@npm:^3.1.4":
-  version: 3.8.1
-  resolution: "uglify-js@npm:3.8.1"
+  version: 3.9.1
+  resolution: "uglify-js@npm:3.9.1"
   dependencies:
     commander: ~2.20.3
-    source-map: ~0.6.1
   bin:
     uglifyjs: bin/uglifyjs
-  checksum: c6c998d64c35889196ea1c643c6723950b500f6982c935e24361268a11fa66caeaf7efdd9f4599c2cea75b26c20079fef86bfcea1a2ce51567aa48182fd30184
+  checksum: b0682d12922a67585b66f16992c525f82d63bfb581210e4f3dc2be0bebd4b159016b1eab7024e89f56fc46040fec0a2ecf858599c16f68509ec303786b43fd3e
   languageName: node
   linkType: hard
 
