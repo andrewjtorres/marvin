@@ -31,7 +31,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.9.0":
+"@babel/runtime@npm:^7.9.2":
   version: 7.9.2
   resolution: "@babel/runtime@npm:7.9.2"
   dependencies:
@@ -6112,7 +6112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:1 || 2, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
+"readable-stream@npm:1 || 2, readable-stream@npm:2 || 3, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
   version: 2.3.7
   resolution: "readable-stream@npm:2.3.7"
   dependencies:
@@ -6127,7 +6127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:2 || 3, readable-stream@npm:^3.0.2":
+"readable-stream@npm:^3.0.2":
   version: 3.6.0
   resolution: "readable-stream@npm:3.6.0"
   dependencies:
@@ -7662,11 +7662,11 @@ __metadata:
   linkType: hard
 
 "yaml@npm:^1.7.2":
-  version: 1.9.0
-  resolution: "yaml@npm:1.9.0"
+  version: 1.9.1
+  resolution: "yaml@npm:1.9.1"
   dependencies:
-    "@babel/runtime": ^7.9.0
-  checksum: 5b2b4ac59f5614d20c6177dec62980efd248969b1626564472ea49f0be33059bbb0994d41106fc68397e76c033ade1fca7341f56cc532d65a2b824465f1e5eb4
+    "@babel/runtime": ^7.9.2
+  checksum: 250c0771e80d0bdff305551199fef781ab0610da012011c2cb8639b34f17c978d5527c1533e3c230f1517875af114d8ecb0e1c6275848c84c4f78859ec77c07e
   languageName: node
   linkType: hard
 

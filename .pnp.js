@@ -2606,7 +2606,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["import-fresh", "npm:3.2.1"],
             ["parse-json", "npm:5.0.0"],
             ["path-type", "npm:4.0.0"],
-            ["yaml", "npm:1.9.0"]
+            ["yaml", "npm:1.9.1"]
           ],
           "linkType": "HARD"
         }]
@@ -7980,7 +7980,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/through2-npm-3.0.1-dcc4042403-1.zip/node_modules/through2/",
           "packageDependencies": [
             ["through2", "npm:3.0.1"],
-            ["readable-stream", "npm:3.6.0"]
+            ["readable-stream", "npm:2.3.7"]
           ],
           "linkType": "HARD"
         }]
@@ -8540,10 +8540,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yaml", [
-        ["npm:1.9.0", {
-          "packageLocation": "./.yarn/cache/yaml-npm-1.9.0-08d1e54988-1.zip/node_modules/yaml/",
+        ["npm:1.9.1", {
+          "packageLocation": "./.yarn/cache/yaml-npm-1.9.1-d43edc3715-1.zip/node_modules/yaml/",
           "packageDependencies": [
-            ["yaml", "npm:1.9.0"],
+            ["yaml", "npm:1.9.1"],
             ["@babel/runtime", "npm:7.9.2"]
           ],
           "linkType": "HARD"
