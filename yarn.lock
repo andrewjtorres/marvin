@@ -31,7 +31,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.8.7":
+"@babel/runtime@npm:^7.9.0":
   version: 7.9.2
   resolution: "@babel/runtime@npm:7.9.2"
   dependencies:
@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.1.4
+    lint-staged: ^10.1.5
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettylint: ^1.0.0
@@ -1172,9 +1172,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 13.11.1
-  resolution: "@types/node@npm:13.11.1"
-  checksum: 1fc71eb7ef99427fd137e5f68ed3a30e59bbec0bce9f13a52e894bc6ed2646c5600387b9313f1b6f9553e5dbaf7b2a404c7c951fd60b21e71ef5539f957460b3
+  version: 13.13.0
+  resolution: "@types/node@npm:13.13.0"
+  checksum: 1d03cfcaca558597b7d73dced7e36164de7aae6678b641ba3067c0f83a15a8aec6b38d18c6cee231996ef656e6953a413af70805032ec0537d86efea9c55ac79
   languageName: node
   linkType: hard
 
@@ -4355,9 +4355,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.1.4":
-  version: 10.1.4
-  resolution: "lint-staged@npm:10.1.4"
+"lint-staged@npm:^10.1.5":
+  version: 10.1.5
+  resolution: "lint-staged@npm:10.1.5"
   dependencies:
     chalk: ^3.0.0
     commander: ^4.0.1
@@ -4374,7 +4374,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 2136a4b450b73216eb79b8358626cb4124ccbc23c782328e30a490626154385306bb48cb9a2fbbbfe96e18cdbbce178de05de9c0e6f1158235b4e87413a89ce4
+  checksum: 7215ffce5790a71085e8f06b66ce721b840809c666d1dea807a08ee55bdaf4459aa7310cd208201f28ec8317da53c37dee48ce7e40067fbb07a890726c8cd3de
   languageName: node
   linkType: hard
 
@@ -4727,7 +4727,7 @@ __metadata:
     cz-conventional-changelog: ^3.1.0
     husky: ^4.2.5
     lerna: ^3.20.2
-    lint-staged: ^10.1.4
+    lint-staged: ^10.1.5
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettier-plugin-toml: ^0.3.1
@@ -6332,20 +6332,20 @@ __metadata:
   linkType: hard
 
 "resolve@^1.1.6, resolve@^1.10.0":
-  version: 1.16.0
-  resolution: "resolve@npm:1.16.0"
+  version: 1.16.1
+  resolution: "resolve@npm:1.16.1"
   dependencies:
     path-parse: ^1.0.6
-  checksum: d38b9090fc162ef759bd5db1070dc6a93b72bff949178a88227a0e0d0c0f717fb04f7cc5de685154ca3e4558427c73b53fe9909c54f8a27579c869fac356cbe1
+  checksum: 885b0efc589c74a4a11d4d8dae2be7e6faac9710a46dee1a1632854e3ed999e9969461ee37ac4b05d6e9b50e7c58882b443a8421ae6adcb168d66bb099b4ae03
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>":
-  version: 1.16.0
-  resolution: "resolve@patch:resolve@npm%3A1.16.0#builtin<compat/resolve>::version=1.16.0&hash=8fccd0"
+  version: 1.16.1
+  resolution: "resolve@patch:resolve@npm%3A1.16.1#builtin<compat/resolve>::version=1.16.1&hash=8fccd0"
   dependencies:
     path-parse: ^1.0.6
-  checksum: b43d14aa53e838e0c0094399890ca20b7ebd3e613f6fb7097fa7c82123888a7259fb4e9c4c0eb5051a43def2f4254baf71fdfde114f5391274f8b094e5c4501a
+  checksum: a5c2fc723f478e2991696d3b4868f3f9b50ee519e08ffc93f1cb80b824ffef58ec2689e040330c981103ec380ce0dbc2d2b04f6537e2025dc3a4d8b504712353
   languageName: node
   linkType: hard
 
@@ -7662,11 +7662,11 @@ __metadata:
   linkType: hard
 
 "yaml@npm:^1.7.2":
-  version: 1.8.3
-  resolution: "yaml@npm:1.8.3"
+  version: 1.9.0
+  resolution: "yaml@npm:1.9.0"
   dependencies:
-    "@babel/runtime": ^7.8.7
-  checksum: ae4f6dd17f946109aec2d9e1fa22b6d9683ff0ac5cd39f74fcb7d196c1c42575f649b030e571215d242afdca24cc3aa00c21f48b8316f99d38a6b4b2a1d5507f
+    "@babel/runtime": ^7.9.0
+  checksum: 5b2b4ac59f5614d20c6177dec62980efd248969b1626564472ea49f0be33059bbb0994d41106fc68397e76c033ade1fca7341f56cc532d65a2b824465f1e5eb4
   languageName: node
   linkType: hard
 
