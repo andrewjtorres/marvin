@@ -114,7 +114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.1.4"],
+            ["lint-staged", "npm:10.1.5"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.4"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -1158,7 +1158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/ai/",
           "packageDependencies": [
             ["@marvin/ai", "workspace:packages/ai"],
-            ["lint-staged", "npm:10.1.4"],
+            ["lint-staged", "npm:10.1.5"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.4"],
             ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"]
@@ -1316,7 +1316,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@octokit-types-npm-2.10.0-2b1af160ee-1.zip/node_modules/@octokit/types/",
           "packageDependencies": [
             ["@octokit/types", "npm:2.10.0"],
-            ["@types/node", "npm:13.11.1"]
+            ["@types/node", "npm:13.13.0"]
           ],
           "linkType": "HARD"
         }]
@@ -1377,7 +1377,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/glob", "npm:7.1.1"],
             ["@types/events", "npm:3.0.0"],
             ["@types/minimatch", "npm:3.0.3"],
-            ["@types/node", "npm:13.11.1"]
+            ["@types/node", "npm:13.13.0"]
           ],
           "linkType": "HARD"
         }]
@@ -1392,10 +1392,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:13.11.1", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-13.11.1-ea46d1204d-1.zip/node_modules/@types/node/",
+        ["npm:13.13.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-13.13.0-247c77d018-1.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:13.11.1"]
+            ["@types/node", "npm:13.13.0"]
           ],
           "linkType": "HARD"
         }]
@@ -2606,7 +2606,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["import-fresh", "npm:3.2.1"],
             ["parse-json", "npm:5.0.0"],
             ["path-type", "npm:4.0.0"],
-            ["yaml", "npm:1.8.3"]
+            ["yaml", "npm:1.9.0"]
           ],
           "linkType": "HARD"
         }]
@@ -4911,10 +4911,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:10.1.4", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.4-cc89bfac71-1.zip/node_modules/lint-staged/",
+        ["npm:10.1.5", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.5-820f09e971-1.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:10.1.4"],
+            ["lint-staged", "npm:10.1.5"],
             ["chalk", "npm:3.0.0"],
             ["commander", "npm:4.1.1"],
             ["cosmiconfig", "npm:6.0.0"],
@@ -5319,7 +5319,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.1.4"],
+            ["lint-staged", "npm:10.1.5"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.4"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -5774,7 +5774,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["normalize-package-data", "npm:2.5.0"],
             ["hosted-git-info", "npm:2.8.8"],
-            ["resolve", "patch:resolve@npm%3A1.16.0#builtin<compat/resolve>::version=1.16.0&hash=8fccd0"],
+            ["resolve", "patch:resolve@npm%3A1.16.1#builtin<compat/resolve>::version=1.16.1&hash=8fccd0"],
             ["semver", "npm:5.7.1"],
             ["validate-npm-package-license", "npm:3.0.4"]
           ],
@@ -6878,7 +6878,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/rechoir-npm-0.6.2-0df5f171ec-1.zip/node_modules/rechoir/",
           "packageDependencies": [
             ["rechoir", "npm:0.6.2"],
-            ["resolve", "patch:resolve@npm%3A1.16.0#builtin<compat/resolve>::version=1.16.0&hash=8fccd0"]
+            ["resolve", "patch:resolve@npm%3A1.16.1#builtin<compat/resolve>::version=1.16.1&hash=8fccd0"]
           ],
           "linkType": "HARD"
         }]
@@ -7015,10 +7015,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["resolve", [
-        ["patch:resolve@npm%3A1.16.0#builtin<compat/resolve>::version=1.16.0&hash=8fccd0", {
-          "packageLocation": "./.yarn/cache/resolve-patch-1e9630ac90-1.zip/node_modules/resolve/",
+        ["patch:resolve@npm%3A1.16.1#builtin<compat/resolve>::version=1.16.1&hash=8fccd0", {
+          "packageLocation": "./.yarn/cache/resolve-patch-70992539da-1.zip/node_modules/resolve/",
           "packageDependencies": [
-            ["resolve", "patch:resolve@npm%3A1.16.0#builtin<compat/resolve>::version=1.16.0&hash=8fccd0"],
+            ["resolve", "patch:resolve@npm%3A1.16.1#builtin<compat/resolve>::version=1.16.1&hash=8fccd0"],
             ["path-parse", "npm:1.0.6"]
           ],
           "linkType": "HARD"
@@ -8540,10 +8540,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yaml", [
-        ["npm:1.8.3", {
-          "packageLocation": "./.yarn/cache/yaml-npm-1.8.3-89e8b81d4d-1.zip/node_modules/yaml/",
+        ["npm:1.9.0", {
+          "packageLocation": "./.yarn/cache/yaml-npm-1.9.0-08d1e54988-1.zip/node_modules/yaml/",
           "packageDependencies": [
-            ["yaml", "npm:1.8.3"],
+            ["yaml", "npm:1.9.0"],
             ["@babel/runtime", "npm:7.9.2"]
           ],
           "linkType": "HARD"
