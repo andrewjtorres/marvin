@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.1.5
+    lint-staged: ^10.1.7
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettylint: ^1.0.0
@@ -996,14 +996,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/endpoint@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@octokit/endpoint@npm:6.0.0"
+"@octokit/endpoint@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "@octokit/endpoint@npm:6.0.1"
   dependencies:
-    "@octokit/types": ^2.0.0
+    "@octokit/types": ^2.11.1
     is-plain-object: ^3.0.0
     universal-user-agent: ^5.0.0
-  checksum: edb2747e819ce8f50c9b3cebcf1a2cdf8c08b1422ba20996b2afb785b1618b8f95eacf018ded88575739e86221f53e3a88e30803bb59ec2f62ee242867e34f72
+  checksum: ca0ed303a8beff0bd508464ae3c133a403b0d83b28079129effd707e9b840af30b85991fb13200d0940f69f82cf23cfdb938609bda9882ae92d4854f3207f350
   languageName: node
   linkType: hard
 
@@ -1063,18 +1063,18 @@ __metadata:
   linkType: hard
 
 "@octokit/request@npm:^5.2.0":
-  version: 5.4.0
-  resolution: "@octokit/request@npm:5.4.0"
+  version: 5.4.2
+  resolution: "@octokit/request@npm:5.4.2"
   dependencies:
-    "@octokit/endpoint": ^6.0.0
+    "@octokit/endpoint": ^6.0.1
     "@octokit/request-error": ^2.0.0
-    "@octokit/types": ^2.8.2
+    "@octokit/types": ^2.11.1
     deprecation: ^2.0.0
     is-plain-object: ^3.0.0
     node-fetch: ^2.3.0
     once: ^1.4.0
     universal-user-agent: ^5.0.0
-  checksum: 6b2708e2eb476df08a9a58ccf5ba8138cd376001529f87a247617a358f068e4a4fd4a800000f651bebe9b5fb71b35dbe812fa2477d21f1eda6b27a3646909317
+  checksum: 608e379791b6b17142d2caf6a8f7d18606a79267bb95827c4c087e0199979bb2ab8ac9597c51398a30c5f13d173d38b928e9fa87163e3866668c55af49bb84e2
   languageName: node
   linkType: hard
 
@@ -1102,12 +1102,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.0.1, @octokit/types@npm:^2.8.2":
-  version: 2.10.0
-  resolution: "@octokit/types@npm:2.10.0"
+"@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.0.1, @octokit/types@npm:^2.11.1":
+  version: 2.11.1
+  resolution: "@octokit/types@npm:2.11.1"
   dependencies:
     "@types/node": ">= 8"
-  checksum: 5ba213e6c3f035a34f2fbbf9b0711ec559dc019f77ecbe17ffcbe0992c3d3263970a0a710bc0204f19213ab08a5b836813db9c04011ea5c2bb2ace9755f64d9f
+  checksum: 6e2188e4ae3cd12922490661a704198be3b22a27b3b3e551d8dd4162c68f3020596927dafc8517ec04ba78c0619b41c4fd82e603eff9d682cc86d0c873c284bd
   languageName: node
   linkType: hard
 
@@ -1172,9 +1172,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 13.13.0
-  resolution: "@types/node@npm:13.13.0"
-  checksum: 1d03cfcaca558597b7d73dced7e36164de7aae6678b641ba3067c0f83a15a8aec6b38d18c6cee231996ef656e6953a413af70805032ec0537d86efea9c55ac79
+  version: 13.13.1
+  resolution: "@types/node@npm:13.13.1"
+  checksum: 347bdc4e64947f1605bcfb6771060a9bd386d3dc364bb24920481d9f178b61c718f4501f53a30c0851fda77d62d0bac2e5f23f678f57d725d91d5e4473f5a62a
   languageName: node
   linkType: hard
 
@@ -1243,14 +1243,14 @@ __metadata:
   linkType: hard
 
 "ajv@npm:^6.5.5":
-  version: 6.12.0
-  resolution: "ajv@npm:6.12.0"
+  version: 6.12.2
+  resolution: "ajv@npm:6.12.2"
   dependencies:
     fast-deep-equal: ^3.1.1
     fast-json-stable-stringify: ^2.0.0
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
-  checksum: 601f67d73030717b42f62de7c83660d507a314e1653c5bc8656f9a65c6a2f22017d90728c0f335bda5424c292a1a83bdb7faee0964786b4462a5c7c42e2b0802
+  checksum: a40126c49d1e0af45d02060141634427ec3210b3f244e73b6655f7fcc7e452d5bb4f4454a5c20cd157d9b616c20e42ce935af19538d51692248f74a2cbea931d
   languageName: node
   linkType: hard
 
@@ -1787,16 +1787,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "chalk@npm:3.0.0"
-  dependencies:
-    ansi-styles: ^4.1.0
-    supports-color: ^7.1.0
-  checksum: 366bfad255e1ee49a8944a434c94772195d206f2fdd0d132b2a4aab199c4f7ff696312522735613c0a92d69a1afda70c0284a0a9612234ce8034b19be83b6543
-  languageName: node
-  linkType: hard
-
 "chalk@npm:^4.0.0":
   version: 4.0.0
   resolution: "chalk@npm:4.0.0"
@@ -1972,10 +1962,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^4.0.1":
-  version: 4.1.1
-  resolution: "commander@npm:4.1.1"
-  checksum: db4fadfeb5f18e6aa182f2c8dd6b9e8a2632886f2174c8115f0fb787f86ae778be99d380c043cbf771a4bde841de2ef2fd1e547b9e317835a800fd9ca61aea6e
+"commander@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "commander@npm:5.0.0"
+  checksum: 040b371deb7fd8bc8155da0aa5ddebc6a07c2cbd3e6fa7d589edef81b85859e4c63deb083a4cb5bbe814955eeae43ddac534c51b635ec5902f8b9bb1aaef50a5
   languageName: node
   linkType: hard
 
@@ -2772,9 +2762,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "execa@npm:3.4.0"
+"execa@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "execa@npm:4.0.0"
   dependencies:
     cross-spawn: ^7.0.0
     get-stream: ^5.0.0
@@ -2783,10 +2773,9 @@ __metadata:
     merge-stream: ^2.0.0
     npm-run-path: ^4.0.0
     onetime: ^5.1.0
-    p-finally: ^2.0.0
     signal-exit: ^3.0.2
     strip-final-newline: ^2.0.0
-  checksum: 8f8ed8fe048f6b7263f92dd55a82d08c035098a184d3a63455106666fc96d80139b5acabd78a383fa9d10a0d48b1d25c1576e1a937b7e5b563e680940e5e72f5
+  checksum: f7ab455ee38f21499709ccedb567e8cd2a53946b60e510af0569078d0240d922385003e2e797a5570990209030cb7e2d73acfb25ae49c70267664adcc000b9a2
   languageName: node
   linkType: hard
 
@@ -4355,16 +4344,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.1.5":
-  version: 10.1.5
-  resolution: "lint-staged@npm:10.1.5"
+"lint-staged@npm:^10.1.7":
+  version: 10.1.7
+  resolution: "lint-staged@npm:10.1.7"
   dependencies:
-    chalk: ^3.0.0
-    commander: ^4.0.1
+    chalk: ^4.0.0
+    commander: ^5.0.0
     cosmiconfig: ^6.0.0
     debug: ^4.1.1
     dedent: ^0.7.0
-    execa: ^3.4.0
+    execa: ^4.0.0
     listr: ^0.14.3
     log-symbols: ^3.0.0
     micromatch: ^4.0.2
@@ -4374,7 +4363,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 7215ffce5790a71085e8f06b66ce721b840809c666d1dea807a08ee55bdaf4459aa7310cd208201f28ec8317da53c37dee48ce7e40067fbb07a890726c8cd3de
+  checksum: a682c22ac3f8672c5ea2774f72ceb2daf66e4f473876c3107b895dea573a2037311b92dd78420662bd49df5a6b742dc1881a57b378660fdbcec976089241091b
   languageName: node
   linkType: hard
 
@@ -4727,7 +4716,7 @@ __metadata:
     cz-conventional-changelog: ^3.1.0
     husky: ^4.2.5
     lerna: ^3.20.2
-    lint-staged: ^10.1.5
+    lint-staged: ^10.1.7
     npm-run-all: ^4.1.5
     prettier: ^2.0.4
     prettier-plugin-toml: ^0.3.1
@@ -5460,13 +5449,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-finally@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "p-finally@npm:2.0.1"
-  checksum: 5cfd585a6913b124d08faa7fd746262b91eb70d6161c299f7900f4a0dfa692c04b070fc020b857560b6ba1fb4633b44a5a32eb8aa3fec7e9277a27f95dd3b9f9
-  languageName: node
-  linkType: hard
-
 "p-limit@npm:^1.1.0":
   version: 1.3.0
   resolution: "p-limit@npm:1.3.0"
@@ -6112,7 +6094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:1 || 2, readable-stream@npm:2 || 3, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
+"readable-stream@npm:1 || 2, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
   version: 2.3.7
   resolution: "readable-stream@npm:2.3.7"
   dependencies:
@@ -6127,7 +6109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.0.2":
+"readable-stream@npm:2 || 3, readable-stream@npm:^3.0.2":
   version: 3.6.0
   resolution: "readable-stream@npm:3.6.0"
   dependencies:
@@ -6712,9 +6694,9 @@ __metadata:
   linkType: hard
 
 "spdx-exceptions@npm:^2.1.0":
-  version: 2.2.0
-  resolution: "spdx-exceptions@npm:2.2.0"
-  checksum: c681ac388e5d7d5e1b5ecc18d4524e2ee81fdf4302091d324aafa907ac458db4b873645681feb9fb645e527a405d41433733636e479e551f15db109c7da1ce85
+  version: 2.3.0
+  resolution: "spdx-exceptions@npm:2.3.0"
+  checksum: e6c3df91207c0660f3209802c942cf61abad3a739b0af0da9ed60410d0a0ee23cd0881ce26727150cb9899bd41256e90363f95f0ac543407fe1a1b486e00a732
   languageName: node
   linkType: hard
 
@@ -7662,11 +7644,11 @@ __metadata:
   linkType: hard
 
 "yaml@npm:^1.7.2":
-  version: 1.9.1
-  resolution: "yaml@npm:1.9.1"
+  version: 1.9.2
+  resolution: "yaml@npm:1.9.2"
   dependencies:
     "@babel/runtime": ^7.9.2
-  checksum: 250c0771e80d0bdff305551199fef781ab0610da012011c2cb8639b34f17c978d5527c1533e3c230f1517875af114d8ecb0e1c6275848c84c4f78859ec77c07e
+  checksum: 5d7e885b28272c774e15d8063843fcf1c98f1acf2ceeca6b649a4c83ee9f81485ce24c68d72afac532693a10714c2cb1617dd0a9e058156b172cbba23774b925
   languageName: node
   linkType: hard
 
