@@ -32,11 +32,11 @@ __metadata:
   linkType: hard
 
 "@babel/runtime@npm:^7.9.2":
-  version: 7.9.2
-  resolution: "@babel/runtime@npm:7.9.2"
+  version: 7.9.6
+  resolution: "@babel/runtime@npm:7.9.6"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 2/50c65b4972e62ca260ff6f3f99cf2395585d7f7bcd947ee87d082c2926cb4f0c93c815d5e9071162e689a4d2ba4143ffd5b005893be860088689c963f34e50c8
+  checksum: 2/ff94d6861daea1c6e4639f2e6d22992539fab45ce6ef468de37e0dd0df109aee94276f72fc962b48946dde0b8554a71343fc398ea5a565cab59c596829ccc2ad
   languageName: node
   linkType: hard
 
@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.2.0
+    lint-staged: ^10.2.2
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettylint: ^1.0.0
@@ -2023,8 +2023,8 @@ __metadata:
   linkType: hard
 
 "commitizen@npm:^4.0.3":
-  version: 4.0.4
-  resolution: "commitizen@npm:4.0.4"
+  version: 4.0.5
+  resolution: "commitizen@npm:4.0.5"
   dependencies:
     cachedir: 2.2.0
     cz-conventional-changelog: 3.0.1
@@ -2037,14 +2037,14 @@ __metadata:
     inquirer: 6.5.0
     is-utf8: ^0.2.1
     lodash: 4.17.15
-    minimist: 1.2.3
+    minimist: 1.2.5
     shelljs: 0.7.6
     strip-bom: 4.0.0
     strip-json-comments: 3.0.1
   bin:
-    commitizen: ./bin/commitizen
-    git-cz: ./bin/git-cz
-  checksum: 2/59fbdd9a768b94b70314453ea4c33bfd61b37389bdbe164f79f7de9759285c1d4f92fe7d25c6574add5e8153c07c90442d91dbdff3a5aaed720c338d4aa7de51
+    commitizen: bin/commitizen
+    git-cz: bin/git-cz
+  checksum: 2/d02f0b8fa869c71829708f667c0ae22f6644d3e7bfe08e2097bbe6e37b0b870785335379156ee102e1bfc92bad902a9f06fb64ea9ebf1c4654cfab662dbe8082
   languageName: node
   linkType: hard
 
@@ -4387,9 +4387,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "lint-staged@npm:10.2.0"
+"lint-staged@npm:^10.2.2":
+  version: 10.2.2
+  resolution: "lint-staged@npm:10.2.2"
   dependencies:
     chalk: ^4.0.0
     commander: ^5.0.0
@@ -4406,7 +4406,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 2/28674d5874456af675858e301c7b447bddec217b4749288b83b7ed74fe32a2aa8cf3af24251a9fe94a60e032079c6acf022a85d28ac93d2a6c0d431ff63b6bf3
+  checksum: 2/c994d6c260ecde00834c9947412df894471d2cb6433cc14a7efa649133179d694bc5f241dcfe528bcb6d11eb758efc0f651a18233e087fbd4719ba40c8320f62
   languageName: node
   linkType: hard
 
@@ -4719,7 +4719,7 @@ __metadata:
     cz-conventional-changelog: ^3.1.0
     husky: ^4.2.5
     lerna: ^3.20.2
-    lint-staged: ^10.2.0
+    lint-staged: ^10.2.2
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
@@ -4893,14 +4893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:1.2.3":
-  version: 1.2.3
-  resolution: "minimist@npm:1.2.3"
-  checksum: 2/a6bfbd4b22b66c5fcf82b58d2f04a45da64ad010008678e6487a01818570cec0677b160120cb879bd75a04f34758fb3d63e6bcef5417fc363630a9e7be713dee
-  languageName: node
-  linkType: hard
-
-"minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.5":
+"minimist@npm:1.2.5, minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.5":
   version: 1.2.5
   resolution: "minimist@npm:1.2.5"
   checksum: 2/b77b8590147a4e217ff34266236bc39de23b52e6e33054076991ff674c7397a1380a7bde11111916f16f003a94aaa7e4f3d92595a32189644ff607fabc65a5b6

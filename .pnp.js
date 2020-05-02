@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "lint-staged",
-        "npm:10.2.0"
+        "npm:10.2.2"
       ],
       [
         "npm-run-all",
@@ -81,7 +81,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.2.0"],
+            ["lint-staged", "npm:10.2.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -123,10 +123,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@babel/runtime", [
-        ["npm:7.9.2", {
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.9.2-68b4224984-2.zip/node_modules/@babel/runtime/",
+        ["npm:7.9.6", {
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.9.6-93b1a0d418-2.zip/node_modules/@babel/runtime/",
           "packageDependencies": [
-            ["@babel/runtime", "npm:7.9.2"],
+            ["@babel/runtime", "npm:7.9.6"],
             ["regenerator-runtime", "npm:0.13.5"]
           ],
           "linkType": "HARD",
@@ -1125,7 +1125,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/ai/",
           "packageDependencies": [
             ["@marvin/ai", "workspace:packages/ai"],
-            ["lint-staged", "npm:10.2.0"],
+            ["lint-staged", "npm:10.2.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
             ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"]
@@ -2339,10 +2339,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["commitizen", [
-        ["npm:4.0.4", {
-          "packageLocation": "./.yarn/cache/commitizen-npm-4.0.4-15dc349dfd-2.zip/node_modules/commitizen/",
+        ["npm:4.0.5", {
+          "packageLocation": "./.yarn/cache/commitizen-npm-4.0.5-09b6bbde07-2.zip/node_modules/commitizen/",
           "packageDependencies": [
-            ["commitizen", "npm:4.0.4"],
+            ["commitizen", "npm:4.0.5"],
             ["cachedir", "npm:2.2.0"],
             ["cz-conventional-changelog", "npm:3.0.1"],
             ["dedent", "npm:0.7.0"],
@@ -2354,7 +2354,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["inquirer", "npm:6.5.0"],
             ["is-utf8", "npm:0.2.1"],
             ["lodash", "npm:4.17.15"],
-            ["minimist", "npm:1.2.3"],
+            ["minimist", "npm:1.2.5"],
             ["shelljs", "npm:0.7.6"],
             ["strip-bom", "npm:4.0.0"],
             ["strip-json-comments", "npm:3.0.1"]
@@ -2696,7 +2696,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["@commitlint/load", "npm:8.3.5"],
             ["chalk", "npm:2.4.2"],
-            ["commitizen", "npm:4.0.4"],
+            ["commitizen", "npm:4.0.5"],
             ["conventional-commit-types", "npm:3.0.0"],
             ["lodash.map", "npm:4.6.0"],
             ["longest", "npm:2.0.1"],
@@ -2760,10 +2760,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:7f820b30f65e8759a4d9b9ac4e47f294a1ecdff13cf8aa87c8a3251ab35baaa7ac371f276b3e8d133ce243ac14b65e1de581ae42adc11b51b111df1d8be4b07c#npm:4.1.1", {
-          "packageLocation": "./.yarn/$$virtual/debug-virtual-3ad0f7d7c2/0/cache/debug-npm-4.1.1-540248b3aa-2.zip/node_modules/debug/",
+        ["virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.6", {
+          "packageLocation": "./.yarn/$$virtual/debug-virtual-b857c1e678/0/cache/debug-npm-3.2.6-6214e40f12-2.zip/node_modules/debug/",
           "packageDependencies": [
-            ["debug", "virtual:7f820b30f65e8759a4d9b9ac4e47f294a1ecdff13cf8aa87c8a3251ab35baaa7ac371f276b3e8d133ce243ac14b65e1de581ae42adc11b51b111df1d8be4b07c#npm:4.1.1"],
+            ["debug", "virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.6"],
             ["ms", "npm:2.1.2"],
             ["supports-color", null]
           ],
@@ -2772,10 +2772,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.6", {
-          "packageLocation": "./.yarn/$$virtual/debug-virtual-b857c1e678/0/cache/debug-npm-3.2.6-6214e40f12-2.zip/node_modules/debug/",
+        ["virtual:905a39902470d23cd8852e62d0468a1e0247d27346f97fcbe43095699a7cae3f36db960f45a516659b81b34381abcae9d717f642c0dc7797c5263ce7c9646c22#npm:4.1.1", {
+          "packageLocation": "./.yarn/$$virtual/debug-virtual-2856ecd06d/0/cache/debug-npm-4.1.1-540248b3aa-2.zip/node_modules/debug/",
           "packageDependencies": [
-            ["debug", "virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.6"],
+            ["debug", "virtual:905a39902470d23cd8852e62d0468a1e0247d27346f97fcbe43095699a7cae3f36db960f45a516659b81b34381abcae9d717f642c0dc7797c5263ce7c9646c22#npm:4.1.1"],
             ["ms", "npm:2.1.2"],
             ["supports-color", null]
           ],
@@ -4939,14 +4939,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:10.2.0", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-10.2.0-7f820b30f6-2.zip/node_modules/lint-staged/",
+        ["npm:10.2.2", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-10.2.2-905a399024-2.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:10.2.0"],
+            ["lint-staged", "npm:10.2.2"],
             ["chalk", "npm:4.0.0"],
             ["commander", "npm:5.1.0"],
             ["cosmiconfig", "npm:6.0.0"],
-            ["debug", "virtual:7f820b30f65e8759a4d9b9ac4e47f294a1ecdff13cf8aa87c8a3251ab35baaa7ac371f276b3e8d133ce243ac14b65e1de581ae42adc11b51b111df1d8be4b07c#npm:4.1.1"],
+            ["debug", "virtual:905a39902470d23cd8852e62d0468a1e0247d27346f97fcbe43095699a7cae3f36db960f45a516659b81b34381abcae9d717f642c0dc7797c5263ce7c9646c22#npm:4.1.1"],
             ["dedent", "npm:0.7.0"],
             ["execa", "npm:4.0.0"],
             ["listr2", "npm:1.3.8"],
@@ -5302,7 +5302,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.2.0"],
+            ["lint-staged", "npm:10.2.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -5476,13 +5476,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["minimist", [
-        ["npm:1.2.3", {
-          "packageLocation": "./.yarn/cache/minimist-npm-1.2.3-ca6fbac939-2.zip/node_modules/minimist/",
-          "packageDependencies": [
-            ["minimist", "npm:1.2.3"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:1.2.5", {
           "packageLocation": "./.yarn/cache/minimist-npm-1.2.5-ced0e1f617-2.zip/node_modules/minimist/",
           "packageDependencies": [
@@ -8576,7 +8569,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yaml-npm-1.9.2-a19b05b3b1-2.zip/node_modules/yaml/",
           "packageDependencies": [
             ["yaml", "npm:1.9.2"],
-            ["@babel/runtime", "npm:7.9.2"]
+            ["@babel/runtime", "npm:7.9.6"]
           ],
           "linkType": "HARD",
         }]
