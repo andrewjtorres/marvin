@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackPool": [
       [
         "cz-conventional-changelog",
-        "npm:3.1.0"
+        "npm:3.2.0"
       ],
       [
         "husky",
@@ -78,7 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["cz-conventional-changelog", "npm:3.1.0"],
+            ["cz-conventional-changelog", "npm:3.2.0"],
             ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.2.2"],
@@ -2339,10 +2339,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["commitizen", [
-        ["npm:4.0.5", {
-          "packageLocation": "./.yarn/cache/commitizen-npm-4.0.5-09b6bbde07-2.zip/node_modules/commitizen/",
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/commitizen-npm-4.1.0-dd1c13c125-2.zip/node_modules/commitizen/",
           "packageDependencies": [
-            ["commitizen", "npm:4.0.5"],
+            ["commitizen", "npm:4.1.0"],
             ["cachedir", "npm:2.2.0"],
             ["cz-conventional-changelog", "npm:3.0.1"],
             ["dedent", "npm:0.7.0"],
@@ -2355,7 +2355,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-utf8", "npm:0.2.1"],
             ["lodash", "npm:4.17.15"],
             ["minimist", "npm:1.2.5"],
-            ["shelljs", "npm:0.7.6"],
             ["strip-bom", "npm:4.0.0"],
             ["strip-json-comments", "npm:3.0.1"]
           ],
@@ -2690,17 +2689,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:3.1.0", {
-          "packageLocation": "./.yarn/cache/cz-conventional-changelog-npm-3.1.0-d6aa6df281-2.zip/node_modules/cz-conventional-changelog/",
+        ["npm:3.2.0", {
+          "packageLocation": "./.yarn/cache/cz-conventional-changelog-npm-3.2.0-0d6f8e98f5-2.zip/node_modules/cz-conventional-changelog/",
           "packageDependencies": [
-            ["cz-conventional-changelog", "npm:3.1.0"],
+            ["cz-conventional-changelog", "npm:3.2.0"],
             ["@commitlint/load", "npm:8.3.5"],
             ["chalk", "npm:2.4.2"],
-            ["commitizen", "npm:4.0.5"],
+            ["commitizen", "npm:4.1.0"],
             ["conventional-commit-types", "npm:3.0.0"],
             ["lodash.map", "npm:4.6.0"],
             ["longest", "npm:2.0.1"],
-            ["right-pad", "npm:1.0.1"],
             ["word-wrap", "npm:1.2.3"]
           ],
           "linkType": "HARD",
@@ -3935,7 +3933,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:1.2.5"],
             ["neo-async", "npm:2.6.1"],
             ["source-map", "npm:0.6.1"],
-            ["uglify-js", "npm:3.9.1"],
+            ["uglify-js", "npm:3.9.2"],
             ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD",
@@ -4347,15 +4345,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string-width", "npm:2.1.1"],
             ["strip-ansi", "npm:5.2.0"],
             ["through", "npm:2.3.8"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["interpret", [
-        ["npm:1.2.0", {
-          "packageLocation": "./.yarn/cache/interpret-npm-1.2.0-273dc5c9c5-2.zip/node_modules/interpret/",
-          "packageDependencies": [
-            ["interpret", "npm:1.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -5299,7 +5288,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["marvin", "workspace:."],
-            ["cz-conventional-changelog", "npm:3.1.0"],
+            ["cz-conventional-changelog", "npm:3.2.0"],
             ["husky", "npm:4.2.5"],
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.2.2"],
@@ -6860,16 +6849,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["rechoir", [
-        ["npm:0.6.2", {
-          "packageLocation": "./.yarn/cache/rechoir-npm-0.6.2-0df5f171ec-2.zip/node_modules/rechoir/",
-          "packageDependencies": [
-            ["rechoir", "npm:0.6.2"],
-            ["resolve", "patch:resolve@npm%3A1.17.0#builtin<compat/resolve>::version=1.17.0&hash=e7677c"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["redent", [
         ["npm:1.0.0", {
           "packageLocation": "./.yarn/cache/redent-npm-1.0.0-b4da60611f-2.zip/node_modules/redent/",
@@ -7300,18 +7279,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/shell-quote-npm-1.7.2-8e2768dbb0-2.zip/node_modules/shell-quote/",
           "packageDependencies": [
             ["shell-quote", "npm:1.7.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["shelljs", [
-        ["npm:0.7.6", {
-          "packageLocation": "./.yarn/cache/shelljs-npm-0.7.6-f8bd9106ec-2.zip/node_modules/shelljs/",
-          "packageDependencies": [
-            ["shelljs", "npm:0.7.6"],
-            ["glob", "npm:7.1.6"],
-            ["interpret", "npm:1.2.0"],
-            ["rechoir", "npm:0.6.2"]
           ],
           "linkType": "HARD",
         }]
@@ -8147,10 +8114,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["uglify-js", [
-        ["npm:3.9.1", {
-          "packageLocation": "./.yarn/cache/uglify-js-npm-3.9.1-c3fdcb0dd8-2.zip/node_modules/uglify-js/",
+        ["npm:3.9.2", {
+          "packageLocation": "./.yarn/cache/uglify-js-npm-3.9.2-bd70525775-2.zip/node_modules/uglify-js/",
           "packageDependencies": [
-            ["uglify-js", "npm:3.9.1"],
+            ["uglify-js", "npm:3.9.2"],
             ["commander", "npm:2.20.3"]
           ],
           "linkType": "HARD",
