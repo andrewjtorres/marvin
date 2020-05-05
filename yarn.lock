@@ -2023,8 +2023,8 @@ __metadata:
   linkType: hard
 
 "commitizen@npm:^4.0.3":
-  version: 4.0.5
-  resolution: "commitizen@npm:4.0.5"
+  version: 4.1.0
+  resolution: "commitizen@npm:4.1.0"
   dependencies:
     cachedir: 2.2.0
     cz-conventional-changelog: 3.0.1
@@ -2038,13 +2038,12 @@ __metadata:
     is-utf8: ^0.2.1
     lodash: 4.17.15
     minimist: 1.2.5
-    shelljs: 0.7.6
     strip-bom: 4.0.0
     strip-json-comments: 3.0.1
   bin:
     commitizen: bin/commitizen
     git-cz: bin/git-cz
-  checksum: 2/d02f0b8fa869c71829708f667c0ae22f6644d3e7bfe08e2097bbe6e37b0b870785335379156ee102e1bfc92bad902a9f06fb64ea9ebf1c4654cfab662dbe8082
+  checksum: 2/effb5cd761bf5a3b19e15f7673ce9241bc259d6542f2fc43691d520051fe6e6ed86f8f28b5586cbe5e833f0eb0a961e30fdc9d934939da5d7888d603b649ce96
   languageName: node
   linkType: hard
 
@@ -2355,9 +2354,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "cz-conventional-changelog@npm:3.1.0"
+"cz-conventional-changelog@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "cz-conventional-changelog@npm:3.2.0"
   dependencies:
     "@commitlint/load": ">6.1.1"
     chalk: ^2.4.1
@@ -2365,12 +2364,11 @@ __metadata:
     conventional-commit-types: ^3.0.0
     lodash.map: ^4.5.1
     longest: ^2.0.1
-    right-pad: ^1.0.1
     word-wrap: ^1.0.3
   dependenciesMeta:
     "@commitlint/load":
       optional: true
-  checksum: 2/3feccceb6402348bf1d25ee341124e9c53ab13a2a4af83a133b37873389cec83460d279b7dc14320f2834147c4de275216f2e69a3136f5c2d90da08d18ee665e
+  checksum: 2/8fce253c2c99181994ea16f52606ec1e23d710fc04f928560c5918ae686b07b58384fd49173212a378643397c2b05008fc55fc27a865412a1771bc4377957f3f
   languageName: node
   linkType: hard
 
@@ -3387,7 +3385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.0.3, glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.0.3, glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.1.6
   resolution: "glob@npm:7.1.6"
   dependencies:
@@ -3859,13 +3857,6 @@ __metadata:
     strip-ansi: ^5.1.0
     through: ^2.3.6
   checksum: 2/f3185658ee9eac60cf1296810df3e94aa3957aab7c49dd3a9b4fab5b257c4f24f5a682ad7072448bf9492c0101cdf0ee3daf3531da513b76b583815668a2512a
-  languageName: node
-  linkType: hard
-
-"interpret@npm:^1.0.0":
-  version: 1.2.0
-  resolution: "interpret@npm:1.2.0"
-  checksum: 2/06d0dd4af01f9d0a99af8fb20c888db99e7c1bd28835951646a7e426dd99ccfffb9d06ad2e8f7cb60dd2ecc3e5bc61fe83e04c2cc47d92c7b144ff935673463c
   languageName: node
   linkType: hard
 
@@ -4716,7 +4707,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "marvin@workspace:."
   dependencies:
-    cz-conventional-changelog: ^3.1.0
+    cz-conventional-changelog: ^3.2.0
     husky: ^4.2.5
     lerna: ^3.20.2
     lint-staged: ^10.2.2
@@ -6146,15 +6137,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rechoir@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "rechoir@npm:0.6.2"
-  dependencies:
-    resolve: ^1.1.6
-  checksum: 2/6646a6bce733282d182bf04816b15d4e2d63736b3453cf62a8568aaa1399621a73b3942315161f549e090f9a3c61bc09f4cb674f928c369a40037621e10295bd
-  languageName: node
-  linkType: hard
-
 "redent@npm:^1.0.0":
   version: 1.0.0
   resolution: "redent@npm:1.0.0"
@@ -6327,7 +6309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@^1.1.6, resolve@^1.10.0":
+resolve@^1.10.0:
   version: 1.17.0
   resolution: "resolve@npm:1.17.0"
   dependencies:
@@ -6336,7 +6318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>":
   version: 1.17.0
   resolution: "resolve@patch:resolve@npm%3A1.17.0#builtin<compat/resolve>::version=1.17.0&hash=e7677c"
   dependencies:
@@ -6548,19 +6530,6 @@ __metadata:
   version: 1.7.2
   resolution: "shell-quote@npm:1.7.2"
   checksum: 2/3b3d06814ca464cde8594c27bdd57a1f4c06b26ad2988b08b5819f97ac1edfd7cb7313fda1c909da33211972c72c5a7906b7da2b62078109f9d3274d3f404fa9
-  languageName: node
-  linkType: hard
-
-"shelljs@npm:0.7.6":
-  version: 0.7.6
-  resolution: "shelljs@npm:0.7.6"
-  dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: ./bin/shjs
-  checksum: 2/cc5b7e565cb87928b293f7124aa88b216cb7ecbe2e2cf2ccba8403ad2cc537d64879b967a98fed131455e38c40691a39c82ab5891786a8a14b941591c0cbb894
   languageName: node
   linkType: hard
 
@@ -7326,13 +7295,13 @@ __metadata:
   linkType: hard
 
 "uglify-js@npm:^3.1.4":
-  version: 3.9.1
-  resolution: "uglify-js@npm:3.9.1"
+  version: 3.9.2
+  resolution: "uglify-js@npm:3.9.2"
   dependencies:
     commander: ~2.20.3
   bin:
     uglifyjs: bin/uglifyjs
-  checksum: 2/bb667077492d8b0f2c9591a0420692302056c6df66f1c3d0bf4771854025147b6ece41159712f91374755a48e75694de9838c75a0464d4b7f96cbd2eb1c5fa2f
+  checksum: 2/cb5a34033adf39470a20cda9f0b3f0be4487cbde22d071b5dbc565eafe2f55415627751ec01432f90b980f4b3724bcbb82655e66f1ca0f3c0f2978de8fdbff17
   languageName: node
   linkType: hard
 
