@@ -47,7 +47,7 @@ jobs:
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
       - name: Restore Poetry cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v1.2.0
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
           key: ${{ runner.os }}-ai-poetry-cache-${{ hashFiles('**/poetry.lock') }}
@@ -82,7 +82,7 @@ jobs:
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
       - name: Restore Poetry cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v1.2.0
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
           key: ${{ runner.os }}-ai-poetry-cache-${{ hashFiles('**/poetry.lock') }}
