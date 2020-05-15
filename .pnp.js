@@ -6610,7 +6610,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prettier-plugin-toml-npm-0.3.1-a4a923f5b6-3.zip/node_modules/prettier-plugin-toml/",
           "packageDependencies": [
             ["prettier-plugin-toml", "npm:0.3.1"],
-            ["@toml-tools/lexer", "npm:0.3.1"],
             ["@toml-tools/parser", "npm:0.3.1"],
             ["prettier", "npm:1.19.1"]
           ],
