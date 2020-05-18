@@ -31,15 +31,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.9.2":
-  version: 7.9.6
-  resolution: "@babel/runtime@npm:7.9.6"
-  dependencies:
-    regenerator-runtime: ^0.13.4
-  checksum: 3/ff94d6861daea1c6e4639f2e6d22992539fab45ce6ef468de37e0dd0df109aee94276f72fc962b48946dde0b8554a71343fc398ea5a565cab59c596829ccc2ad
-  languageName: node
-  linkType: hard
-
 "@commitlint/execute-rule@npm:^8.3.4":
   version: 8.3.4
   resolution: "@commitlint/execute-rule@npm:8.3.4"
@@ -963,7 +954,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.2.2
+    lint-staged: ^10.2.4
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettylint: ^1.0.0
@@ -1846,16 +1837,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "chalk@npm:3.0.0"
-  dependencies:
-    ansi-styles: ^4.1.0
-    supports-color: ^7.1.0
-  checksum: 3/4018b0c812880da595d0d7b8159939527b72f58d3370e2fdc1a24d9abd460bab851695d7eca014082f110d5702d1221b05493fec430ccce375de907d50cc48c1
-  languageName: node
-  linkType: hard
-
 "chalk@npm:^4.0.0":
   version: 4.0.0
   resolution: "chalk@npm:4.0.0"
@@ -2047,7 +2028,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^5.0.0":
+"commander@npm:^5.1.0":
   version: 5.1.0
   resolution: "commander@npm:5.1.0"
   checksum: 3/d16141ea7f580945156fb8a06de2834c4647c7d9d3732ebd4534ab8e0b7c64747db301e18f2b840f28ea8fef51f7a8d6178e674b45a21931f0b65ff1c7f476b3
@@ -2678,7 +2659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enquirer@npm:^2.3.4":
+"enquirer@npm:^2.3.5":
   version: 2.3.5
   resolution: "enquirer@npm:2.3.5"
   dependencies:
@@ -2829,7 +2810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^4.0.0":
+"execa@npm:^4.0.1":
   version: 4.0.1
   resolution: "execa@npm:4.0.1"
   dependencies:
@@ -4357,7 +4338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kind-of@npm:^6.0.0, kind-of@npm:^6.0.2":
+"kind-of@npm:^6.0.0, kind-of@npm:^6.0.2, kind-of@npm:^6.0.3":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
   checksum: 3/5de5d6577796af87a983199d6350ed41c670abec4a306cc43ca887c1afdbd6b89af9ab00016e3ca17eb7ad89ebfd9bb817d33baa89f855c6c95398a8b8abbf08
@@ -4399,18 +4380,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.2":
-  version: 10.2.2
-  resolution: "lint-staged@npm:10.2.2"
+"lint-staged@npm:^10.2.4":
+  version: 10.2.4
+  resolution: "lint-staged@npm:10.2.4"
   dependencies:
     chalk: ^4.0.0
-    commander: ^5.0.0
+    commander: ^5.1.0
     cosmiconfig: ^6.0.0
     debug: ^4.1.1
     dedent: ^0.7.0
-    execa: ^4.0.0
-    listr2: 1.3.8
-    log-symbols: ^3.0.0
+    execa: ^4.0.1
+    listr2: ^2.0.2
+    log-symbols: ^4.0.0
     micromatch: ^4.0.2
     normalize-path: ^3.0.0
     please-upgrade-node: ^3.2.0
@@ -4418,29 +4399,29 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 3/c994d6c260ecde00834c9947412df894471d2cb6433cc14a7efa649133179d694bc5f241dcfe528bcb6d11eb758efc0f651a18233e087fbd4719ba40c8320f62
+  checksum: 3/3df6ef007b2f13783d36a15bc54e69be5601346522f903ef226074f4061bd7a36758dd480fedc0589a1e5abdef6f9e025a40b8d7716b496b9022e22aa2f04760
   languageName: node
   linkType: hard
 
-"listr2@npm:1.3.8":
-  version: 1.3.8
-  resolution: "listr2@npm:1.3.8"
+"listr2@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "listr2@npm:2.0.2"
   dependencies:
     "@samverschueren/stream-to-observable": ^0.3.0
-    chalk: ^3.0.0
+    chalk: ^4.0.0
     cli-cursor: ^3.1.0
     cli-truncate: ^2.1.0
     elegant-spinner: ^2.0.0
-    enquirer: ^2.3.4
+    enquirer: ^2.3.5
     figures: ^3.2.0
     indent-string: ^4.0.0
     log-update: ^4.0.0
     p-map: ^4.0.0
     pad: ^3.2.0
-    rxjs: ^6.3.3
+    rxjs: ^6.5.5
     through: ^2.3.8
     uuid: ^7.0.2
-  checksum: 3/95874cce1d0f26d072398e06c3b78fdb40813b393b7b4d9a3d53fea4502d5ca43b7cb095a64cc09666d3a57c4bafbf4f60a45c840fa91429ab8c1a667b8e7e34
+  checksum: 3/7ea67a3f88ce19e7aed3e09ff6e31926d91ca9148100785faa2c060bcf938fadf4c26fce4088224c3e84259c41d9f568c63d33422cba13d5f74b4c1bb0b2e059
   languageName: node
   linkType: hard
 
@@ -4602,12 +4583,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"log-symbols@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "log-symbols@npm:3.0.0"
+"log-symbols@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "log-symbols@npm:4.0.0"
   dependencies:
-    chalk: ^2.4.2
-  checksum: 3/bfa7cceaea16d7e378b4f6a16e22c5c78bc4250350a84d653766927bdf27e5b94015f616e193bc275e80d13f882867ddf224a3c6c152e24289ed5e58d84d306e
+    chalk: ^4.0.0
+  checksum: 3/2cbdb0427d1853f2bd36645bff42aaca200902284f28aadacb3c0fa4c8c43fe6bfb71b5d61ab08b67063d066d7c55b8bf5fbb43b03e4a150dbcdd643e9cd1dbf
   languageName: node
   linkType: hard
 
@@ -4738,7 +4719,7 @@ __metadata:
     cz-conventional-changelog: ^3.2.0
     husky: ^4.2.5
     lerna: ^3.21.0
-    lint-staged: ^10.2.2
+    lint-staged: ^10.2.4
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
@@ -4924,12 +4905,13 @@ __metadata:
   linkType: hard
 
 "minimist-options@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "minimist-options@npm:4.0.2"
+  version: 4.1.0
+  resolution: "minimist-options@npm:4.1.0"
   dependencies:
     arrify: ^1.0.1
     is-plain-obj: ^1.1.0
-  checksum: 3/07e8e0529e4b4f7055df1d40a49be115f862d513509cb3bd168e4a9a7a9476a2c3d43d81944078b6d7995ec897c58217a94b6b81f4ef68b136fba8a39f7a97cd
+    kind-of: ^6.0.3
+  checksum: 3/51f1aba56f9c2c2986d85c98a29abec26c632019abd2966a151029cf2cf0903d81894781460e0d5755d4f899bb3884bc86fc9af36ab31469a38d82cf74f4f651
   languageName: node
   linkType: hard
 
@@ -6253,13 +6235,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerator-runtime@npm:^0.13.4":
-  version: 0.13.5
-  resolution: "regenerator-runtime@npm:0.13.5"
-  checksum: 3/8d8ee0eca26e0491085033caf2b1b95379c4db21e38d79cde52bbd4014a3865eee26ec0f4f958682e8600f185f2f5dbcd8c6685b9b9261639767929c19b5bcd2
-  languageName: node
-  linkType: hard
-
 "regex-not@npm:^1.0.0, regex-not@npm:^1.0.2":
   version: 1.0.2
   resolution: "regex-not@npm:1.0.2"
@@ -6477,7 +6452,7 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^6.3.3, rxjs@npm:^6.4.0, rxjs@npm:^6.5.5":
+"rxjs@npm:^6.4.0, rxjs@npm:^6.5.5":
   version: 6.5.5
   resolution: "rxjs@npm:6.5.5"
   dependencies:
@@ -7792,11 +7767,9 @@ resolve@^1.10.0:
   linkType: hard
 
 "yaml@npm:^1.7.2":
-  version: 1.9.2
-  resolution: "yaml@npm:1.9.2"
-  dependencies:
-    "@babel/runtime": ^7.9.2
-  checksum: 3/098baa974d33f13c3a93efba4e83c8992f533e78463010afc41a9c2ae574890fa670d91e8d18ffaf9af616c3a0683a4e93b69057bd143f53306570a117ebcb7f
+  version: 1.10.0
+  resolution: "yaml@npm:1.10.0"
+  checksum: 3/d4cc9f9724f8d0aebc2cf52e4e6aa7059f12d50deb54b5225d103462fb2af36e5c0bb419101ca4b1f0cd3b4db9e4139cf2c690e863ac6227648d39d6f4e2522c
   languageName: node
   linkType: hard
 
