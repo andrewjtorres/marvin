@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "lerna",
-        "npm:3.21.0"
+        "npm:3.22.0"
       ],
       [
         "lint-staged",
@@ -80,7 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["cz-conventional-changelog", "npm:3.2.0"],
             ["husky", "npm:4.2.5"],
-            ["lerna", "npm:3.21.0"],
+            ["lerna", "npm:3.22.0"],
             ["lint-staged", "npm:10.2.6"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
@@ -411,10 +411,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/conventional-commits", [
-        ["npm:3.18.5", {
-          "packageLocation": "./.yarn/cache/@lerna-conventional-commits-npm-3.18.5-95ac321f31-3.zip/node_modules/@lerna/conventional-commits/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/@lerna-conventional-commits-npm-3.22.0-e5908c5ef8-3.zip/node_modules/@lerna/conventional-commits/",
           "packageDependencies": [
-            ["@lerna/conventional-commits", "npm:3.18.5"],
+            ["@lerna/conventional-commits", "npm:3.22.0"],
             ["@lerna/validation-error", "npm:3.13.0"],
             ["conventional-changelog-angular", "npm:5.0.10"],
             ["conventional-changelog-core", "npm:3.2.3"],
@@ -431,10 +431,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/create", [
-        ["npm:3.21.0", {
-          "packageLocation": "./.yarn/cache/@lerna-create-npm-3.21.0-2a86422859-3.zip/node_modules/@lerna/create/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/@lerna-create-npm-3.22.0-80f0592ea2-3.zip/node_modules/@lerna/create/",
           "packageDependencies": [
-            ["@lerna/create", "npm:3.21.0"],
+            ["@lerna/create", "npm:3.22.0"],
             ["@evocateur/pacote", "npm:9.6.5"],
             ["@lerna/child-process", "npm:3.16.5"],
             ["@lerna/command", "npm:3.21.0"],
@@ -558,12 +558,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/github-client", [
-        ["npm:3.16.5", {
-          "packageLocation": "./.yarn/cache/@lerna-github-client-npm-3.16.5-e021b01af8-3.zip/node_modules/@lerna/github-client/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/@lerna-github-client-npm-3.22.0-c140318446-3.zip/node_modules/@lerna/github-client/",
           "packageDependencies": [
-            ["@lerna/github-client", "npm:3.16.5"],
+            ["@lerna/github-client", "npm:3.22.0"],
             ["@lerna/child-process", "npm:3.16.5"],
-            ["@octokit/plugin-enterprise-rest", "npm:3.6.2"],
+            ["@octokit/plugin-enterprise-rest", "npm:6.0.1"],
             ["@octokit/rest", "npm:16.43.1"],
             ["git-url-parse", "npm:11.1.2"],
             ["npmlog", "npm:4.1.2"]
@@ -604,10 +604,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/import", [
-        ["npm:3.21.0", {
-          "packageLocation": "./.yarn/cache/@lerna-import-npm-3.21.0-7a925bf7ff-3.zip/node_modules/@lerna/import/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/@lerna-import-npm-3.22.0-99c443d8d5-3.zip/node_modules/@lerna/import/",
           "packageDependencies": [
-            ["@lerna/import", "npm:3.21.0"],
+            ["@lerna/import", "npm:3.22.0"],
             ["@lerna/child-process", "npm:3.16.5"],
             ["@lerna/command", "npm:3.21.0"],
             ["@lerna/prompt", "npm:3.18.5"],
@@ -889,10 +889,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/publish", [
-        ["npm:3.21.0", {
-          "packageLocation": "./.yarn/cache/@lerna-publish-npm-3.21.0-cc532e2247-3.zip/node_modules/@lerna/publish/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/@lerna-publish-npm-3.22.0-635f542fd7-3.zip/node_modules/@lerna/publish/",
           "packageDependencies": [
-            ["@lerna/publish", "npm:3.21.0"],
+            ["@lerna/publish", "npm:3.22.0"],
             ["@evocateur/libnpmaccess", "npm:3.1.2"],
             ["@evocateur/npm-registry-fetch", "npm:4.0.0"],
             ["@evocateur/pacote", "npm:9.6.5"],
@@ -914,7 +914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@lerna/run-lifecycle", "npm:3.16.2"],
             ["@lerna/run-topologically", "npm:3.18.5"],
             ["@lerna/validation-error", "npm:3.13.0"],
-            ["@lerna/version", "npm:3.21.0"],
+            ["@lerna/version", "npm:3.22.0"],
             ["figgy-pudding", "npm:3.5.2"],
             ["fs-extra", "npm:8.1.0"],
             ["npm-package-arg", "npm:6.1.1"],
@@ -1065,16 +1065,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/version", [
-        ["npm:3.21.0", {
-          "packageLocation": "./.yarn/cache/@lerna-version-npm-3.21.0-0cd24cbe50-3.zip/node_modules/@lerna/version/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/@lerna-version-npm-3.22.0-713d163573-3.zip/node_modules/@lerna/version/",
           "packageDependencies": [
-            ["@lerna/version", "npm:3.21.0"],
+            ["@lerna/version", "npm:3.22.0"],
             ["@lerna/check-working-tree", "npm:3.16.5"],
             ["@lerna/child-process", "npm:3.16.5"],
             ["@lerna/collect-updates", "npm:3.20.0"],
             ["@lerna/command", "npm:3.21.0"],
-            ["@lerna/conventional-commits", "npm:3.18.5"],
-            ["@lerna/github-client", "npm:3.16.5"],
+            ["@lerna/conventional-commits", "npm:3.22.0"],
+            ["@lerna/github-client", "npm:3.22.0"],
             ["@lerna/gitlab-client", "npm:3.15.0"],
             ["@lerna/output", "npm:3.13.0"],
             ["@lerna/prerelease-id-from-version", "npm:3.16.0"],
@@ -1166,10 +1166,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@octokit/plugin-enterprise-rest", [
-        ["npm:3.6.2", {
-          "packageLocation": "./.yarn/cache/@octokit-plugin-enterprise-rest-npm-3.6.2-86af792b1c-3.zip/node_modules/@octokit/plugin-enterprise-rest/",
+        ["npm:6.0.1", {
+          "packageLocation": "./.yarn/cache/@octokit-plugin-enterprise-rest-npm-6.0.1-e1c802acb0-3.zip/node_modules/@octokit/plugin-enterprise-rest/",
           "packageDependencies": [
-            ["@octokit/plugin-enterprise-rest", "npm:3.6.2"]
+            ["@octokit/plugin-enterprise-rest", "npm:6.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -1806,10 +1806,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["aws4", [
-        ["npm:1.9.1", {
-          "packageLocation": "./.yarn/cache/aws4-npm-1.9.1-4163942423-3.zip/node_modules/aws4/",
+        ["npm:1.10.0", {
+          "packageLocation": "./.yarn/cache/aws4-npm-1.10.0-74d09999c1-3.zip/node_modules/aws4/",
           "packageDependencies": [
-            ["aws4", "npm:1.9.1"]
+            ["aws4", "npm:1.10.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2637,7 +2637,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cosmiconfig", "npm:5.2.1"],
             ["import-fresh", "npm:2.0.0"],
             ["is-directory", "npm:0.3.1"],
-            ["js-yaml", "npm:3.13.1"],
+            ["js-yaml", "npm:3.14.0"],
             ["parse-json", "npm:4.0.0"]
           ],
           "linkType": "HARD",
@@ -3225,10 +3225,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.0.1", {
-          "packageLocation": "./.yarn/cache/execa-npm-4.0.1-3dd7f3e85f-3.zip/node_modules/execa/",
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/cache/execa-npm-4.0.2-4978b1f214-3.zip/node_modules/execa/",
           "packageDependencies": [
-            ["execa", "npm:4.0.1"],
+            ["execa", "npm:4.0.2"],
             ["cross-spawn", "npm:7.0.2"],
             ["get-stream", "npm:5.1.0"],
             ["human-signals", "npm:1.1.1"],
@@ -4791,10 +4791,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["js-yaml", [
-        ["npm:3.13.1", {
-          "packageLocation": "./.yarn/cache/js-yaml-npm-3.13.1-3a28ff3b75-3.zip/node_modules/js-yaml/",
+        ["npm:3.14.0", {
+          "packageLocation": "./.yarn/cache/js-yaml-npm-3.14.0-7ecf74b3d2-3.zip/node_modules/js-yaml/",
           "packageDependencies": [
-            ["js-yaml", "npm:3.13.1"],
+            ["js-yaml", "npm:3.14.0"],
             ["argparse", "npm:1.0.10"],
             ["esprima", "npm:4.0.1"]
           ],
@@ -4911,26 +4911,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lerna", [
-        ["npm:3.21.0", {
-          "packageLocation": "./.yarn/cache/lerna-npm-3.21.0-655f83aa38-3.zip/node_modules/lerna/",
+        ["npm:3.22.0", {
+          "packageLocation": "./.yarn/cache/lerna-npm-3.22.0-891935a59c-3.zip/node_modules/lerna/",
           "packageDependencies": [
-            ["lerna", "npm:3.21.0"],
+            ["lerna", "npm:3.22.0"],
             ["@lerna/add", "npm:3.21.0"],
             ["@lerna/bootstrap", "npm:3.21.0"],
             ["@lerna/changed", "npm:3.21.0"],
             ["@lerna/clean", "npm:3.21.0"],
             ["@lerna/cli", "npm:3.18.5"],
-            ["@lerna/create", "npm:3.21.0"],
+            ["@lerna/create", "npm:3.22.0"],
             ["@lerna/diff", "npm:3.21.0"],
             ["@lerna/exec", "npm:3.21.0"],
-            ["@lerna/import", "npm:3.21.0"],
+            ["@lerna/import", "npm:3.22.0"],
             ["@lerna/info", "npm:3.21.0"],
             ["@lerna/init", "npm:3.21.0"],
             ["@lerna/link", "npm:3.21.0"],
             ["@lerna/list", "npm:3.21.0"],
-            ["@lerna/publish", "npm:3.21.0"],
+            ["@lerna/publish", "npm:3.22.0"],
             ["@lerna/run", "npm:3.21.0"],
-            ["@lerna/version", "npm:3.21.0"],
+            ["@lerna/version", "npm:3.22.0"],
             ["import-local", "npm:2.0.0"],
             ["npmlog", "npm:4.1.2"]
           ],
@@ -4957,7 +4957,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cosmiconfig", "npm:6.0.0"],
             ["debug", "virtual:48ce50dbc7e43df5ad33585d1cd42646648b342639dd0314c5226d7a78baa48cf1b99239959d19d5ff6b33f858d42ed18054a57817d32e641a29200e098113d6#npm:4.1.1"],
             ["dedent", "npm:0.7.0"],
-            ["execa", "npm:4.0.1"],
+            ["execa", "npm:4.0.2"],
             ["listr2", "npm:2.0.4"],
             ["log-symbols", "npm:4.0.0"],
             ["micromatch", "npm:4.0.2"],
@@ -5317,7 +5317,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["marvin", "workspace:."],
             ["cz-conventional-changelog", "npm:3.2.0"],
             ["husky", "npm:4.2.5"],
-            ["lerna", "npm:3.21.0"],
+            ["lerna", "npm:3.22.0"],
             ["lint-staged", "npm:10.2.6"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
@@ -7019,7 +7019,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["request", "npm:2.88.2"],
             ["aws-sign2", "npm:0.7.0"],
-            ["aws4", "npm:1.9.1"],
+            ["aws4", "npm:1.10.0"],
             ["caseless", "npm:0.12.0"],
             ["combined-stream", "npm:1.0.8"],
             ["extend", "npm:3.0.2"],
@@ -7530,10 +7530,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["spdx-correct", [
-        ["npm:3.1.0", {
-          "packageLocation": "./.yarn/cache/spdx-correct-npm-3.1.0-9ad640b3ef-3.zip/node_modules/spdx-correct/",
+        ["npm:3.1.1", {
+          "packageLocation": "./.yarn/cache/spdx-correct-npm-3.1.1-47f574c27a-3.zip/node_modules/spdx-correct/",
           "packageDependencies": [
-            ["spdx-correct", "npm:3.1.0"],
+            ["spdx-correct", "npm:3.1.1"],
             ["spdx-expression-parse", "npm:3.0.1"],
             ["spdx-license-ids", "npm:3.0.5"]
           ],
@@ -8396,7 +8396,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/validate-npm-package-license-npm-3.0.4-7af8adc7a8-3.zip/node_modules/validate-npm-package-license/",
           "packageDependencies": [
             ["validate-npm-package-license", "npm:3.0.4"],
-            ["spdx-correct", "npm:3.1.0"],
+            ["spdx-correct", "npm:3.1.1"],
             ["spdx-expression-parse", "npm:3.0.1"]
           ],
           "linkType": "HARD",
