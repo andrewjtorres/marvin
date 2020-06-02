@@ -43,14 +43,6 @@
     "prettylint": "^1.0.0",
     "rxjs": "^6.5.5"
   },
-  "dependenciesMeta": {
-    "core-js": {
-      "built": false
-    },
-    "husky": {
-      "built": false
-    }
-  },
   "engines": {
     "node": ">=12.16",
     "yarn": ">=1.22"
