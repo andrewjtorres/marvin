@@ -743,9 +743,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna/publish@npm:3.22.0":
-  version: 3.22.0
-  resolution: "@lerna/publish@npm:3.22.0"
+"@lerna/publish@npm:3.22.1":
+  version: 3.22.1
+  resolution: "@lerna/publish@npm:3.22.1"
   dependencies:
     "@evocateur/libnpmaccess": ^3.1.2
     "@evocateur/npm-registry-fetch": ^4.0.0
@@ -768,7 +768,7 @@ __metadata:
     "@lerna/run-lifecycle": 3.16.2
     "@lerna/run-topologically": 3.18.5
     "@lerna/validation-error": 3.13.0
-    "@lerna/version": 3.22.0
+    "@lerna/version": 3.22.1
     figgy-pudding: ^3.5.1
     fs-extra: ^8.1.0
     npm-package-arg: ^6.1.0
@@ -777,7 +777,7 @@ __metadata:
     p-map: ^2.1.0
     p-pipe: ^1.2.0
     semver: ^6.2.0
-  checksum: 3/5f7a82e3c0809bf5538ab08ab3dee5c0d1cfee6c3f4fc1234443d844d4ece9ff52d041a7d324a371abedceabe716c2c3cc9ee0f41f41d5b548f41954ab4d9374
+  checksum: 3/70b270838e7ba06f6da34772938e224443d016cc1ed400972ee2347debc1f0b3fc9cf579a7cf928d23ddb92978b1c74d015caf933d80abec0a41cdc2d8ccb1c8
   languageName: node
   linkType: hard
 
@@ -906,9 +906,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna/version@npm:3.22.0":
-  version: 3.22.0
-  resolution: "@lerna/version@npm:3.22.0"
+"@lerna/version@npm:3.22.1":
+  version: 3.22.1
+  resolution: "@lerna/version@npm:3.22.1"
   dependencies:
     "@lerna/check-working-tree": 3.16.5
     "@lerna/child-process": 3.16.5
@@ -936,7 +936,7 @@ __metadata:
     slash: ^2.0.0
     temp-write: ^3.4.0
     write-json-file: ^3.2.0
-  checksum: 3/ad43e46f116787525cca7cae70af920ef5929afae12b519a075c5dd0a50637fd4ce1ad7a6e4562a92206780f0bcf0312b21c72a434e2fa5a0e2bb8a958150e35
+  checksum: 3/406350f23130a78d481800369c2b31069ccee60e55eaf7fb9274e24913d36cb8be2054ac1143a104468ed5a032284840626602ac19d947004aafd8e2e0321483
   languageName: node
   linkType: hard
 
@@ -1823,12 +1823,12 @@ __metadata:
   linkType: hard
 
 "chalk@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "chalk@npm:4.0.0"
+  version: 4.1.0
+  resolution: "chalk@npm:4.1.0"
   dependencies:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
-  checksum: 3/12b01a228b5ca2f03a82684c62d54c06e2ba2f7b81dd08fac56c5b9288958dd24f9cae866e140df5c29cb736059cb4be0165157ebb0b15039cc1ea511a2dab60
+  checksum: 3/f860285b419f9e925c2db0f45ffa88aa8794c14b80cc5d01ff30930bcfc384996606362706f0829cf557f6d36152a5fb2d227ad63c4bc90e2ec9e9dbed4a3c07
   languageName: node
   linkType: hard
 
@@ -4323,9 +4323,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lerna@npm:^3.22.0":
-  version: 3.22.0
-  resolution: "lerna@npm:3.22.0"
+"lerna@npm:^3.22.1":
+  version: 3.22.1
+  resolution: "lerna@npm:3.22.1"
   dependencies:
     "@lerna/add": 3.21.0
     "@lerna/bootstrap": 3.21.0
@@ -4340,14 +4340,14 @@ __metadata:
     "@lerna/init": 3.21.0
     "@lerna/link": 3.21.0
     "@lerna/list": 3.21.0
-    "@lerna/publish": 3.22.0
+    "@lerna/publish": 3.22.1
     "@lerna/run": 3.21.0
-    "@lerna/version": 3.22.0
+    "@lerna/version": 3.22.1
     import-local: ^2.0.0
     npmlog: ^4.1.2
   bin:
     lerna: cli.js
-  checksum: 3/e74830beed260c48fedbe9461a5a47cbcb9d7ad52adc55b2160e4ec4bf449b1f588dbfc53628f0990edd72d3a70ca0c6648f345dfa42c0c09f027d5522fe2bec
+  checksum: 3/ee9d147889ea0f1fb6730e52b8537fc78cea5a289ed625a4dbe9e0283b926ac991133e3077c8cbadd37d12d6a4994c159b811d610636b05bde9bab12bc1352a0
   languageName: node
   linkType: hard
 
@@ -4694,7 +4694,7 @@ __metadata:
   dependencies:
     cz-conventional-changelog: ^3.2.0
     husky: ^4.2.5
-    lerna: ^3.22.0
+    lerna: ^3.22.1
     lint-staged: ^10.2.9
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
