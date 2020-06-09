@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "lerna",
-        "npm:3.22.0"
+        "npm:3.22.1"
       ],
       [
         "lint-staged",
@@ -80,7 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["cz-conventional-changelog", "npm:3.2.0"],
             ["husky", "npm:4.2.5"],
-            ["lerna", "npm:3.22.0"],
+            ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:10.2.9"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
@@ -889,10 +889,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/publish", [
-        ["npm:3.22.0", {
-          "packageLocation": "./.yarn/cache/@lerna-publish-npm-3.22.0-635f542fd7-3.zip/node_modules/@lerna/publish/",
+        ["npm:3.22.1", {
+          "packageLocation": "./.yarn/cache/@lerna-publish-npm-3.22.1-469707df67-3.zip/node_modules/@lerna/publish/",
           "packageDependencies": [
-            ["@lerna/publish", "npm:3.22.0"],
+            ["@lerna/publish", "npm:3.22.1"],
             ["@evocateur/libnpmaccess", "npm:3.1.2"],
             ["@evocateur/npm-registry-fetch", "npm:4.0.0"],
             ["@evocateur/pacote", "npm:9.6.5"],
@@ -914,7 +914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@lerna/run-lifecycle", "npm:3.16.2"],
             ["@lerna/run-topologically", "npm:3.18.5"],
             ["@lerna/validation-error", "npm:3.13.0"],
-            ["@lerna/version", "npm:3.22.0"],
+            ["@lerna/version", "npm:3.22.1"],
             ["figgy-pudding", "npm:3.5.2"],
             ["fs-extra", "npm:8.1.0"],
             ["npm-package-arg", "npm:6.1.1"],
@@ -1065,10 +1065,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@lerna/version", [
-        ["npm:3.22.0", {
-          "packageLocation": "./.yarn/cache/@lerna-version-npm-3.22.0-713d163573-3.zip/node_modules/@lerna/version/",
+        ["npm:3.22.1", {
+          "packageLocation": "./.yarn/cache/@lerna-version-npm-3.22.1-97f4c3a7dd-3.zip/node_modules/@lerna/version/",
           "packageDependencies": [
-            ["@lerna/version", "npm:3.22.0"],
+            ["@lerna/version", "npm:3.22.1"],
             ["@lerna/check-working-tree", "npm:3.16.5"],
             ["@lerna/child-process", "npm:3.16.5"],
             ["@lerna/collect-updates", "npm:3.20.0"],
@@ -2097,10 +2097,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/chalk-npm-4.0.0-50e5418ea0-3.zip/node_modules/chalk/",
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/chalk-npm-4.1.0-c746e252ba-3.zip/node_modules/chalk/",
           "packageDependencies": [
-            ["chalk", "npm:4.0.0"],
+            ["chalk", "npm:4.1.0"],
             ["ansi-styles", "npm:4.2.1"],
             ["supports-color", "npm:7.1.0"]
           ],
@@ -4098,7 +4098,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/unplugged/husky-npm-4.2.5-30d80a2ef8/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.2.5"],
-            ["chalk", "npm:4.0.0"],
+            ["chalk", "npm:4.1.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.6.0"],
             ["cosmiconfig", "npm:6.0.0"],
@@ -4861,10 +4861,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lerna", [
-        ["npm:3.22.0", {
-          "packageLocation": "./.yarn/cache/lerna-npm-3.22.0-891935a59c-3.zip/node_modules/lerna/",
+        ["npm:3.22.1", {
+          "packageLocation": "./.yarn/cache/lerna-npm-3.22.1-7ce162be33-3.zip/node_modules/lerna/",
           "packageDependencies": [
-            ["lerna", "npm:3.22.0"],
+            ["lerna", "npm:3.22.1"],
             ["@lerna/add", "npm:3.21.0"],
             ["@lerna/bootstrap", "npm:3.21.0"],
             ["@lerna/changed", "npm:3.21.0"],
@@ -4878,9 +4878,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@lerna/init", "npm:3.21.0"],
             ["@lerna/link", "npm:3.21.0"],
             ["@lerna/list", "npm:3.21.0"],
-            ["@lerna/publish", "npm:3.22.0"],
+            ["@lerna/publish", "npm:3.22.1"],
             ["@lerna/run", "npm:3.21.0"],
-            ["@lerna/version", "npm:3.22.0"],
+            ["@lerna/version", "npm:3.22.1"],
             ["import-local", "npm:2.0.0"],
             ["npmlog", "npm:4.1.2"]
           ],
@@ -4901,7 +4901,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lint-staged-npm-10.2.9-67cfdc8087-3.zip/node_modules/lint-staged/",
           "packageDependencies": [
             ["lint-staged", "npm:10.2.9"],
-            ["chalk", "npm:4.0.0"],
+            ["chalk", "npm:4.1.0"],
             ["cli-truncate", "npm:2.1.0"],
             ["commander", "npm:5.1.0"],
             ["cosmiconfig", "npm:6.0.0"],
@@ -4925,7 +4925,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/listr2-virtual-d4ece8d5c1/0/cache/listr2-npm-2.1.3-957194925f-3.zip/node_modules/listr2/",
           "packageDependencies": [
             ["listr2", "virtual:67cfdc808746f9eedc956d475c7543ec0aa90dcc7bf74a6345b8626731482d384143d83cfeff941f4da647ed312897414700e5037bbebb82627685fd7fbe3246#npm:2.1.3"],
-            ["chalk", "npm:4.0.0"],
+            ["chalk", "npm:4.1.0"],
             ["cli-truncate", "npm:2.1.0"],
             ["enquirer", "npm:2.3.5"],
             ["figures", "npm:3.2.0"],
@@ -5121,7 +5121,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/log-symbols-npm-4.0.0-7291c4d053-3.zip/node_modules/log-symbols/",
           "packageDependencies": [
             ["log-symbols", "npm:4.0.0"],
-            ["chalk", "npm:4.0.0"]
+            ["chalk", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -5266,7 +5266,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["marvin", "workspace:."],
             ["cz-conventional-changelog", "npm:3.2.0"],
             ["husky", "npm:4.2.5"],
-            ["lerna", "npm:3.22.0"],
+            ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:10.2.9"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
