@@ -954,7 +954,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.2.9
+    lint-staged: ^10.2.10
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettylint: ^1.0.0
@@ -979,22 +979,22 @@ __metadata:
   linkType: hard
 
 "@octokit/auth-token@npm:^2.4.0":
-  version: 2.4.1
-  resolution: "@octokit/auth-token@npm:2.4.1"
+  version: 2.4.2
+  resolution: "@octokit/auth-token@npm:2.4.2"
   dependencies:
-    "@octokit/types": ^4.0.1
-  checksum: 3/afe5114bf785bcf4c0a658e2d1886940e45d57451f708aaeb3b993e14e0518dae08653ec878507305ed4f6765428185135dad12a1374d7d419ad9694a8ea33ae
+    "@octokit/types": ^5.0.0
+  checksum: 3/e3347630bbe4d22409879ac6aa166675410cef4fb0ac3ca734d2ab6fa49abf100b28d2de9b5ad347790686fd8d41897a21bbeb2d01f46d6f9ab0faf760f10b83
   languageName: node
   linkType: hard
 
 "@octokit/endpoint@npm:^6.0.1":
-  version: 6.0.2
-  resolution: "@octokit/endpoint@npm:6.0.2"
+  version: 6.0.3
+  resolution: "@octokit/endpoint@npm:6.0.3"
   dependencies:
-    "@octokit/types": ^4.0.1
+    "@octokit/types": ^5.0.0
     is-plain-object: ^3.0.0
     universal-user-agent: ^5.0.0
-  checksum: 3/802f14e87f946214321e18bf46c7998af2ec78254e60ad1d1a83983a5a6791691cd5444c3db318452c83a4c50492ffe5cc142260c37059c22fbb9bd297606be5
+  checksum: 3/abfa39e37667556125704446ad7f9007bc2beac114999d4faba27bc4c398e504cff8af4bddd0a6ec4758b9f4f95f4a861fd89a5d5b7063196276d9aa98fceeb9
   languageName: node
   linkType: hard
 
@@ -1054,18 +1054,18 @@ __metadata:
   linkType: hard
 
 "@octokit/request@npm:^5.2.0":
-  version: 5.4.4
-  resolution: "@octokit/request@npm:5.4.4"
+  version: 5.4.5
+  resolution: "@octokit/request@npm:5.4.5"
   dependencies:
     "@octokit/endpoint": ^6.0.1
     "@octokit/request-error": ^2.0.0
-    "@octokit/types": ^4.0.1
+    "@octokit/types": ^5.0.0
     deprecation: ^2.0.0
     is-plain-object: ^3.0.0
     node-fetch: ^2.3.0
     once: ^1.4.0
     universal-user-agent: ^5.0.0
-  checksum: 3/41ad864f5a46dea36b4c6ae2d11bbb85fdaedeb369a467738e131681539df897c81cbfb13bc0b9af740c98b389a694f8836b42bc026ff4ed86834dc4fd625fda
+  checksum: 3/b359c72b4a2a4ed08b6c1ab809ce4d0e946425cc7f787fb83eec6e7616389d710802d0e6c7665a62b6d025e0fd4544a709c6dbc69cf0ec919ea6ba3a13cb0d91
   languageName: node
   linkType: hard
 
@@ -1103,11 +1103,20 @@ __metadata:
   linkType: hard
 
 "@octokit/types@npm:^4.0.1":
-  version: 4.1.9
-  resolution: "@octokit/types@npm:4.1.9"
+  version: 4.1.10
+  resolution: "@octokit/types@npm:4.1.10"
   dependencies:
     "@types/node": ">= 8"
-  checksum: 3/52cb142f82494ff163ede265e5c8922c615b6f76e0176f119106d7d8f969591df40f2e8078141e9569a022db7385f220c46cfc41e384c125af67ef833d89603d
+  checksum: 3/a7f9f3ed1387abd6ead95b27b1229d0e6881656797317d61ea2797f0fd851a7598a2a743426e1e6eb5f3dc9c94fe9e15e19c8ee04193d0a9b9c7967e8fcbbf79
+  languageName: node
+  linkType: hard
+
+"@octokit/types@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@octokit/types@npm:5.0.0"
+  dependencies:
+    "@types/node": ">= 8"
+  checksum: 3/b3bca478d7aadcdba71fcb7962524b840d4dc2ceea4b4a479eeb7947aa48100109d60986578aca48ea447a611657293e47f0c5abff0f94afe5fe6c06fc5780d8
   languageName: node
   linkType: hard
 
@@ -1162,9 +1171,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 14.0.12
-  resolution: "@types/node@npm:14.0.12"
-  checksum: 3/3b5066456c3caeb3650cc991a61886e781560b1f18d113d9afd57be2c1d8876850e8c8977516ff28d60cfe148bfe5087256414b75f67a1648f5d40d697fe14d0
+  version: 14.0.13
+  resolution: "@types/node@npm:14.0.13"
+  checksum: 3/2f2be6f7f1a916b0f4d58949bd934a8e41c0dcb15c493c17c3eaf78da3065c09650030f0dfe2e8c11880d597ee001d7cd925129218037fdb4432e80f7d895673
   languageName: node
   linkType: hard
 
@@ -4358,9 +4367,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.9":
-  version: 10.2.9
-  resolution: "lint-staged@npm:10.2.9"
+"lint-staged@npm:^10.2.10":
+  version: 10.2.10
+  resolution: "lint-staged@npm:10.2.10"
   dependencies:
     chalk: ^4.0.0
     cli-truncate: 2.1.0
@@ -4379,7 +4388,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 3/5b34de94781244687bc3a1513f79e5ed9879aa7bd8609cffa9ea04f2e27e2967bf4a51d25164621762cb0f604aa01d20e1df188b0dc279cf8a6778f80f2b0b13
+  checksum: 3/2d31c76675aee3edd037a75153f9c7cf125e20bf89ea922b5cce420d9fc231ddecc41135b7210fbba5d516f54d15b202eb2ce790831da9db34efd5639fd7e37b
   languageName: node
   linkType: hard
 
@@ -4695,7 +4704,7 @@ __metadata:
     cz-conventional-changelog: ^3.2.0
     husky: ^4.2.5
     lerna: ^3.22.1
-    lint-staged: ^10.2.9
+    lint-staged: ^10.2.10
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
