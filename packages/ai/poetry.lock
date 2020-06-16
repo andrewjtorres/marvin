@@ -258,7 +258,7 @@ description = "Check PEP-8 naming conventions, plugin for flake8"
 name = "pep8-naming"
 optional = false
 python-versions = "*"
-version = "0.10.0"
+version = "0.11.0"
 
 [package.dependencies]
 flake8-polyfill = ">=1.0.2,<2"
@@ -422,7 +422,7 @@ python-versions = "*"
 version = "0.2.4"
 
 [metadata]
-content-hash = "3a26f9ab4f537bfad20cf95a44b8d271d7d4d37822bd5154bd10901010e03577"
+content-hash = "1e553515e733352812216ea64d28df7e9a47ee10228b5dac3f126955f914fa36"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -557,8 +557,8 @@ pathspec = [
     {file = "pathspec-0.8.0.tar.gz", hash = "sha256:da45173eb3a6f2a5a487efba21f050af2b41948be6ab52b6a1e3ff22bb8b7061"},
 ]
 pep8-naming = [
-    {file = "pep8-naming-0.10.0.tar.gz", hash = "sha256:f3b4a5f9dd72b991bf7d8e2a341d2e1aa3a884a769b5aaac4f56825c1763bf3a"},
-    {file = "pep8_naming-0.10.0-py2.py3-none-any.whl", hash = "sha256:5d9f1056cb9427ce344e98d1a7f5665710e2f20f748438e308995852cfa24164"},
+    {file = "pep8-naming-0.11.0.tar.gz", hash = "sha256:81747b7bb5aeb12acc3df451db3ce9d324531e226f46c35af53ce3926579f5c4"},
+    {file = "pep8_naming-0.11.0-py2.py3-none-any.whl", hash = "sha256:a078f3a32fb85142fd5e36ea15929c023e2143e66cbf7d42bf262079c7baddf9"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
