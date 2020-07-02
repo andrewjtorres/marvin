@@ -41,7 +41,7 @@
     "prettier": "^2.0.5",
     "prettier-plugin-toml": "^0.3.1",
     "prettylint": "^1.0.0",
-    "rxjs": "^6.5.5"
+    "rxjs": "^6.6.0"
   },
   "engines": {
     "node": ">=12.16",
