@@ -65,10 +65,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "prettylint",
         "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"
-      ],
-      [
-        "rxjs",
-        "npm:6.6.2"
       ]
     ],
     "locationBlacklistData": [
@@ -85,8 +81,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
             ["prettier-plugin-toml", "npm:0.3.1"],
-            ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"],
-            ["rxjs", "npm:6.6.2"]
+            ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -5240,8 +5235,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.5"],
             ["prettier-plugin-toml", "npm:0.3.1"],
-            ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"],
-            ["rxjs", "npm:6.6.2"]
+            ["prettylint", "virtual:6f9108c5afe10e0b68cd7d3c0060d89f555472dbc861b55a89c49eef65571904c12d79d3152a24dfb27ccd2b0daccfd0f352b79e6aacfe279acd0948e0c7a795#npm:1.0.0"]
           ],
           "linkType": "SOFT",
         }]
