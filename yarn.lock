@@ -4675,7 +4675,6 @@ __metadata:
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
-    rxjs: ^6.6.0
   dependenciesMeta:
     husky:
       built: false
