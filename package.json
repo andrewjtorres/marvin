@@ -44,7 +44,7 @@
     "rxjs": "^6.6.0"
   },
   "engines": {
-    "node": ">=12.16",
+    "node": ">=12.18",
     "yarn": ">=1.22"
   },
   "private": true,
