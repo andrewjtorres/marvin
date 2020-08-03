@@ -1,12 +1,6 @@
-# Compiled Output
-*.egg-info
+# Artifacts and Compiled Output
+ai.egg-info
 __pycache__
-dist
-
-# Dependencies
-.yarn/unplugged
-.yarn/build-state.yml
-node_modules
 
 # Static Typing
 .mypy_cache
