@@ -9,7 +9,7 @@ on:
 jobs:
   root_static_analysis:
     name: Root Static Analysis
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2.1.0
@@ -25,7 +25,7 @@ jobs:
         run: yarn lint:files
   ai_static_analysis:
     name: AI Static Analysis
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2.1.0
@@ -60,7 +60,7 @@ jobs:
         working-directory: packages/ai
   ai_test:
     name: AI Test
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2.1.0
