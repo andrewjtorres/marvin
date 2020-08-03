@@ -50,7 +50,7 @@ jobs:
         uses: actions/cache@v2.1.0
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
-          key: ai-poetry-cache-${{ hashFiles('**/poetry.lock') }}
+          key: ai-poetry-cache-${{ hashFiles('packages/ai/poetry.lock') }}
           restore-keys: ai-poetry-cache-
       - name: Install Python dependencies
         run: poetry install
@@ -85,7 +85,7 @@ jobs:
         uses: actions/cache@v2.1.0
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
-          key: ai-poetry-cache-${{ hashFiles('**/poetry.lock') }}
+          key: ai-poetry-cache-${{ hashFiles('packages/ai/poetry.lock') }}
           restore-keys: ai-poetry-cache-
       - name: Install Python dependencies
         run: poetry install
@@ -93,7 +93,7 @@ jobs:
       - name: Test units
         run: yarn test:units --cov ai --cov-branch --cov-report xml --doctest-modules
         working-directory: packages/ai
-      - name: Publish code coverage results
+      - name: Publish code coverage report
         uses: codecov/codecov-action@v1.0.7
         with:
           flags: ai
