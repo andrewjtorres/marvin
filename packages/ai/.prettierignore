@@ -1,0 +1,14 @@
+# Miscellaneous
+!**/.*
+
+# Artifacts and Compiled Output
+ai.egg-info
+__pycache__
+
+# Static Typing
+.mypy_cache
+
+# Test and Code Coverage
+.pytest_cache
+coverage
+.coverage
