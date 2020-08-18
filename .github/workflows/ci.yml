@@ -94,6 +94,6 @@ jobs:
         run: yarn test:units --cov ai --cov-branch --cov-report xml --doctest-modules
         working-directory: packages/ai
       - name: Publish code coverage report
-        uses: codecov/codecov-action@v1.0.12
+        uses: codecov/codecov-action@v1.0.13
         with:
           flags: ai
