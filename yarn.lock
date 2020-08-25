@@ -2323,7 +2323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:^3.2.0":
+"cz-conventional-changelog@npm:^3.2.1":
   version: 3.2.1
   resolution: "cz-conventional-changelog@npm:3.2.1"
   dependencies:
@@ -4674,7 +4674,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "marvin@workspace:."
   dependencies:
-    cz-conventional-changelog: ^3.2.0
+    cz-conventional-changelog: ^3.2.1
     husky: ^4.2.5
     lerna: ^3.22.1
     lint-staged: ^10.2.11
