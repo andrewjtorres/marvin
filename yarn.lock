@@ -962,7 +962,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.2.11
+    lint-staged: ^10.2.13
     npm-run-all: ^4.1.5
     prettier: ^2.1.0
     prettylint: ^1.0.0
@@ -1170,9 +1170,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 14.6.0
-  resolution: "@types/node@npm:14.6.0"
-  checksum: ff23553ab77516d0f90b6710a041a49723fc1b1ca33a5379d5746068cac8b9ddbec428d3a4913afaee50bcdc69b9583843740a18a3519ae997982694f5287c6b
+  version: 14.6.1
+  resolution: "@types/node@npm:14.6.1"
+  checksum: 0cc38a56a464f34daba7a948eca861909649c17094de4b43b2b3b89af8c56da77ee99c5992e9b0c33c71c1e3e2653ccfd745f3da77458c71b0909a911af5eaaf
   languageName: node
   linkType: hard
 
@@ -1883,7 +1883,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:2.1.0, cli-truncate@npm:^2.1.0":
+"cli-truncate@npm:^2.1.0":
   version: 2.1.0
   resolution: "cli-truncate@npm:2.1.0"
   dependencies:
@@ -1997,16 +1997,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "commander@npm:5.1.0"
-  checksum: d16141ea7f580945156fb8a06de2834c4647c7d9d3732ebd4534ab8e0b7c64747db301e18f2b840f28ea8fef51f7a8d6178e674b45a21931f0b65ff1c7f476b3
+"commander@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "commander@npm:6.0.0"
+  checksum: c7dad02c772d6c6eb76f0642756408df98c730a17c764f5329700638045abd9633038251277ce7d6a077a96d89e6261ee268a4249a3bc4edd607ca8a0126642f
   languageName: node
   linkType: hard
 
 "commitizen@npm:^4.0.3":
-  version: 4.2.0
-  resolution: "commitizen@npm:4.2.0"
+  version: 4.2.1
+  resolution: "commitizen@npm:4.2.1"
   dependencies:
     cachedir: 2.2.0
     cz-conventional-changelog: 3.2.0
@@ -2026,7 +2026,7 @@ __metadata:
     commitizen: bin/commitizen
     cz: bin/git-cz
     git-cz: bin/git-cz
-  checksum: 8c0bb6f0c6511cb11fe7d5c9549e470a519e8ef7399ae4a2766aac694af73da7d62e209a31dc073c9a03994df1e621fdaec41eb46135b3eb4dd3908bc3b2c436
+  checksum: 95483fa1b1157f707b4166e2b4ba372b0ff4421e00a21511d984e47226fab546e553db0b2b1f5490c335245e08473868bf2c859fc778643ec62058fe87631d0f
   languageName: node
   linkType: hard
 
@@ -2265,6 +2265,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cosmiconfig@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "cosmiconfig@npm:7.0.0"
+  dependencies:
+    "@types/parse-json": ^4.0.0
+    import-fresh: ^3.2.1
+    parse-json: ^5.0.0
+    path-type: ^4.0.0
+    yaml: ^1.10.0
+  checksum: 151fcb91773c0ae826fc801eab86f8f818605dbf63c8e5515adf0ff0fec5ede8e614f387f93c088d65527a2ea9021f0cd8c6b6e5c7fef2b77480b5e2c33700dc
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^6.0.0, cross-spawn@npm:^6.0.5":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5"
@@ -2324,8 +2337,8 @@ __metadata:
   linkType: hard
 
 "cz-conventional-changelog@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "cz-conventional-changelog@npm:3.2.1"
+  version: 3.3.0
+  resolution: "cz-conventional-changelog@npm:3.3.0"
   dependencies:
     "@commitlint/load": ">6.1.1"
     chalk: ^2.4.1
@@ -2337,7 +2350,7 @@ __metadata:
   dependenciesMeta:
     "@commitlint/load":
       optional: true
-  checksum: 8dd00a2e0bc29abcaa9b65f00d8dffda01409f13679a7306776358fe188e310ba70600cff3604ede1fc0c7bb8ee7b29f8a94f23e9906cbe8dad9ebda18a7c2b7
+  checksum: aa696ecb99ecb667d6d73bac40f5966eb53dd7e2fcd85d4254cec1ae041fd6c3579c4447a382668c607433ec6540a590154603bf0062062e9e10aa48066cc75d
   languageName: node
   linkType: hard
 
@@ -2626,7 +2639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enquirer@npm:^2.3.5":
+"enquirer@npm:^2.3.6":
   version: 2.3.6
   resolution: "enquirer@npm:2.3.6"
   dependencies:
@@ -2777,7 +2790,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^4.0.1":
+"execa@npm:^4.0.3":
   version: 4.0.3
   resolution: "execa@npm:4.0.3"
   dependencies:
@@ -3697,7 +3710,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0":
+"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0, import-fresh@npm:^3.2.1":
   version: 3.2.1
   resolution: "import-fresh@npm:3.2.1"
   dependencies:
@@ -4340,19 +4353,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.11":
-  version: 10.2.11
-  resolution: "lint-staged@npm:10.2.11"
+"lint-staged@npm:^10.2.13":
+  version: 10.2.13
+  resolution: "lint-staged@npm:10.2.13"
   dependencies:
-    chalk: ^4.0.0
-    cli-truncate: 2.1.0
-    commander: ^5.1.0
-    cosmiconfig: ^6.0.0
+    chalk: ^4.1.0
+    cli-truncate: ^2.1.0
+    commander: ^6.0.0
+    cosmiconfig: ^7.0.0
     debug: ^4.1.1
     dedent: ^0.7.0
-    enquirer: ^2.3.5
-    execa: ^4.0.1
-    listr2: ^2.1.0
+    enquirer: ^2.3.6
+    execa: ^4.0.3
+    listr2: ^2.6.0
     log-symbols: ^4.0.0
     micromatch: ^4.0.2
     normalize-path: ^3.0.0
@@ -4361,11 +4374,11 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 0d1c408dfea1173b6a691b223228db5a617365bd3ee6b7151fc3cd0b69ecbc1a48ced6675163baa67851c1492ab9025490932d9bf0597dc496638c5a1b4b68ab
+  checksum: ee8fec4a11f1f88991f4071096624daf428a676284a8cf4a3a2d72a1106ff67668115c31ed34a600de13af8f85af279fad73b01960dba7ea3a1c6a4857a6dbb9
   languageName: node
   linkType: hard
 
-"listr2@npm:^2.1.0":
+"listr2@npm:^2.6.0":
   version: 2.6.0
   resolution: "listr2@npm:2.6.0"
   dependencies:
@@ -4677,7 +4690,7 @@ __metadata:
     cz-conventional-changelog: ^3.2.1
     husky: ^4.2.5
     lerna: ^3.22.1
-    lint-staged: ^10.2.11
+    lint-staged: ^10.2.13
     npm-run-all: ^4.1.5
     prettier: ^2.1.0
     prettier-plugin-toml: ^0.3.1
@@ -5838,11 +5851,11 @@ __metadata:
   linkType: hard
 
 "prettier@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "prettier@npm:2.1.0"
+  version: 2.1.1
+  resolution: "prettier@npm:2.1.1"
   bin:
     prettier: bin-prettier.js
-  checksum: f955d380d2892284c28bbfe32b1601cfcd7a24d8b310832937773b9e733f624e38ff70cbafee80e9553bdb3c55783d019163667bf9a69df4e6f7c2acdcf54c06
+  checksum: 420a807cda2d482388daa42379a7aaa1be629cb71f5792362a971a5ed1c6ff377d2e311818d24e9390a4a8a6eac3fda9ebe6975f2168efec893790c0497d8a93
   languageName: node
   linkType: hard
 
@@ -7665,7 +7678,7 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"yaml@npm:^1.7.2":
+"yaml@npm:^1.10.0, yaml@npm:^1.7.2":
   version: 1.10.0
   resolution: "yaml@npm:1.10.0"
   checksum: d4cc9f9724f8d0aebc2cf52e4e6aa7059f12d50deb54b5225d103462fb2af36e5c0bb419101ca4b1f0cd3b4db9e4139cf2c690e863ac6227648d39d6f4e2522c
