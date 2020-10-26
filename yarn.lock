@@ -962,7 +962,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@marvin/ai@workspace:packages/ai"
   dependencies:
-    lint-staged: ^10.4.2
+    lint-staged: ^10.5.0
     npm-run-all: ^4.1.5
     prettier: ^2.1.2
     prettylint: ^1.0.0
@@ -4362,9 +4362,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.4.2":
-  version: 10.4.2
-  resolution: "lint-staged@npm:10.4.2"
+"lint-staged@npm:^10.5.0":
+  version: 10.5.0
+  resolution: "lint-staged@npm:10.5.0"
   dependencies:
     chalk: ^4.1.0
     cli-truncate: ^2.1.0
@@ -4383,7 +4383,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: bbd94e1dbf3e0eb361c262e7594dd4a4963cec87e8d90d3e2904d11f3b4cd9b14b3e923a97ca17ab76e460540f517d071557091890d4e1d8c54523741e882a28
+  checksum: cb86aaee3be5f68504b9a964c62653b036cab4d4af569272368a9656c6d1c6fd97671036cd26b518acad7c42285a2c248d4b1b1337f12f1f5432ad5bfa0320eb
   languageName: node
   linkType: hard
 
@@ -4699,7 +4699,7 @@ __metadata:
     cz-conventional-changelog: ^3.3.0
     husky: ^4.3.0
     lerna: ^3.22.1
-    lint-staged: ^10.4.2
+    lint-staged: ^10.5.0
     npm-run-all: ^4.1.5
     prettier: ^2.1.2
     prettier-plugin-toml: ^0.3.1
