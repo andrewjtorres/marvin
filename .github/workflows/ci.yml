@@ -42,7 +42,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Install Poetry
-        run: pip install --upgrade pip poetry>=1.0
+        run: pip install --upgrade pip poetry>=1.1
       - name: Set Poetry cache directory
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
@@ -77,7 +77,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Install Poetry
-        run: pip install --upgrade pip poetry>=1.0
+        run: pip install --upgrade pip poetry>=1.1
       - name: Set Poetry cache directory
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
