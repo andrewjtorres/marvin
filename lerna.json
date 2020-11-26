@@ -2,6 +2,6 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "loglevel": "success",
+  "loglevel": "warn",
   "packages": ["packages/*"]
 }
