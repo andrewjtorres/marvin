@@ -49,7 +49,7 @@
   },
   "engines": {
     "node": ">=14.15",
-    "yarn": ">=2.3"
+    "yarn": ">=1.22"
   },
   "private": true,
   "workspaces": [
@@ -57,7 +57,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "yarn workspaces foreach --all --verbose run hook:pre-commit"
+      "pre-commit": "yarn hook:pre-commit && lerna run --concurrency 1 --since HEAD --stream hook:pre-commit"
     }
   },
   "lint-staged": {

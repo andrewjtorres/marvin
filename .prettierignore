@@ -3,7 +3,7 @@
 .all-contributorsrc
 
 # Dependencies
-.yarn
+node_modules
 
 # Version Control
 .git
