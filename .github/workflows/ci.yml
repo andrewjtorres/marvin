@@ -54,7 +54,7 @@ jobs:
       - name: Install Node dependencies
         run: yarn install --frozen-lockfile
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2.1.4
         with:
           python-version: 3.9
       - name: Install Poetry
@@ -92,7 +92,7 @@ jobs:
       - name: Install Node dependencies
         run: yarn install --frozen-lockfile
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2.1.4
         with:
           python-version: 3.9
       - name: Install Poetry
