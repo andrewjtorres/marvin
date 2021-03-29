@@ -24,6 +24,7 @@
     "lint": "npm-run-all --parallel \"lint:*\"",
     "lint:files": "prettylint \"**/*.{json,md,yml}\" \"!packages/**\"",
     "lint:workspaces": "lerna run --stream lint",
+    "prepare": "husky install",
     "test": "npm-run-all --parallel \"test:*\"",
     "test:workspaces": "lerna run --stream test"
   },
@@ -34,18 +35,13 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^5.2.0",
+    "husky": "^6.0.0",
     "lerna": "^4.0.0",
     "lint-staged": "^10.5.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "prettier-plugin-toml": "^0.3.1",
     "prettylint": "^1.0.0"
-  },
-  "dependenciesMeta": {
-    "husky": {
-      "built": false
-    }
   },
   "engines": {
     "node": ">=14.15",
@@ -55,11 +51,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn hook:pre-commit && lerna run --concurrency 1 --since HEAD --stream hook:pre-commit"
-    }
-  },
   "lint-staged": {
     "!(packages/**)*.{json,md,yml}": [
       "prettylint --fix"
