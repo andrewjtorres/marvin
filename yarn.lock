@@ -3974,9 +3974,9 @@ npm-pick-manifest@^6.0.0, npm-pick-manifest@^6.1.1:
     semver "^7.3.4"
 
 npm-registry-fetch@^10.0.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-10.1.0.tgz#3b618126b1011af74c12e75d6077712bda411da4"
-  integrity sha512-XcKu0h6OuRTB7HO5uv8htavPQJ1dYTLAXLE5AMs4GFQ1LbY+LlHiNoqIbVshE3rk0vLk+nKxpA/4WJm1kE7eqg==
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-10.1.1.tgz#97bc7a0fca5e8f76cc5162185b8de8caa8bea639"
+  integrity sha512-F6a3l+ffCQ7hvvN16YG5bpm1rPZntCg66PLHDQ1apWJPOCUVHoKnL2w5fqEaTVhp42dmossTyXeR7hTGirfXrg==
   dependencies:
     lru-cache "^6.0.0"
     make-fetch-happen "^8.0.9"
@@ -4226,9 +4226,9 @@ p-waterfall@^2.1.1:
     p-reduce "^2.0.0"
 
 pacote@^11.2.6:
-  version "11.3.2"
-  resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.3.2.tgz#2bef04f6ec6bafceb5eb2f5b3965f0d00aee4d7e"
-  integrity sha512-lMO7V9aMhyE5gfaSFxKfW3OTdXuFBNQJfuNuet3NPzWWhOYIW90t85vHcHLDjdhgmfAdAHyh9q1HAap96ea0XA==
+  version "11.3.3"
+  resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.3.3.tgz#d7d6091464f77c09691699df2ded13ab906b3e68"
+  integrity sha512-GQxBX+UcVZrrJRYMK2HoG+gPeSUX/rQhnbPkkGrCYa4n2F/bgClFPaMm0nsdnYrxnmUy85uMHoFXZ0jTD0drew==
   dependencies:
     "@npmcli/git" "^2.0.1"
     "@npmcli/installed-package-contents" "^1.0.6"
