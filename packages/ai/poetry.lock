@@ -172,7 +172,7 @@ flake8 = "*"
 
 [[package]]
 name = "flake8-rst-docstrings"
-version = "0.2.1"
+version = "0.2.2"
 description = "Python docstring reStructuredText (RST) validator"
 category = "dev"
 optional = false
@@ -424,7 +424,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "df06d4bf6130c624cd5470b9a10e92a7c6c8e97be79d7e162adbd67e8ac9f517"
+content-hash = "9e31c3c8ba8822ce55f0b8ff9b5fa32484431b02e185f865f7c8ad2d42c80dc9"
 
 [metadata.files]
 appdirs = [
@@ -538,8 +538,8 @@ flake8-polyfill = [
     {file = "flake8_polyfill-1.0.2-py2.py3-none-any.whl", hash = "sha256:12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9"},
 ]
 flake8-rst-docstrings = [
-    {file = "flake8-rst-docstrings-0.2.1.tar.gz", hash = "sha256:1617d1dcdb31675d24fd8ff8e5d7932e449a4518dcc1365e50beceb86d658e7f"},
-    {file = "flake8_rst_docstrings-0.2.1-py3-none-any.whl", hash = "sha256:a30f6652f1a68d43f9ad9c9b49aa073e651647fb84d3f6784656a2583473eb79"},
+    {file = "flake8-rst-docstrings-0.2.2.tar.gz", hash = "sha256:1211c78915445005ec113243e78a0ca81234aa1e2818f96e27b26e7f1ee490c7"},
+    {file = "flake8_rst_docstrings-0.2.2-py3-none-any.whl", hash = "sha256:b3a1c535ab3579edc1d42c52acaebd5cf7d45c45a0a275b24c29eb01f590afd1"},
 ]
 iniconfig = [
     {file = "iniconfig-1.1.1-py2.py3-none-any.whl", hash = "sha256:011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"},
