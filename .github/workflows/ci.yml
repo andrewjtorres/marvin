@@ -80,6 +80,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.0
+      - name: Setup Node
+        uses: actions/setup-node@v2.4.1
+        with:
+          node-version: 16.13
       - name: Set Yarn cache directory
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
