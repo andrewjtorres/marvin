@@ -23,7 +23,7 @@ jobs:
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Restore Yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v3.0.0
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: yarn-cache-${{ hashFiles('yarn.lock') }}
@@ -46,7 +46,7 @@ jobs:
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Restore Yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v3.0.0
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: yarn-cache-${{ hashFiles('yarn.lock') }}
@@ -63,7 +63,7 @@ jobs:
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
       - name: Restore Poetry cache
-        uses: actions/cache@v3
+        uses: actions/cache@v3.0.0
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
           key: ai-poetry-cache-${{ hashFiles('packages/ai/poetry.lock') }}
@@ -88,7 +88,7 @@ jobs:
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Restore Yarn cache
-        uses: actions/cache@v3
+        uses: actions/cache@v3.0.0
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: yarn-cache-${{ hashFiles('yarn.lock') }}
@@ -105,7 +105,7 @@ jobs:
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
       - name: Restore Poetry cache
-        uses: actions/cache@v3
+        uses: actions/cache@v3.0.0
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
           key: ai-poetry-cache-${{ hashFiles('packages/ai/poetry.lock') }}
