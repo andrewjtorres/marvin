@@ -3215,9 +3215,9 @@ just-diff-apply@^5.2.0:
   integrity sha512-dgFenZnMsc1xGNqgdtgnh7DK+Oy352CE3VZLbzcbQpsBs9iI2K3M0IRrdgREZ72eItTjbl0suRyvKRdVQa9GbA==
 
 just-diff@^5.0.1:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/just-diff/-/just-diff-5.0.3.tgz#4c9c514dec5526b25ab977590e3c39a0cf271554"
-  integrity sha512-a8p80xcpJ6sdurk5PxDKb4mav9MeKjA3zFKZpCWBIfvg8mznfnmb13MKZvlrwJ+Lhis0wM3uGAzE0ArhFHvIcg==
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/just-diff/-/just-diff-5.1.0.tgz#b916c4428cb65c066cda57e1b4851348c4d97ddc"
+  integrity sha512-Rb0cKJWEOL8/YdXIBYqaWvXjp7VSDRWoGRdlTgP3wy3vdMwhAmLS6QJL26UeS/UDUlScem7NpQCJyY8chl5/3g==
 
 kind-of@^6.0.2, kind-of@^6.0.3:
   version "6.0.3"
