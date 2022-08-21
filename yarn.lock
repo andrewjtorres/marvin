@@ -3595,9 +3595,9 @@ minipass-collect@^1.0.2:
     minipass "^3.0.0"
 
 minipass-fetch@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-2.1.0.tgz#ca1754a5f857a3be99a9271277246ac0b44c3ff8"
-  integrity sha512-H9U4UVBGXEyyWJnqYDCLp1PwD8XIkJ4akNHp1aGVI+2Ym7wQMlxDKi4IB4JbmyU+pl9pEs/cVrK6cOuvmbK4Sg==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-2.1.1.tgz#9b39c047cf10af9bfa6f3a4d25ed88444be27a4c"
+  integrity sha512-/kgtXVGS10PTFET6dAbOBWQtgH+iDiI4NhRqAftojRlsOJhk0y45sVVxqCaRQC+AMFH7JkHiWpuKJKQ+mojKiA==
   dependencies:
     minipass "^3.1.6"
     minipass-sized "^1.0.3"
