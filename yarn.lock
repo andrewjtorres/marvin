@@ -951,19 +951,19 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@14.7.17":
-  version "14.7.17"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.7.17.tgz#eb7eda69a8934eaf1145b8b70737d8b2f81f3424"
-  integrity sha512-ovzGpWnTrmFXX5TEV2VzBUz8oPLoPkqtGKpdvlHvnd0UADQUpmNxoSY7mzHclDLRMyb6MWnVKqlJiypTG/p9iw==
+"@nrwl/cli@14.8.0":
+  version "14.8.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.8.0.tgz#b39fe72c7c17895d2ff0968ccf42379387016aa6"
+  integrity sha512-EvU/XM1ZXXH6FxEpKDTO7jVoc1OMBp/fBriVVdprzWU6Jm6GWgdGwdSYOalbWZDRu4X0Kznb0VnDITzGHx50nQ==
   dependencies:
-    nx "14.7.17"
+    nx "14.8.0"
 
-"@nrwl/tao@14.7.17":
-  version "14.7.17"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.7.17.tgz#30e671d86526e9513d3d0dbb28c72d87b0d3f846"
-  integrity sha512-35IPDtv4hdkmDvLuQ/Q5AaDACgsznpmj3+/SitL1U/vYpFUcAPUrPznL3QK4TuvL3IeCLwYaYO0NCZotDEQi4g==
+"@nrwl/tao@14.8.0":
+  version "14.8.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.8.0.tgz#213028a66f357496a60bb56ac9d2184a57143edb"
+  integrity sha512-nitkfXWq4j/cxFwbmGu6W1QB4VxbMVQon6eKgaeyQRdecfX0rNb7IqH8TBqjG8vk6UdoW9JA+epqoOJL70GeHg==
   dependencies:
-    nx "14.7.17"
+    nx "14.8.0"
 
 "@octokit/auth-token@^3.0.0":
   version "3.0.0"
@@ -3938,13 +3938,13 @@ npmlog@^6.0.0, npmlog@^6.0.2:
     gauge "^4.0.3"
     set-blocking "^2.0.0"
 
-nx@14.7.17, "nx@>=14.6.1 < 16":
-  version "14.7.17"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-14.7.17.tgz#54a78b6fa9b36caa31981ca5f0c87b740e0ebdf6"
-  integrity sha512-LLXdz4xeR54Lqw9t3XtOJsBtlwtSexrlIwhWc42GKlv4MHrBOnTp99jTQ/hdP9TpGCU7tvShRQ4ildZJapgRSg==
+nx@14.8.0, "nx@>=14.6.1 < 16":
+  version "14.8.0"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-14.8.0.tgz#40f7c62abf0de98b9b59d0e5e1287869e1fc94b5"
+  integrity sha512-sCD7nU701X14nX5OMx4yld+F0E2N7ww7vtJaP2uyskyscH95hkrWRixpoQUDIuhnlS72LMhQEZJX76Nq9/zIcg==
   dependencies:
-    "@nrwl/cli" "14.7.17"
-    "@nrwl/tao" "14.7.17"
+    "@nrwl/cli" "14.8.0"
+    "@nrwl/tao" "14.8.0"
     "@parcel/watcher" "2.0.4"
     "@yarnpkg/lockfile" "^1.1.0"
     "@yarnpkg/parsers" "^3.0.0-rc.18"
