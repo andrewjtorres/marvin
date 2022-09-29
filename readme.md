@@ -12,7 +12,7 @@
     <img alt="LGTM" src="https://flat.badgen.net/lgtm/grade/g/ajtorres9/marvin?label=code%20quality">
   </a>
   <a href="https://codecov.io/gh/ajtorres9/marvin">
-    <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ajtorres9/marvin/master">
+    <img alt="Codecov" src="https://flat.badgen.net/codecov/c/github/ajtorres9/marvin/main">
   </a>
   <a href="#contributors">
     <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->

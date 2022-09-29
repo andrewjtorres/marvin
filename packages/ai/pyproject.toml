@@ -22,7 +22,7 @@ authors = [
   "Andrew Torres <andrew.jonathan.torres@gmail.com>",
   "Brian Lee <briandl92391@gmail.com>"
 ]
-repository = "https://github.com/ajtorres9/marvin/tree/master/packages/ai"
+repository = "https://github.com/ajtorres9/marvin/tree/main/packages/ai"
 
 [tool.poetry.dependencies]
 python = "^3.9"
