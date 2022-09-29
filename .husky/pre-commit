@@ -1,4 +1,5 @@
 #!/bin/sh
+
 . "$(dirname "$0")/_/husky.sh"
 
-yarn hook:pre-commit && yarn lerna run --concurrency 1 --since HEAD --stream hook:pre-commit
+yarn hook:pre-commit

@@ -1,6 +1,13 @@
 # Artifacts and Compiled Output
-ai.egg-info
 __pycache__
+.turbo
+ai.egg-info
+
+# Dependencies
+node_modules
+
+# Logs
+*.log*
 
 # Static Typing
 .mypy_cache
@@ -9,6 +16,3 @@ __pycache__
 .pytest_cache
 coverage
 .coverage
-
-# Logs
-*.log*
