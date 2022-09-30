@@ -37,6 +37,7 @@
     }
   },
   "devDependencies": {
+    "@types/prettier": "^2.7.1",
     "cz-conventional-changelog": "^3.3.0",
     "del-cli": "^5.0.0",
     "husky": "^8.0.1",
