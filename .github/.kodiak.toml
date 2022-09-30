@@ -1,0 +1,27 @@
+version = 1
+
+[merge]
+automerge_label = ":rocket: automerge"
+blocking_labels = [
+  ":cyclone: duplicate",
+  ":no_entry_sign: invalid",
+  ":palm_tree: wontfix",
+  ":wave: help wanted"
+]
+method = "squash"
+delete_branch_on_merge = true
+
+[merge.automerge_dependencies]
+usernames = ["dependabot"]
+
+[merge.message]
+title = "pull_request_title"
+body = "pull_request_body"
+strip_html_comments = true
+include_coauthors = true
+
+[update]
+ignored_usernames = ["dependabot"]
+
+[approve]
+auto_approve_usernames = ["dependabot"]
