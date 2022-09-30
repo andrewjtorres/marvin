@@ -21,16 +21,21 @@
     "directory": "packages/ai"
   },
   "scripts": {
+    "clean": "npm-run-all --parallel \"clean:*\"",
+    "clean:caches": "del \"**/__pycache__\" \"**/\\.(mypy|pytest)_cache\" .turbo",
+    "clean:files": "del \"(\\.)?coverage\" dist \"*\\.log*\"",
     "lint": "npm-run-all --parallel \"lint:*\"",
-    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",
-    "lint:scripts": "poetry run flake8 ai tests",
-    "lint:types": "poetry run mypy ai tests",
+    "lint:files": "prettylint \"**/*.{json,md,toml}\"",
+    "lint:scripts": "poetry run flake8 .",
+    "lint:types": "poetry run mypy .",
     "test": "npm-run-all --parallel \"test:*\"",
     "test:units": "poetry run pytest tests"
   },
   "devDependencies": {
+    "del-cli": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
+    "prettier-plugin-toml": "^0.3.1",
     "prettylint": "^1.0.0"
   },
   "engines": {
