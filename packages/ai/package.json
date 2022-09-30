@@ -21,6 +21,7 @@
     "directory": "packages/ai"
   },
   "scripts": {
+    "build": "poetry build",
     "clean": "npm-run-all --parallel \"clean:*\"",
     "clean:caches": "del \"**/__pycache__\" \"**/\\.(mypy|pytest)_cache\" .turbo",
     "clean:files": "del \"(\\.)?coverage\" dist \"*\\.log*\"",
@@ -28,6 +29,7 @@
     "lint:files": "prettylint \"**/*.{json,md,toml}\"",
     "lint:scripts": "poetry run flake8 .",
     "lint:types": "poetry run mypy .",
+    "start": "poetry run ai",
     "test": "npm-run-all --parallel \"test:*\"",
     "test:units": "poetry run pytest tests"
   },
@@ -50,6 +52,7 @@
     "*.py": [
       "poetry run black",
       "poetry run flake8",
+      "poetry run isort",
       "poetry run mypy"
     ]
   }

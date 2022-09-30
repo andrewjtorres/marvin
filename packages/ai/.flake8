@@ -1,7 +1,33 @@
 [flake8]
-ignore = D1, E203, E501, W503
+extend-exclude = .venv, dist, node_modules
+extend-ignore =
+  ; Missing docstring in public module
+  D100,
+  ; Missing docstring in public class
+  D101,
+  ; Missing docstring in public method
+  D102,
+  ; Missing docstring in public function
+  D103,
+  ; Missing docstring in public package
+  D104,
+  ; Missing docstring in magic method
+  D105,
+  ; Missing docstring in public nested class
+  D106,
+  ; Missing docstring in __init__
+  D107,
+  ; Whitespace before ':'
+  E203,
+  ; Line too long (82 > 79 characters)
+  E501,
+  ; Do not use bare except, specify exception instead
+  E722
 max-line-length = 80
-select = B, B9, BLK, C, D, E, F, I, N8, RST, W
-application-import-names = ai
-import-order-style = pycharm
+show-source = true
+enable-extensions = TC, TC1
 max-complexity = 12
+inline-quotes = double
+format-greedy = 1
+ban-relative-imports = true
+min-python-version = 3.10

@@ -1,11 +1,11 @@
-from typing import Any
+import pytest
 
-from ai import main
+import ai
 
 
-def test_ai(capfd: Any) -> None:
-    main()
+def test_ai(capfd: pytest.CaptureFixture[str]) -> None:
+    ai.main()
 
-    out, err = capfd.readouterr()
+    out, _ = capfd.readouterr()
 
     assert out == "Call your main application code here\n"

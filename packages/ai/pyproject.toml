@@ -1,10 +1,3 @@
-[build-system]
-requires = ["poetry>=1.1"]
-build-backend = "poetry.masonry.api"
-
-[tool.black]
-line-length = 80
-
 [tool.poetry]
 name = "ai"
 version = "0.1.0"
@@ -23,20 +16,51 @@ authors = [
   "Brian Lee <briandl92391@gmail.com>"
 ]
 repository = "https://github.com/ajtorres9/marvin/tree/main/packages/ai"
+packages = [{ from = "src", include = "ai" }]
+
+[tool.poetry.scripts]
+ai = "ai:main"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 
-[tool.poetry.dev-dependencies]
-black = "^22.8"
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
 flake8 = "^5.0.4"
+flake8-annotations = "^2.9.1"
 flake8-black = "^0.3.3"
-flake8-bugbear = "^22.9.11"
+flake8-broken-line = "^0.5.0"
+flake8-bugbear = "^22.9.23"
+flake8-comprehensions = "^3.10.0"
 flake8-docstrings = "^1.6.0"
+flake8-eradicate = "^1.4.0"
 flake8-formatter-junit-xml = "^0.0.6"
-flake8-import-order = "^0.18.1"
+flake8-isort = "^4.2.0"
+flake8-no-pep420 = "^2.3.0"
+flake8-pie = "^0.16.0"
+flake8-print = "^5.0.0"
+flake8-pytest-style = "^1.6.0"
+flake8-quotes = "^3.3.1"
 flake8-rst-docstrings = "^0.2.7"
-mypy = "^0.971"
+flake8-simplify = "^0.19.3"
+flake8-tidy-imports = "^4.8.0"
+flake8-type-checking = "^2.1.3"
+flake8-typing-imports = "^1.13.0"
+flake8-use-fstring = "^1.4"
+isort = "^5.10.1"
+mypy = "^0.981"
 pep8-naming = "^0.13.2"
 pytest = "^7.1.3"
-pytest-cov = "^3.0.0"
+pytest-cov = "^4.0.0"
+pytest-sugar = "^0.9.5"
+setuptools = "^65.4.1"
+
+[tool.black]
+force-exclude = "node_modules"
+preview-string-processing = true
+required-version = "22.8.0"
+target-version = ["py310"]
+
+[build-system]
+requires = ["poetry-core>=1.2"]
+build-backend = "poetry.core.masonry.api"

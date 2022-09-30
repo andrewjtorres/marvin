@@ -1,3 +1,3 @@
 def main() -> None:
     """Entry point for the application script."""
-    print("Call your main application code here")
+    print("Call your main application code here")  # noqa: T201

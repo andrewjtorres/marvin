@@ -1,10 +1,13 @@
 # Artifacts and Compiled Output
 __pycache__
 .turbo
-ai.egg-info
+dist
 
 # Dependencies
 node_modules
+
+# Environment
+.venv
 
 # Logs
 *.log*

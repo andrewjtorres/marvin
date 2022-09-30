@@ -4,7 +4,13 @@ precision = 2
 show_missing = true
 
 [html]
-directory = coverage/ai/htmlcov
+directory = coverage/htmlcov
 
 [xml]
-output = coverage/ai/coverage.xml
+output = coverage/coverage.xml
+
+[json]
+output = coverage/coverage.json
+
+[lcov]
+output = coverage/coverage.lcov
