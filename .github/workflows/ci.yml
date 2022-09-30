@@ -9,12 +9,12 @@ on:
 jobs:
   root_static_analysis:
     name: Root Static Analysis
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.0.2
       - name: Setup Node
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v3.5.0
         with:
           node-version: 16.17
       - name: Install Yarn
@@ -23,7 +23,7 @@ jobs:
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Restore Yarn cache
-        uses: actions/cache@v3.0.8
+        uses: actions/cache@v3.0.9
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: yarn-cache-${{ hashFiles('yarn.lock') }}
@@ -34,19 +34,19 @@ jobs:
         run: yarn --silent lint:files
   ai_static_analysis:
     name: AI Static Analysis
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.0.2
       - name: Setup Node
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v3.5.0
         with:
           node-version: 16.17
       - name: Set Yarn cache directory
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Restore Yarn cache
-        uses: actions/cache@v3.0.8
+        uses: actions/cache@v3.0.9
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: yarn-cache-${{ hashFiles('yarn.lock') }}
@@ -56,14 +56,14 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4.2.0
         with:
-          python-version: 3.9
+          python-version: '3.10'
       - name: Install Poetry
-        run: pip install --upgrade pip poetry>=1.1
+        run: pip install --upgrade pip poetry>=1.2
       - name: Set Poetry cache directory
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
       - name: Restore Poetry cache
-        uses: actions/cache@v3.0.8
+        uses: actions/cache@v3.0.9
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
           key: ai-poetry-cache-${{ hashFiles('packages/ai/poetry.lock') }}
@@ -76,19 +76,19 @@ jobs:
         working-directory: packages/ai
   ai_test:
     name: AI Test
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.0.2
       - name: Setup Node
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v3.5.0
         with:
           node-version: 16.17
       - name: Set Yarn cache directory
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Restore Yarn cache
-        uses: actions/cache@v3.0.8
+        uses: actions/cache@v3.0.9
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: yarn-cache-${{ hashFiles('yarn.lock') }}
@@ -98,14 +98,14 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4.2.0
         with:
-          python-version: 3.9
+          python-version: '3.10'
       - name: Install Poetry
-        run: pip install --upgrade pip poetry>=1.1
+        run: pip install --upgrade pip poetry>=1.2
       - name: Set Poetry cache directory
         id: poetry-cache
         run: echo "::set-output name=dir::$(poetry config cache-dir)"
       - name: Restore Poetry cache
-        uses: actions/cache@v3.0.8
+        uses: actions/cache@v3.0.9
         with:
           path: ${{ steps.poetry-cache.outputs.dir }}
           key: ai-poetry-cache-${{ hashFiles('packages/ai/poetry.lock') }}
