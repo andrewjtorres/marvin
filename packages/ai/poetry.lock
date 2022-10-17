@@ -327,11 +327,11 @@ flake8 = ">=3.8.0"
 
 [[package]]
 name = "flake8-type-checking"
-version = "2.1.3"
+version = "2.2.0"
 description = "A flake8 plugin for managing type-checking imports & forward references"
 category = "dev"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = ">=3.8"
 
 [package.dependencies]
 classify-imports = "*"
@@ -845,8 +845,8 @@ flake8-tidy-imports = [
     {file = "flake8_tidy_imports-4.8.0-py3-none-any.whl", hash = "sha256:25bd9799358edefa0e010ce2c587b093c3aba942e96aeaa99b6d0500ae1bf09c"},
 ]
 flake8-type-checking = [
-    {file = "flake8-type-checking-2.1.3.tar.gz", hash = "sha256:a47b790ae6e13cb4c62ea36a3197eaa7b635086544071e3a49d6751f0b6cabe6"},
-    {file = "flake8_type_checking-2.1.3-py3-none-any.whl", hash = "sha256:70d198e93c3831b3ae24f6e80f85e3555c19c4eafb39ee4445abb2236c0b6970"},
+    {file = "flake8_type_checking-2.2.0-py3-none-any.whl", hash = "sha256:c7d9d7adc6cd635a5a1a7859e5e0140f4f8f1705982a22db45872dd9acd49753"},
+    {file = "flake8_type_checking-2.2.0.tar.gz", hash = "sha256:f7972fc9102f3f632ace1f4b1c5c20b900b8b7b529f04bb6c1fe0a11801e9658"},
 ]
 flake8-typing-imports = [
     {file = "flake8_typing_imports-1.13.0-py2.py3-none-any.whl", hash = "sha256:21e4d5bd0bf684d78363d35edf9859719f6620bfe30f24ed5a7afbc8745638cd"},
