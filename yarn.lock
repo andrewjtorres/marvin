@@ -825,9 +825,9 @@ fast-glob@^3.2.11:
     micromatch "^4.0.4"
 
 fastq@^1.6.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.14.0.tgz#107f69d7295b11e0fccc264e1fc6389f623731ce"
-  integrity sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.17.0.tgz#ca5e1a90b5e68f97fc8b61330d5819b82f5fab03"
+  integrity sha512-zGygtijUMT7jnk3h26kUms3BkSDp4IfIKjmnqI2tvx6nuBfiF1UqOxbnLfzdv+apBy+53oaImsKtMw/xYbW+1w==
   dependencies:
     reusify "^1.0.4"
 
